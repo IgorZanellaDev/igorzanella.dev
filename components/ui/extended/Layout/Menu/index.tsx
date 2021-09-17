@@ -3,6 +3,7 @@ import Navbar from "../../../base/Navbar";
 import MenuItem from "./MenuItem";
 import MobileMenu from "./MobileMenu";
 import { useRouter } from "next/router";
+import Logo from "./Logo";
 
 export interface Item {
   path: string;
@@ -77,18 +78,9 @@ const Index: FunctionComponent = () => {
           </div>
           <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
             <div className="flex-shrink-0 flex items-center">
-              <img
-                className="block lg:hidden h-8 w-auto"
-                src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg"
-                alt="Workflow"
-              />
-              <img
-                className="hidden lg:block h-8 w-auto"
-                src="https://tailwindui.com/img/logos/workflow-logo-indigo-500-mark-white-text.svg"
-                alt="Workflow"
-              />
+              <Logo />
             </div>
-            <div className="hidden sm:block sm:ml-6">
+            <div className="hidden items-center sm:flex sm:ml-6">
               <div className="flex space-x-4">
                 {items.map((item) => (
                   <MenuItem
