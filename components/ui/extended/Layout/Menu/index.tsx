@@ -1,5 +1,5 @@
 import { FunctionComponent, useState } from "react";
-import Navbar from "../../../base/Navbar";
+import Navbar from "./Navbar";
 import MenuItem from "./MenuItem";
 import MobileMenu from "./MobileMenu";
 import { useRouter } from "next/router";
@@ -10,7 +10,7 @@ export interface Item {
   name: string;
 }
 
-const Index: FunctionComponent = () => {
+const Menu: FunctionComponent = () => {
   const [mobileOpen, setMobileOpen] = useState<boolean>(false);
   const pathname = useRouter().pathname;
 
@@ -33,6 +33,29 @@ const Index: FunctionComponent = () => {
     <Navbar>
       <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
         <div className="relative flex items-center justify-between h-16">
+          <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
+            <div className="flex-shrink-0 flex items-center">
+              <Logo />
+            </div>
+            <div className="hidden items-center sm:flex sm:ml-6">
+              <div className="flex space-x-4">
+                {items.map((item) => (
+                  <MenuItem
+                    href={item.path}
+                    current={pathname === item.path}
+                    key={item.path}
+                  >
+                    {item.name}
+                  </MenuItem>
+                ))}
+              </div>
+            </div>
+          </div>
+          <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+            <MenuItem href="#" cta>
+              Contact me
+            </MenuItem>
+          </div>
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
             <button
               type="button"
@@ -76,29 +99,6 @@ const Index: FunctionComponent = () => {
               )}
             </button>
           </div>
-          <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
-            <div className="flex-shrink-0 flex items-center">
-              <Logo />
-            </div>
-            <div className="hidden items-center sm:flex sm:ml-6">
-              <div className="flex space-x-4">
-                {items.map((item) => (
-                  <MenuItem
-                    href={item.path}
-                    current={pathname === item.path}
-                    key={item.path}
-                  >
-                    {item.name}
-                  </MenuItem>
-                ))}
-              </div>
-            </div>
-          </div>
-          <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-            <MenuItem href="#" cta>
-              Contact me
-            </MenuItem>
-          </div>
         </div>
       </div>
       <MobileMenu open={mobileOpen} items={items} />
@@ -106,4 +106,4 @@ const Index: FunctionComponent = () => {
   );
 };
 
-export default Index;
+export default Menu;
