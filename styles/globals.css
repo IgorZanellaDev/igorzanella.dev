@@ -1,5 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind screens;
+@tailwind utilities;
+
 html,
 body {
-  min-height: 100vh;
-  background-color: #1F2937;
+  @apply bg-gray-900;
 }
