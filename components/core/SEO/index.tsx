@@ -2,8 +2,9 @@ import { FunctionComponent } from "react";
 import Head from "next/head";
 import { OpenGraphObject, TwitterCard } from "../../../types/seo";
 import { Thing, WithContext } from "schema-dts";
-import { TITLE_SUFFIX, URL } from "../../../constants/seo";
+import { TITLE_SUFFIX } from "../../../constants/seo";
 import { useRouter } from "next/router";
+import { WEBSITE_URL } from "../../../constants/url";
 
 interface SEOProps {
   title: string;
@@ -30,7 +31,9 @@ const SEO: FunctionComponent<SEOProps> = (props: SEOProps) => {
       )}
       <link
         rel="canonical"
-        href={props.canonical ? props.canonical : URL + useRouter().pathname}
+        href={
+          props.canonical ? props.canonical : WEBSITE_URL + useRouter().pathname
+        }
       />
     </Head>
   );
