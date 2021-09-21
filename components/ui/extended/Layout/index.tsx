@@ -1,5 +1,5 @@
 import { FunctionComponent, ReactChild } from "react";
-import Menu from "./Menu";
+import Header from "./Header";
 
 interface LayoutProps {
   children: ReactChild | ReactChild[];
@@ -8,7 +8,7 @@ interface LayoutProps {
 const Layout: FunctionComponent<LayoutProps> = (props: LayoutProps) => {
   return (
     <>
-      <Menu />
+      <Header />
       {props.children}
     </>
   );
