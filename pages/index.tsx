@@ -2,16 +2,19 @@ import type { NextPage } from "next";
 import React from "react";
 import GlobalWrapper from "../components/core/GlobalWrapper";
 import SEO from "../components/core/SEO";
-import PageContainer from "../components/ui/base/PageContainer";
-import MainCard from "../components/ui/base/MainCard";
+import HeaderSection from "../components/ui/extended/HeaderSection";
+
+/**
+ * Header
+ * Technology stack (programming languages, ecc)
+ * Interested in startups section
+ * */
 
 const Home: NextPage = () => {
   return (
     <GlobalWrapper withLayout>
-      <SEO title="Home" />
-      <PageContainer>
-        <MainCard />
-      </PageContainer>
+      <SEO title="Hello" />
+      <HeaderSection />
     </GlobalWrapper>
   );
 };
