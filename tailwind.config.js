@@ -4,10 +4,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "iz-yellow-dark": "#ff9933",
         "iz-yellow-light": "#ffcc00",
-        "iz-blue-dark": "#005cb4",
+        "iz-yellow-dark": "#ff9933",
         "iz-blue-light": "#00ccff",
+        "iz-blue-dark": "#005cb4",
+        "iz-blue-dark-darker-10": "#0052a2",
       },
     },
   },
