@@ -1,4 +1,5 @@
 import "../styles/globals.css";
+import "animate.css";
 import "tailwindcss/tailwind.css";
 import type { AppProps } from "next/app";
 import { GTM_ID } from "../constants/seo";
