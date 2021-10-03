@@ -47,9 +47,10 @@ const TechnologyStack = () => {
           <div className="w-full flex justify-start items-center flex-row flex-wrap -mx-4">
             {TECHNOLOGIES.filter(
               (technology) => technology.category === selectedCategory
-            ).map((technology) => (
+            ).map((technology, i) => (
               <TechnologyElement
                 technology={technology}
+                index={i}
                 key={technology.name}
               />
             ))}
