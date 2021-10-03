@@ -63,6 +63,11 @@ export const TECHNOLOGIES: Technology[] = [
     category: TechnologyCategory.Frontend,
   },
   {
+    name: "Styled Components",
+    icon: "styledcomponents",
+    category: TechnologyCategory.Frontend,
+  },
+  {
     name: "Tailwind CSS",
     icon: "tailwind",
     category: TechnologyCategory.Frontend,
@@ -80,31 +85,6 @@ export const TECHNOLOGIES: Technology[] = [
   {
     name: "Algolia",
     icon: "algolia",
-    category: TechnologyCategory.Frontend,
-  },
-  {
-    name: "Styled Components",
-    icon: "styledcomponents",
-    category: TechnologyCategory.Frontend,
-  },
-  {
-    name: "Google Tag Manager",
-    icon: "gtm",
-    category: TechnologyCategory.Frontend,
-  },
-  {
-    name: "Google Analytics",
-    icon: "ganalytics",
-    category: TechnologyCategory.Frontend,
-  },
-  {
-    name: "Google Optimize",
-    icon: "goptimize",
-    category: TechnologyCategory.Frontend,
-  },
-  {
-    name: "Mixpanel",
-    icon: "mixpanel",
     category: TechnologyCategory.Frontend,
   },
   // Backend
@@ -244,10 +224,55 @@ export const TECHNOLOGIES: Technology[] = [
     icon: "heroku",
     category: TechnologyCategory.Devops,
   },
+  {
+    name: "Ethereum",
+    icon: "ethereum",
+    category: TechnologyCategory.Devops,
+  },
   // Other
   {
     name: "Python",
     icon: "python",
+    category: TechnologyCategory.Other,
+  },
+  {
+    name: "Telegram API",
+    icon: "telegram",
+    category: TechnologyCategory.Other,
+  },
+  {
+    name: "Google Tag Manager",
+    icon: "gtm",
+    category: TechnologyCategory.Other,
+  },
+  {
+    name: "Google Analytics",
+    icon: "ganalytics",
+    category: TechnologyCategory.Other,
+  },
+  {
+    name: "Google Optimize",
+    icon: "goptimize",
+    category: TechnologyCategory.Other,
+  },
+  {
+    name: "Google AdSense",
+    icon: "gadsense",
+    category: TechnologyCategory.Other,
+  },
+  {
+    name: "Google Ads",
+    icon: "gads",
+    category: TechnologyCategory.Other,
+  },
+  {
+    name: "Google Search Console",
+    icon: "gsearchconsole",
+    category: TechnologyCategory.Other,
+  },
+  {
+    name: "Mixpanel",
+    icon: "mixpanel",
     category: TechnologyCategory.Other,
   },
   {
