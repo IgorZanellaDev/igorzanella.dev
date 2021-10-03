@@ -7,7 +7,11 @@ interface PageContainerProps {
 const PageContainer: FunctionComponent<PageContainerProps> = (
   props: PageContainerProps
 ) => {
-  return <>{props.children}</>;
+  return (
+    <div className="mx-auto container px-6 lg:px-14 xl:px-0">
+      {props.children}
+    </div>
+  );
 };
 
 export default PageContainer;
