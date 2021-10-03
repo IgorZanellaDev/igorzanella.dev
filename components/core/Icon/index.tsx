@@ -10,85 +10,21 @@ export type IconType =
   | "racing-line-motorsport"
   | "twitter";
 
-/**
- * Tech list
- * --------
- * FRONTEND
- * html5
- * css3
- * scss
- * sass
- * javascript
- * typescript
- * ecmascript
- * canvas
- * react
- * react native
- * next
- * gatsby
- * graphql
- * svelte
- * sapper
- * sveltekit
- * wordpress
- * shopify
- * bootstrap
- * tailwind
- * redux
- * algolia
- * i18next
- * axios
- * styled components
- * --------
- * BACKEND
- * php
- * laravel
- * node.js
- * express
- * sql
- * mongodb
- * chargify
- * --------
- * DEVOPS & SCRIPTING
- * ubuntu
- * centos
- * windows
- * docker
- * terraform/hcl
- * circleci
- * github actions
- * gatsby cloud
- * netlify
- * vercel
- * aws
- * python
- * lua
- * --------
- * WEB
- * google tag manager
- * analytics
- * optimize
- * mixpanel
- * --------
- * GENERAL PURPOSE
- * C++
- * C#
- * Java
- * Unity
- */
-
 interface IconProps {
   size: number;
   type: IconType;
 }
 
-const Icon: FunctionComponent<IconProps> = (props: IconProps) => {
+type Props = IconProps & React.SVGProps<SVGSVGElement>;
+
+const Icon: FunctionComponent<Props> = (props: Props) => {
   switch (props.type) {
     case "bestondesk":
       return (
         <svg
           width={props.size}
           height={props.size}
+          className={props.className}
           version="1.1"
           viewBox="0 0 1333.3 1333.3"
           xmlns="http://www.w3.org/2000/svg"
@@ -170,6 +106,7 @@ const Icon: FunctionComponent<IconProps> = (props: IconProps) => {
         <svg
           width={props.size}
           height={props.size}
+          className={props.className}
           viewBox="0 0 762 780"
           version="1.1"
           xmlns="http://www.w3.org/2000/svg"
@@ -239,10 +176,11 @@ const Icon: FunctionComponent<IconProps> = (props: IconProps) => {
     case "github":
       return (
         <svg
-          xmlns="http://www.w3.org/2000/svg"
           width={props.size}
           height={props.size}
+          className={props.className}
           viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
         >
           <path
             fill="inherit"
@@ -253,9 +191,10 @@ const Icon: FunctionComponent<IconProps> = (props: IconProps) => {
     case "linkedin":
       return (
         <svg
-          xmlns="http://www.w3.org/2000/svg"
           width={props.size}
           height={props.size}
+          className={props.className}
+          xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
         >
           <path
@@ -267,9 +206,10 @@ const Icon: FunctionComponent<IconProps> = (props: IconProps) => {
     case "plus":
       return (
         <svg
-          xmlns="http://www.w3.org/2000/svg"
           width={props.size}
           height={props.size}
+          className={props.className}
+          xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
         >
           <path d="M24 10h-10v-10h-4v10h-10v4h10v10h4v-10h10z" />
@@ -277,15 +217,21 @@ const Icon: FunctionComponent<IconProps> = (props: IconProps) => {
       );
     case "racing-line-motorsport":
       return (
-        <Image src="/logos/rlm.png" width={props.size} height={props.size} />
+        <Image
+          src="/logos/rlm.png"
+          width={props.size}
+          height={props.size}
+          className={props.className}
+        />
       );
     case "twitter":
       return (
         <svg
-          xmlns="http://www.w3.org/2000/svg"
           width={props.size}
           height={props.size}
+          className={props.className}
           viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
         >
           <path
             fill="inherit"
