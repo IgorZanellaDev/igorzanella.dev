@@ -6,6 +6,7 @@ const About: NextPage = () => {
   return (
     <GlobalWrapper withLayout>
       <SEO title="About" />
+      <h1>About</h1>
     </GlobalWrapper>
   );
 };
