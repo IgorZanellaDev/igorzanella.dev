@@ -1,5 +1,5 @@
 import React, { FunctionComponent } from "react";
-import { Technology } from "../../../../../app-types/technology";
+import { Technology } from "../../../../../../app-types/technology";
 
 interface TechnologyElementProps {
   technology: Technology;

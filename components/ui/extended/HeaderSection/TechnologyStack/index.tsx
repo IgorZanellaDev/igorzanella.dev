@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import CategoryButton from "./CategoryButton";
 import TechnologyElement from "./Technology";
-import { TechnologyCategory } from "../../../../app-types/technology";
-import { TECHNOLOGIES } from "../../../../constants/technology";
+import { TechnologyCategory } from "../../../../../app-types/technology";
+import { TECHNOLOGIES } from "../../../../../constants/technology";
 
 const TechnologyStack = () => {
   const [selectedCategory, setSelectedCategory] = useState<TechnologyCategory>(
@@ -12,9 +12,9 @@ const TechnologyStack = () => {
   return (
     <div className="container pt-10">
       <div className="flex justify-start items-start flex-col space-y-10">
-        <h1 className="xl:text-5xl md:text-4xl text-3xl font-extrabold text-white">
+        <h2 className="xl:text-5xl md:text-4xl text-3xl font-extrabold text-white">
           Technology skills
-        </h1>
+        </h2>
         <div className="w-full flex flex-col space-y-4 md:space-y-4">
           <div>
             <div className="flex md:justify-start justify-between item-start flex-row space-x-3 xl:space-x-14 md:space-x-4 border-gray-700 border-b w-full h-full">
@@ -44,7 +44,7 @@ const TechnologyStack = () => {
               </CategoryButton>
             </div>
           </div>
-          <div className="w-full flex justify-start items-center flex-row flex-wrap -mx-4">
+          <div className="w-full flex justify-center xl:justify-start items-center flex-row flex-wrap -mx-4">
             {TECHNOLOGIES.filter(
               (technology) => technology.category === selectedCategory
             ).map((technology, i) => (
