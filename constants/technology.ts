@@ -245,6 +245,16 @@ export const TECHNOLOGIES: Technology[] = [
     category: TechnologyCategory.Devops,
   },
   {
+    name: "cPanel",
+    icon: "cpanel",
+    category: TechnologyCategory.Devops,
+  },
+  {
+    name: "OpenLiteSpeed",
+    icon: "openlitespeed",
+    category: TechnologyCategory.Devops,
+  },
+  {
     name: "Ethereum",
     icon: "ethereum",
     category: TechnologyCategory.Devops,
