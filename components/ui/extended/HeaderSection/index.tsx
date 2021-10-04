@@ -1,6 +1,6 @@
 import React, { FunctionComponent } from "react";
 import Led from "../../base/Led";
-import TechnologyStack from "../TechnologyStack";
+import TechnologyStack from "./TechnologyStack";
 
 const HeaderSection: FunctionComponent = () => {
   return (
@@ -13,13 +13,13 @@ const HeaderSection: FunctionComponent = () => {
           </div>
           <div>
             <h1 className="md:text-7xl text-4xl font-black leading-tight text-white xl:w-4/5">
-              Hello world, I am Igor Zanella.
+              Hello world, I am Igor Zanella 👋🏻
             </h1>
           </div>
-          <div className="md::mt-8 mt-4">
-            <p className="text-2xl leading-6 font-medium text-white">
-              Full Stack Developer and DevOps
-            </p>
+          <div className="md:mt-8 mt-4">
+            <h2 className="text-2xl leading-6 font-medium text-white">
+              Full Stack Developer and DevOps specialist
+            </h2>
           </div>
           <div className="md:mt-4 mt-2">
             <p className="text-base leading-normal text-gray-400 xl:w-96">
