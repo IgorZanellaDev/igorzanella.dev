@@ -1,5 +1,3 @@
-import { IconType } from "../components/core/Icon";
-
 export enum TechnologyCategory {
   Frontend = "frontend",
   Backend = "backend",
