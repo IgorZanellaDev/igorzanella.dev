@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
-import GlobalWrapper from "../components/core/GlobalWrapper";
-import SEO from "../components/core/SEO";
+import GlobalWrapper from "components/core/GlobalWrapper";
+import SEO from "components/core/SEO";
 
 const About: NextPage = () => {
   return (

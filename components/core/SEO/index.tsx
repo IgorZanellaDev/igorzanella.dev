@@ -1,10 +1,10 @@
 import { FunctionComponent } from "react";
 import Head from "next/head";
-import { OpenGraphObject, TwitterCard } from "../../../types/seo";
+import { OpenGraphObject, TwitterCard } from "types/seo";
 import { Thing, WithContext } from "schema-dts";
-import { TITLE_SUFFIX } from "../../../constants/seo";
+import { TITLE_SUFFIX } from "constants/seo";
 import { useRouter } from "next/router";
-import { WEBSITE_URL } from "../../../constants/url";
+import { WEBSITE_URL } from "constants/url";
 
 interface SEOProps {
   title: string;

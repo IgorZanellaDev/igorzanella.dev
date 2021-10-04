@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import CategoryButton from "./CategoryButton";
 import TechnologyElement from "./Technology";
-import { TechnologyCategory } from "../../../../../app-types/technology";
+import { TechnologyCategory } from "types/technology";
 import { TECHNOLOGIES } from "../../../../../constants/technology";
 
 const TechnologyStack = () => {

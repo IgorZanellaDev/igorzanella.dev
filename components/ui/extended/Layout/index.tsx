@@ -1,6 +1,6 @@
 import { FunctionComponent, ReactChild } from "react";
 import Header from "./Header";
-import PageContainer from "../../base/PageContainer";
+import PageContainer from "components/ui/base/PageContainer";
 
 interface LayoutProps {
   children: ReactChild | ReactChild[];

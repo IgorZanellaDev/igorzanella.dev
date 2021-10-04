@@ -1,4 +1,4 @@
-import { Technology, TechnologyCategory } from "../app-types/technology";
+import { Technology, TechnologyCategory } from "types/technology";
 
 export const TECHNOLOGIES: Technology[] = [
   // Frontend

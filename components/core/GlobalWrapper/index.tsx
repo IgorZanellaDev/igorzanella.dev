@@ -1,5 +1,5 @@
 import { FunctionComponent, ReactChild } from "react";
-import Layout from "../../ui/extended/Layout";
+import Layout from "components/ui/extended/Layout";
 
 interface GlobalWrapperProps {
   withLayout?: boolean;

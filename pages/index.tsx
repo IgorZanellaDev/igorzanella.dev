@@ -1,10 +1,10 @@
 import type { NextPage } from "next";
 import React from "react";
-import GlobalWrapper from "../components/core/GlobalWrapper";
-import SEO from "../components/core/SEO";
-import HeaderSection from "../components/ui/extended/HeaderSection";
-import StartProjectCTASection from "../components/ui/extended/StartProjectCTASection";
-import ServicesSection from "../components/ui/extended/ServicesSection";
+import GlobalWrapper from "components/core/GlobalWrapper";
+import SEO from "components/core/SEO";
+import HeaderSection from "components/ui/extended/HeaderSection";
+import StartProjectCTASection from "components/ui/extended/StartProjectCTASection";
+import ServicesSection from "components/ui/extended/ServicesSection";
 
 /**
  * Header

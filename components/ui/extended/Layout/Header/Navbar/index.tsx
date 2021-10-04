@@ -1,12 +1,8 @@
 import React, { FunctionComponent } from "react";
-import Logo from "../../../../../core/Logo";
-import Icon from "../../../../../core/Icon";
+import Logo from "components/core/Logo";
+import Icon from "components/core/Icon";
 import NavbarItem from "./NavbarItem";
-import {
-  GITHUB_URL,
-  LINKEDIN_URL,
-  TWITTER_URL,
-} from "../../../../../../constants/url";
+import { GITHUB_URL, LINKEDIN_URL, TWITTER_URL } from "constants/url";
 
 const Navbar: FunctionComponent = () => {
   return (
