@@ -6,6 +6,7 @@ module.exports = {
       colors: {
         "iz-yellow-light": "#ffcc00",
         "iz-yellow-dark": "#ff9933",
+        "iz-yellow-dark-darker-10": "#ff8914",
         "iz-blue-light": "#00ccff",
         "iz-blue-dark": "#005cb4",
         "iz-blue-dark-darker-10": "#0052a2",
