@@ -68,8 +68,18 @@ export const TECHNOLOGIES: Technology[] = [
     category: TechnologyCategory.Frontend,
   },
   {
+    name: "Bootstrap",
+    icon: "bootstrap",
+    category: TechnologyCategory.Frontend,
+  },
+  {
     name: "Tailwind CSS",
     icon: "tailwind",
+    category: TechnologyCategory.Frontend,
+  },
+  {
+    name: "PostCSS",
+    icon: "postcss",
     category: TechnologyCategory.Frontend,
   },
   {
@@ -96,6 +106,11 @@ export const TECHNOLOGIES: Technology[] = [
   {
     name: "Laravel",
     icon: "laravel",
+    category: TechnologyCategory.Backend,
+  },
+  {
+    name: "Symfony",
+    icon: "symfony",
     category: TechnologyCategory.Backend,
   },
   {
@@ -177,6 +192,11 @@ export const TECHNOLOGIES: Technology[] = [
   {
     name: "AWS",
     icon: "aws",
+    category: TechnologyCategory.Devops,
+  },
+  {
+    name: "Cloudflare",
+    icon: "cloudflare",
     category: TechnologyCategory.Devops,
   },
   {
