@@ -14,7 +14,7 @@ export const SERVICES: Service[] = [
     icon: "database",
   },
   {
-    name: "Servers support",
+    name: "Server support",
     description: "Provide, install and configure servers. DevOps tasks.",
     icon: "terminal",
   },
