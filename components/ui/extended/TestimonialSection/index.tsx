@@ -3,47 +3,32 @@ import Icon from "components/core/Icon";
 
 const TestimonialSection: FunctionComponent = () => {
   return (
-    <section className="py-16 md:py-20 lg:py-24">
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="relative">
-          <img
-            className="mx-auto h-12"
-            src="/icons/customerly.svg"
-            alt="Workcation"
-          />
-          <blockquote className="mt-6">
-            <div className="max-w-4xl mx-auto text-center text-2xl leading-9 font-medium text-gray-300">
-              <p>
-                &ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Nemo expedita voluptas culpa sapiente alias molestiae. Numquam
-                corrupti in laborum sed rerum et corporis.&rdquo;
+    <section className="py-16">
+      <div className="relative">
+        <div className="relative py-24 px-8 bg-iz-blue-light rounded-xl shadow-2xl overflow-hidden lg:px-16 lg:grid lg:grid-cols-2 lg:gap-x-8">
+          <div className="absolute inset-0 opacity-50 filter saturate-0 mix-blend-multiply">
+            <img
+              src="https://images.unsplash.com/photo-1601381718415-a05fb0a261f3?ixid=MXwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8ODl8fHxlbnwwfHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1216&q=80"
+              alt=""
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <div className="relative lg:col-span-1">
+            <img className="h-12 w-auto" src="/icons/customerly.svg" alt="" />
+            <blockquote className="mt-6 text-white">
+              <p className="text-xl font-medium sm:text-2xl">
+                Workflow has completely transformed how we interact with
+                customers. We've seen record bookings, higher customer
+                satisfaction, and reduced churn.
               </p>
-            </div>
-            <div className="mt-8">
-              <div className="md:flex md:items-center md:justify-center">
-                <div className="md:flex-shrink-0">
-                  <img
-                    className="mx-auto h-10 w-10 rounded-full"
-                    src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                    alt=""
-                  />
-                </div>
-                <div className="mt-3 text-center md:mt-0 md:ml-4 md:flex md:items-center">
-                  <div className="text-base font-medium text-gray-100">
-                    Luca Micheli
-                  </div>
-                  <Icon
-                    type="slash"
-                    size={16}
-                    className="hidden md:block mx-1 h-5 w-5 text-customerly-blue"
-                  />
-                  <div className="text-base font-medium text-gray-300">
-                    CEO, Workcation
-                  </div>
-                </div>
-              </div>
-            </div>
-          </blockquote>
+              <footer className="mt-6">
+                <p className="flex flex-col font-medium">
+                  <span>Luca Micheli</span>
+                  <span>CoFounder, Customerly</span>
+                </p>
+              </footer>
+            </blockquote>
+          </div>
         </div>
       </div>
     </section>
