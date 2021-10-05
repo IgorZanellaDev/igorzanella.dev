@@ -4,13 +4,13 @@ import Icon from "components/core/Icon";
 
 const ServicesSection: FunctionComponent = () => {
   return (
-    <div className="relative py-16 sm:py-24 lg:py-32">
+    <section className="relative py-16">
       <div className="mx-auto max-w-md text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
         <h3 className="text-base font-semibold tracking-wider text-iz-blue-light uppercase">
           Work with me
         </h3>
         <h2 className="mt-2 text-3xl font-extrabold text-white tracking-tight sm:text-4xl">
-          This is what I'm doing everyday ☀️
+          This is what I do everyday ☀️
         </h2>
         <p className="mt-5 max-w-prose mx-auto text-xl text-gray-400">
           In these years I had a lot of experiences. So this is what can I do
@@ -45,7 +45,7 @@ const ServicesSection: FunctionComponent = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
