@@ -12,6 +12,7 @@ export type IconType =
   | "linkedin"
   | "play"
   | "plus"
+  | "slash"
   | "racing-line-motorsport"
   | "terminal"
   | "twitter";
@@ -316,6 +317,18 @@ const Icon: FunctionComponent<Props> = (props: Props) => {
           viewBox="0 0 24 24"
         >
           <path d="M24 10h-10v-10h-4v10h-10v4h10v10h4v-10h10z" />
+        </svg>
+      );
+    case "slash":
+      return (
+        <svg
+          width={props.size}
+          height={props.size}
+          className={props.className}
+          fill="currentColor"
+          viewBox="0 0 20 20"
+        >
+          <path d="M11 0h3L9 20H6l5-20z" />
         </svg>
       );
     case "racing-line-motorsport":
