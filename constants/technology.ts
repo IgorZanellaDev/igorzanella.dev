@@ -78,6 +78,11 @@ export const TECHNOLOGIES: Technology[] = [
     category: TechnologyCategory.Frontend,
   },
   {
+    name: "Bulma",
+    icon: "bulma",
+    category: TechnologyCategory.Frontend,
+  },
+  {
     name: "PostCSS",
     icon: "postcss",
     category: TechnologyCategory.Frontend,
