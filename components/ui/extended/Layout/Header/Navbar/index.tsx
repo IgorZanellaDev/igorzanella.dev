@@ -3,6 +3,7 @@ import Logo from "components/core/Logo";
 import Icon from "components/core/Icon";
 import NavbarItem from "./NavbarItem";
 import { GITHUB_URL, LINKEDIN_URL, TWITTER_URL } from "constants/url";
+import { MENU_LINKS } from "constants/navbar";
 
 const Navbar: FunctionComponent = () => {
   return (
@@ -12,9 +13,9 @@ const Navbar: FunctionComponent = () => {
       aria-label="Main navigation"
     >
       <div className="flex flex-row items-center space-x-10">
-        <NavbarItem href={"/"}>Hello</NavbarItem>
-        <NavbarItem href={"/projects"}>Projects</NavbarItem>
-        <NavbarItem href={"/about"}>About</NavbarItem>
+        {MENU_LINKS.map((menuLink) => (
+          <NavbarItem href={menuLink.link}>{menuLink.name}</NavbarItem>
+        ))}
       </div>
       <div className="flex justify-center items-center h-auto">
         <Logo withoutText />
