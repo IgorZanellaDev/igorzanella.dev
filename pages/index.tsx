@@ -19,9 +19,8 @@ const Home: NextPage = () => {
       <SEO title="Hello" />
       <HeaderSection />
       <ServicesSection />
-      {/*StartProjectCTASection: Want to start a new project? CTA*/}
+      <TestimonialSection />
       <CTASection />
-      {/*Testimonials*/}
     </GlobalWrapper>
   );
 };
