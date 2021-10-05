@@ -4,7 +4,7 @@ import FooterLink from "components/ui/extended/Layout/Footer/FooterLink";
 
 const Footer: FunctionComponent = () => {
   return (
-    <footer className="mx-auto container px-6 lg:px-14 xl:px-2">
+    <footer className="mx-auto container px-6 lg:px-14 xl:px-2 mt-8">
       <div className="py-12 md:flex md:items-center md:justify-between">
         <div className="flex justify-center space-x-6 md:order-2">
           {SOCIAL_LINKS.map((socialLink) => (
