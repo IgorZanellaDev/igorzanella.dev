@@ -4,6 +4,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        "customerly-blue": "#2fb6fa",
         "iz-yellow-light": "#ffcc00",
         "iz-yellow-dark": "#ff9933",
         "iz-yellow-dark-darker-10": "#ff8914",
