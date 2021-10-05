@@ -16,7 +16,7 @@ const CTASection: FunctionComponent = () => {
           <button className="mx-2 py-6 px-8 rounded-xl text-xl md:text-2xl font-bold text-white bg-gradient-to-b from-iz-blue-light to-iz-blue-dark hover:to-iz-blue-dark-darker-10">
             Contact me
           </button>
-          <button className="mx-2 py-6 px-8 rounded-xl text-xl md:text-2xl font-bold text-white bg-gray-800">
+          <button className="mx-2 py-6 px-8 rounded-xl text-xl md:text-2xl font-bold text-white bg-gradient-to-b from-gray-700 to-gray-800">
             Go to projects
           </button>
         </div>
