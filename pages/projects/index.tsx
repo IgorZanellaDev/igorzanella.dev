@@ -43,8 +43,8 @@ const Projects: NextPage = () => {
         description={
           "Italian blog, business created to earn with affiliate marketing, Amazon and others."
         }
-        imageWidth={1950}
-        imageHeight={1010}
+        imageWidth={1920}
+        imageHeight={1080}
       />
       <ProjectSection
         inverted
@@ -54,8 +54,8 @@ const Projects: NextPage = () => {
         description={
           "Sim racing international team, competing in most important championships in the world"
         }
-        imageWidth={1950}
-        imageHeight={1010}
+        imageWidth={1920}
+        imageHeight={1080}
       />
     </GlobalWrapper>
   );

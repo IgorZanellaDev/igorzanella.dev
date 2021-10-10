@@ -16,12 +16,13 @@ const ProjectSection: FunctionComponent<ProjectSectionProps> = (
   props: ProjectSectionProps
 ) => {
   return (
-    <section
+    <div
       className={
-        "flex py-8 " + (props.inverted ? "flex-row-reverse" : "flex-row")
+        "flex py-8 flex-col " +
+        (props.inverted ? "lg:flex-row-reverse" : "lg:flex-row")
       }
     >
-      <div className="flex w-3/5 relative p-10">
+      <div className="flex w-full lg:w-3/5 relative lg:p-10">
         <Link href={"/projects/" + props.id}>
           <a>
             <Image
@@ -33,7 +34,7 @@ const ProjectSection: FunctionComponent<ProjectSectionProps> = (
           </a>
         </Link>
       </div>
-      <div className="flex flex-col text-white justify-center">
+      <div className="flex flex-col text-white justify-center mt-2 lg:mt-0">
         <p className="text-base font-semibold text-iz-blue-light tracking-wide uppercase">
           {props.type}
         </p>
@@ -48,7 +49,7 @@ const ProjectSection: FunctionComponent<ProjectSectionProps> = (
           {props.description}
         </p>
       </div>
-    </section>
+    </div>
   );
 };
 

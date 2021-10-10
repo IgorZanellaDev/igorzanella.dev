@@ -19,7 +19,7 @@ const TitleSection: FunctionComponent<TitleSectionProps> = (
           <h2 className="mt-1 text-4xl font-extrabold text-white sm:text-5xl sm:tracking-tight lg:text-6xl">
             {props.title}
           </h2>
-          <p className="max-w-xl mt-5 mx-auto text-xl text-gray-500">
+          <p className="max-w-2xl mt-5 mx-auto text-xl text-gray-500">
             {props.description}
           </p>
         </div>
