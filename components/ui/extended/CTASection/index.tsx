@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React, { FunctionComponent } from "react";
 
 const CTASection: FunctionComponent = () => {
@@ -16,9 +17,11 @@ const CTASection: FunctionComponent = () => {
           <button className="mx-2 py-6 px-8 rounded-xl text-xl md:text-2xl font-bold text-white bg-gradient-to-b from-iz-blue-light to-iz-blue-dark hover:to-iz-blue-dark-darker-10">
             Contact me
           </button>
-          <button className="mx-2 py-6 px-8 rounded-xl text-xl md:text-2xl font-bold text-white bg-gradient-to-b from-gray-700 to-gray-800">
-            Go to projects
-          </button>
+          <Link href={"/projects"}>
+            <a className="mx-2 py-6 px-8 rounded-xl text-xl md:text-2xl font-bold text-white bg-gradient-to-b from-gray-700 to-gray-800">
+              Go to projects
+            </a>
+          </Link>
         </div>
       </div>
     </section>
