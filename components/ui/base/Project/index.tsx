@@ -2,7 +2,7 @@ import React, { FunctionComponent } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-interface ProjectSectionProps {
+interface ProjectProps {
   id: string;
   description: string;
   inverted?: boolean;
@@ -12,9 +12,7 @@ interface ProjectSectionProps {
   type: string;
 }
 
-const ProjectSection: FunctionComponent<ProjectSectionProps> = (
-  props: ProjectSectionProps
-) => {
+const Project: FunctionComponent<ProjectProps> = (props: ProjectProps) => {
   return (
     <div
       className={
@@ -23,10 +21,10 @@ const ProjectSection: FunctionComponent<ProjectSectionProps> = (
       }
     >
       <div className="flex w-full lg:w-3/5 relative lg:p-10">
-        <Link href={"/projects/" + props.id}>
+        <Link href={`/projects/${props.id}`}>
           <a>
             <Image
-              src={"/projects/previews/" + props.id + ".jpg"}
+              src={`/projects/previews/${props.id}.jpg`}
               width={props.imageWidth}
               height={props.imageHeight}
               className="rounded-2xl overflow-hidden"
@@ -38,7 +36,7 @@ const ProjectSection: FunctionComponent<ProjectSectionProps> = (
         <p className="text-base font-semibold text-iz-blue-light tracking-wide uppercase">
           {props.type}
         </p>
-        <Link href={"/projects/" + props.id}>
+        <Link href={`/projects/${props.id}`}>
           <a>
             <h3 className="text-3xl lg:text-5xl font-bold transition hover:border-b-8 border-white">
               {props.title}
@@ -53,4 +51,4 @@ const ProjectSection: FunctionComponent<ProjectSectionProps> = (
   );
 };
 
-export default ProjectSection;
+export default Project;
