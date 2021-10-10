@@ -11,7 +11,7 @@ const TitleSection: FunctionComponent<TitleSectionProps> = (
 ) => {
   return (
     <section>
-      <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <h1 className="text-base font-semibold text-iz-blue-light tracking-wide uppercase">
             {props.subtitle}
