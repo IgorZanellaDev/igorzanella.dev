@@ -14,7 +14,9 @@ const Navbar: FunctionComponent = () => {
     >
       <div className="flex flex-row items-center space-x-10">
         {MENU_LINKS.map((menuLink) => (
-          <NavbarItem href={menuLink.link}>{menuLink.name}</NavbarItem>
+          <NavbarItem href={menuLink.link} key={menuLink.name}>
+            {menuLink.name}
+          </NavbarItem>
         ))}
       </div>
       <div className="flex justify-center items-center h-auto">
