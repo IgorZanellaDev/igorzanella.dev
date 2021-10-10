@@ -9,6 +9,7 @@ module.exports = {
         "iz-yellow-dark": "#ff9933",
         "iz-yellow-dark-darker-10": "#ff8914",
         "iz-blue-light": "#00ccff",
+        "iz-blue-light-darker-10": "#00b7e5",
         "iz-blue-dark": "#005cb4",
         "iz-blue-dark-darker-10": "#0052a2",
       },
