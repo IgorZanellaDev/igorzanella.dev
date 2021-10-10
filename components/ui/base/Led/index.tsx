@@ -23,10 +23,7 @@ const getBoxShadow = (color: LedColor): string => {
 const Led: FunctionComponent<LedProps> = (props: LedProps) => {
   return (
     <div
-      className={
-        "w-4 h-4 rounded-full bg-white" +
-        (props.className ? " " + props.className : "")
-      }
+      className={`w-4 h-4 rounded-full bg-white ${props.className}`}
       style={{
         boxShadow: getBoxShadow(props.color),
       }}
