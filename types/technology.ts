@@ -6,7 +6,7 @@ export enum TechnologyCategory {
 }
 
 export interface Technology {
-  icon: string;
+  id: string;
   name: string;
   category: TechnologyCategory;
 }
