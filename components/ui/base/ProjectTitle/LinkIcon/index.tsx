@@ -14,7 +14,7 @@ const LinkIcon: FunctionComponent<LinkIconProps> = (props: LinkIconProps) => {
         <Icon
           size={32}
           type={props.icon}
-          className="fill-current text-gray-200 hover:text-white transition-all"
+          className="fill-current text-gray-200 hover:text-white transition-all h-6 md:h-7 lg:h-8"
         />
       </a>
     </Link>
