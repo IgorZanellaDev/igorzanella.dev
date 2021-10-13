@@ -5,7 +5,11 @@ interface PProps {
 }
 
 const P: FunctionComponent<PProps> = (props: PProps) => {
-  return <p className="mt-3 text-lg text-white">{props.children}</p>;
+  return (
+    <p className="mt-2 lg:mt-3 text-base lg:text-lg text-white">
+      {props.children}
+    </p>
+  );
 };
 
 export default P;
