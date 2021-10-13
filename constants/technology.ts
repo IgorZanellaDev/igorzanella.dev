@@ -139,6 +139,11 @@ export const TECHNOLOGIES: Technology[] = [
     category: TechnologyCategory.Backend,
   },
   {
+    name: "Serverless",
+    id: "serverless",
+    category: TechnologyCategory.Backend,
+  },
+  {
     name: "Wordpress",
     id: "wordpress",
     category: TechnologyCategory.Backend,
