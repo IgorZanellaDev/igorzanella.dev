@@ -8,6 +8,7 @@ import P from "components/ui/base/Typography/p";
 import ProjectSection from "components/ui/base/ProjectSection";
 import A from "components/ui/base/Typography/a";
 import H3 from "components/ui/base/Typography/h3";
+import Img from "components/ui/base/Typography/img";
 
 const RacingLineMotorsport: NextPage = () => {
   return (
@@ -51,12 +52,20 @@ const RacingLineMotorsport: NextPage = () => {
           Racing Line Motorsport is a Sim Racing team created by me and other
           passioned guys. The team competes in the best championships in the
           world for the game Assetto Corsa Competizione, which is one of the
-          best simulative racing games.
+          best simulative racing games. In 2020 and 2021 the team was deemed to
+          be in the World Top 10 of Assetto Corsa Competizione sim racing teams.
           <br />
-          Team has been created in 2019, but had great results from the
+          The team has been created in 2019, but had great results from the
           beginning. Competing against other teams like Ferrari and working with
           real automotive brands like Bentley and Mercedes AMG.
         </P>
+        <Img
+          src={
+            "/projects/racing-line-motorsport/racing-line-motorsport-silverstone-bentley.jpg"
+          }
+          width={1920}
+          height={1080}
+        />
         <H2>Official website</H2>
         <P>
           Racing Line Motorsport also organize races, which are available on the{" "}
@@ -70,6 +79,11 @@ const RacingLineMotorsport: NextPage = () => {
           . Website has been created also to show to the world the team members
           and to share contacts and community links.
         </P>
+        <Img
+          src={"/projects/racing-line-motorsport/website.jpg"}
+          width={1440}
+          height={786}
+        />
         <H3>Frontend</H3>
         <P>
           I completely created the frontend by my own, it's based on React, with
@@ -79,9 +93,9 @@ const RacingLineMotorsport: NextPage = () => {
         </P>
         <H3>Backend</H3>
         <P>
-          Backend has been made by a friend of mine, I helped him sometimes.
-          Backend is on Node.JS and Express, on MongoDB, it's hosted on AWS,
-          with Serverless framework.
+          Backend has been made by another team member, but I helped him
+          sometimes. Backend is on Node.JS and Express, on MongoDB, it's hosted
+          on AWS, with Serverless framework.
         </P>
         <H3>News section</H3>
         <P>
@@ -96,6 +110,23 @@ const RacingLineMotorsport: NextPage = () => {
           based on Gatsby framework. It's a separate section to optimize SEO for
           news. CMS is Contentful, where Gatsby download posts on every build.
           Hosted on Netlify.
+        </P>
+        <Img
+          src={"/projects/racing-line-motorsport/news.jpg"}
+          width={1440}
+          height={850}
+        />
+        <H2>Race/training servers</H2>
+        <P>
+          We have training servers and races servers on AWS EC2 with Windows
+          Server OS, we use them to organize our races or to train for important
+          championships.
+        </P>
+        <H2>Target</H2>
+        <P>
+          Obviously, the target is to stay on top of main competitions in sim
+          racing and to continue growing as a team and a group, with the same
+          passion we had have till now.
         </P>
       </ProjectSection>
     </GlobalWrapper>
