@@ -6,7 +6,11 @@ interface H3Props {
 }
 
 const H3: FunctionComponent<H3Props> = (props: H3Props) => {
-  return <h3 className={`text-white ${props.className}`}>{props.children}</h3>;
+  return (
+    <h3 className={`text-white text-3xl font-semibold mt-2 ${props.className}`}>
+      {props.children}
+    </h3>
+  );
 };
 
 export default H3;
