@@ -2,10 +2,17 @@ import React, { FunctionComponent } from "react";
 import Image from "next/image";
 import TechnologyElement from "components/ui/extended/HeaderSection/TechnologyStack/Technology";
 import { exportTechnologies } from "utils/technology";
+import LinkIcon from "components/ui/base/ProjectTitle/LinkIcon";
 
 interface ProjectTitleProps {
   category: string;
   id: string;
+  links: {
+    web?: string;
+    instagram?: string;
+    facebook?: string;
+    twitter?: string;
+  };
   name: string;
   subtitle: string;
   imageWidth: number;
@@ -18,8 +25,8 @@ const ProjectTitle: FunctionComponent<ProjectTitleProps> = (
 ) => {
   return (
     <section className="mb-8">
-      <div className="flex mx-auto py-6">
-        <div className="w-1/2 mr-3">
+      <div className="flex mx-auto py-6 space-x-8">
+        <div className="w-1/2">
           <p className="text-base font-semibold text-iz-blue-light tracking-wide uppercase">
             {props.subtitle}
           </p>
@@ -29,7 +36,21 @@ const ProjectTitle: FunctionComponent<ProjectTitleProps> = (
           <p className="mt-2 text-3xl font-semibold tracking-wide uppercase text-transparent bg-clip-text bg-gradient-to-b from-iz-yellow-light to-iz-yellow-dark">
             {props.category}
           </p>
-          <h2 className="mt-8 text-3xl font-semibold text-white sm:text-5xl sm:tracking-tight lg:text-4xl">
+          <div className="flex mt-6 space-x-4">
+            {props.links.web && (
+              <LinkIcon icon={"globe"} href={props.links.web} />
+            )}
+            {props.links.instagram && (
+              <LinkIcon icon={"instagram"} href={props.links.instagram} />
+            )}
+            {props.links.facebook && (
+              <LinkIcon icon={"facebook"} href={props.links.facebook} />
+            )}
+            {props.links.twitter && (
+              <LinkIcon icon={"twitter"} href={props.links.twitter} />
+            )}
+          </div>
+          <h2 className="mt-6 text-3xl font-semibold text-white sm:text-5xl sm:tracking-tight lg:text-4xl">
             Technologies
           </h2>
           <div className="flex justify-center lg:justify-start items-center flex-row flex-wrap -mx-4 mt-2">
@@ -42,7 +63,7 @@ const ProjectTitle: FunctionComponent<ProjectTitleProps> = (
             ))}
           </div>
         </div>
-        <div className="w-1/2 relative ml-3">
+        <div className="w-1/2 relative">
           <Image
             src={`/projects/${props.id}/main.jpg`}
             layout="fill"
