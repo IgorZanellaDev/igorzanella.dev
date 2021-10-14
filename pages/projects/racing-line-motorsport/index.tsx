@@ -37,6 +37,7 @@ const RacingLineMotorsport: NextPage = () => {
           "ganalytics",
           "html5",
           "i18next",
+          "javascript",
           "mongodb",
           "netlify",
           "nodejs",
