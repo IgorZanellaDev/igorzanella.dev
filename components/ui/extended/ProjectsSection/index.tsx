@@ -41,7 +41,7 @@ const ProjectsSection: FunctionComponent = () => {
         type={"Team project"}
         title={"Racing Line Motorsport"}
         description={
-          "Sim racing international team, competing in most important championships in the world"
+          "International sim racing team, competing in most important championships in the world"
         }
         imageWidth={1920}
         imageHeight={1080}
