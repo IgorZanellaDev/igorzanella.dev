@@ -231,7 +231,7 @@ export const TECHNOLOGIES: Technology[] = [
   },
   {
     name: "Github Actions",
-    id: "github",
+    id: "github-actions",
     category: TechnologyCategory.Devops,
   },
   {
