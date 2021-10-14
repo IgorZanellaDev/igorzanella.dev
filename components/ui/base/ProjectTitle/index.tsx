@@ -11,6 +11,7 @@ interface ProjectTitleProps {
     web?: string;
     instagram?: string;
     facebook?: string;
+    telegram?: string;
     twitter?: string;
   };
   name: string;
@@ -45,6 +46,9 @@ const ProjectTitle: FunctionComponent<ProjectTitleProps> = (
             )}
             {props.links.facebook && (
               <LinkIcon icon={"facebook"} href={props.links.facebook} />
+            )}
+            {props.links.telegram && (
+              <LinkIcon icon={"telegram"} href={props.links.telegram} />
             )}
             {props.links.twitter && (
               <LinkIcon icon={"twitter"} href={props.links.twitter} />
