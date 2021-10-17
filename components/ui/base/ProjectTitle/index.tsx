@@ -9,6 +9,7 @@ interface ProjectTitleProps {
   id: string;
   links: {
     web?: string;
+    github?: string;
     instagram?: string;
     facebook?: string;
     telegram?: string;
@@ -37,9 +38,12 @@ const ProjectTitle: FunctionComponent<ProjectTitleProps> = (
           <p className="mt-2 text-xl sm:text-xl lg:text-3xl font-semibold tracking-wide uppercase text-transparent bg-clip-text bg-gradient-to-b from-iz-yellow-light to-iz-yellow-dark">
             {props.category}
           </p>
-          <div className="flex mt-6 space-x-2 md:space-x-3 lg:space-x-4">
+          <div className="flex mt-6 space-x-2 md:space-x-4 lg:space-x-5">
             {props.links.web && (
               <LinkIcon icon={"globe"} href={props.links.web} />
+            )}
+            {props.links.github && (
+              <LinkIcon icon={"github"} href={props.links.github} />
             )}
             {props.links.instagram && (
               <LinkIcon icon={"instagram"} href={props.links.instagram} />
