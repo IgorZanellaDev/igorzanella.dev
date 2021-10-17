@@ -5,6 +5,9 @@ import ProjectTitle from "components/ui/base/ProjectTitle";
 import ProjectSection from "components/ui/base/ProjectSection";
 import H2 from "components/ui/base/Typography/h2";
 import P from "components/ui/base/Typography/p";
+import H3 from "components/ui/base/Typography/h3";
+import A from "components/ui/base/Typography/a";
+import Img from "components/ui/base/Typography/img";
 
 const BestOnDesk: NextPage = () => {
   return (
@@ -15,6 +18,7 @@ const BestOnDesk: NextPage = () => {
         id={"bestondesk"}
         links={{
           web: "https://www.bestondesk.com",
+          github: "https://github.com/BestOnDesk/gatsby-bod",
           instagram: "https://www.instagram.com/bestondesk/",
           facebook: "https://www.facebook.com/bestondeskcom/",
           telegram: "https://t.me/bestondesk",
@@ -49,15 +53,61 @@ const BestOnDesk: NextPage = () => {
         <P>
           BestOnDesk is an italian blog, created for the people who work in
           office, to give advices on products, but also articles on motivation,
-          personal growth and personal finance.
+          personal growth and personal finance. Idea came from a friend of mine,
+          Marco Campagnolo, I created the first website in Wordpress and he is
+          still writing the articles.
         </P>
         <H2>Website</H2>
         <P>
           The actual website is created with Gatsby, with the legacy Wordpress
-          as CMS. The legacy blog was entirely on Wordpress, so, with more than
-          400 articles, it would be difficult to move everything on another CMS.
-          So I decided to keep Wordpress and use it only as CMS, building the
-          new website with Gatsby, importing articles with GraphQL.
+          as CMS built with Gatsby, importing articles with GraphQL.
+        </P>
+        <H3>Open Source</H3>
+        <P>
+          The project is Open Source and it's available on Github in{" "}
+          <A href="https://github.com/BestOnDesk/gatsby-bod">this repository</A>
+          , where you can find obviously only the frontend.
+        </P>
+        <H3>Frontend</H3>
+        <P>
+          Frontend is based on Gatsby, which is a React framework created to
+          build static websites from dynamic assets. The website builds on
+          Github Actions and then it goes on AWS S3 and the cache is on AWS
+          Cloudfront.
+        </P>
+        <H3>CMS</H3>
+        <P>
+          Wordpress is the CMS I used in this project, because the legacy
+          website was on Wordpress, and there were more than 400 articles. I
+          didn't have time to move the articles on another CMS, also because I
+          used on Wordpress a plugin to show Amazon products, which are the core
+          business of the website, so I continue to use Wordpress with the same
+          plugin, but I redesigned the website and did it static with Gatsby.
+        </P>
+        <H3>Legacy website</H3>
+        <P>
+          The first website was based entirely on Wordpress, on an OpenLiteSpeed
+          server on AWS EC2, performances were good for a Wordpress website,
+          because it had a good cache system with LiteSpeed Cache, which has
+          been a good choice. But we needed something more, so I decided to
+          implement JAMStack, and I went for Gatsby.
+        </P>
+        <Img
+          src={"/projects/bestondesk/website-legacy.jpg"}
+          width={1902}
+          height={947}
+        />
+        <H2>Collaborations</H2>
+        <P>
+          We collaborate with some startups, like 4Books and we are affiliated
+          with Amazon, Fiverr, BigCommerce, GearBest, SkyScanner and many other
+          companies.
+        </P>
+        <H2>Telegram bot</H2>
+        <P>
+          <A href="/projects/amz-discountbot">AMZ DiscountBot</A> was created
+          for BestOnDesk. For detailed info check the project page in this
+          website.
         </P>
       </ProjectSection>
     </GlobalWrapper>
