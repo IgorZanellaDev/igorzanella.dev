@@ -110,9 +110,9 @@ const BestOnDesk: NextPage = () => {
         </P>
         <H2>Telegram bot</H2>
         <P>
-          <A href="/projects/amz-discountbot">AMZ DiscountBot</A> was created
-          for BestOnDesk. For detailed info check the project page in this
-          website.
+          I created a Telegram channel for BestOnDesk followers. There are 3
+          bots which let me manage that channel.
+        </P>
         </P>
       </ProjectSection>
     </GlobalWrapper>

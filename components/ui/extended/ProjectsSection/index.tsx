@@ -26,17 +26,6 @@ const ProjectsSection: FunctionComponent = () => {
         imageHeight={1010}
       />
       <Project
-        id={"amz-discountbot"}
-        type={"Personal side project"}
-        title={"AMZ DiscountBot"}
-        description={
-          "Italian blog, business created to earn with affiliate marketing, Amazon and others."
-        }
-        imageWidth={1920}
-        imageHeight={1080}
-      />
-      <Project
-        inverted
         id={"racing-line-motorsport"}
         type={"Team project"}
         title={"Racing Line Motorsport"}
