@@ -93,6 +93,16 @@ export const TECHNOLOGIES: Technology[] = [
     category: TechnologyCategory.Frontend,
   },
   {
+    name: "React Query",
+    id: "react-query",
+    category: TechnologyCategory.Frontend,
+  },
+  {
+    name: "Recoil",
+    id: "recoil",
+    category: TechnologyCategory.Frontend,
+  },
+  {
     name: "i18next",
     id: "i18next",
     category: TechnologyCategory.Frontend,
