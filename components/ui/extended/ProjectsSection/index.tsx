@@ -17,10 +17,10 @@ const ProjectsSection: FunctionComponent = () => {
       <Project
         inverted
         id={"customerly"}
-        type={"Customer project"}
+        type={"Freelance project"}
         title={"Customerly"}
         description={
-          "Italian blog, business created to earn with affiliate marketing, Amazon and others."
+          "Customer support and marketing automation service with more than 25K customers."
         }
         imageWidth={1950}
         imageHeight={1010}
