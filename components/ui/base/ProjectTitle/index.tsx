@@ -14,6 +14,7 @@ interface ProjectTitleProps {
     facebook?: string;
     telegram?: string;
     twitter?: string;
+    linkedin?: string;
   };
   name: string;
   subtitle: string;
@@ -56,6 +57,9 @@ const ProjectTitle: FunctionComponent<ProjectTitleProps> = (
             )}
             {props.links.twitter && (
               <LinkIcon icon={"twitter"} href={props.links.twitter} />
+            )}
+            {props.links.linkedin && (
+              <LinkIcon icon={"linkedin"} href={props.links.linkedin} />
             )}
           </div>
           <h2 className="mt-6 text-2xl md:text-3xl font-semibold text-white sm:tracking-tight lg:text-4xl">
