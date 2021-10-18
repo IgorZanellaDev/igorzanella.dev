@@ -43,6 +43,7 @@ const BestOnDesk: NextPage = () => {
           "react",
           "sass",
           "styledcomponents",
+          "telegram",
           "terraform",
           "typescript",
           "wordpress",
@@ -113,6 +114,24 @@ const BestOnDesk: NextPage = () => {
           I created a Telegram channel for BestOnDesk followers. There are 3
           bots which let me manage that channel.
         </P>
+        <H3>Manager bot</H3>
+        <P>
+          The manager bot is the one which permit me to start/stop the other
+          bots and to have some info like percentages of usage of services,
+          etc..
+        </P>
+        <H3>Target bot</H3>
+        <P>
+          The second bot use a list of ASINs (I created) and gets price averages
+          for the last months, after that it calculates the target price for
+          products, with a logarithmic expression.
+        </P>
+        <H3>Alert bot</H3>
+        <P>
+          Last but not least, the alert bot, it writes on Telegram channel the
+          offers and the real discounts, because it alerts people only when
+          price is really under the target price which is calculated on previous
+          prices, and not on fake discounts you find on Amazon.
         </P>
       </ProjectSection>
     </GlobalWrapper>
