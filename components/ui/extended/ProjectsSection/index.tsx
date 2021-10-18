@@ -26,7 +26,7 @@ const ProjectsSection: FunctionComponent = () => {
         imageHeight={1010}
       />
       <Project
-        id={"amz-discount-bot"}
+        id={"amz-discountbot"}
         type={"Personal side project"}
         title={"AMZ DiscountBot"}
         description={
