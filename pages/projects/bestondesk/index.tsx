@@ -75,6 +75,11 @@ const BestOnDesk: NextPage = () => {
           Github Actions and then it goes on AWS S3 and the cache is on AWS
           Cloudfront.
         </P>
+        <Img
+          src={"/projects/bestondesk/website.jpg"}
+          width={1920}
+          height={1080}
+        />
         <H3>CMS</H3>
         <P>
           Wordpress is the CMS I used in this project, because the legacy
