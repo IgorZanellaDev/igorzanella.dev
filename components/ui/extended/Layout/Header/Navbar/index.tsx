@@ -4,6 +4,7 @@ import Icon from "components/core/Icon";
 import NavbarItem from "./NavbarItem";
 import { GITHUB_URL, LINKEDIN_URL, TWITTER_URL } from "constants/url";
 import { MENU_LINKS } from "constants/navbar";
+import Link from "next/link";
 
 const Navbar: FunctionComponent = () => {
   return (
@@ -19,9 +20,11 @@ const Navbar: FunctionComponent = () => {
           </NavbarItem>
         ))}
       </div>
-      <div className="flex justify-center items-center h-auto">
-        <Logo withoutText />
-      </div>
+      <Link href={"/"}>
+        <a className="flex justify-center items-center h-auto">
+          <Logo withoutText />
+        </a>
+      </Link>
       <div className="flex justify-end items-center space-x-6">
         <NavbarItem href={GITHUB_URL}>
           <Icon size={24} type={"github"} />
