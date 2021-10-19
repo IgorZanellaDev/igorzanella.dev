@@ -6,7 +6,7 @@ const ProjectsSection: FunctionComponent = () => {
     <section>
       <Project
         id={"bestondesk"}
-        type={"Personal side project"}
+        role={"CTO"}
         title={"BestOnDesk"}
         description={
           "Italian blog, business created to earn with affiliate marketing, Amazon and others."
@@ -17,7 +17,7 @@ const ProjectsSection: FunctionComponent = () => {
       <Project
         inverted
         id={"customerly"}
-        type={"Freelance project"}
+        role={"Full Stack Developer"}
         title={"Customerly"}
         description={
           "Customer support and marketing automation service with more than 25K customers."
@@ -27,7 +27,7 @@ const ProjectsSection: FunctionComponent = () => {
       />
       <Project
         id={"racing-line-motorsport"}
-        type={"Team project"}
+        role={"Staff member"}
         title={"Racing Line Motorsport"}
         description={
           "International sim racing team, competing in most important championships in the world"

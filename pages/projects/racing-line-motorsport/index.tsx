@@ -24,7 +24,7 @@ const RacingLineMotorsport: NextPage = () => {
         }}
         id={"racing-line-motorsport"}
         name={"Racing Line Motorsport"}
-        subtitle={"Team project"}
+        subtitle={"Staff member"}
         imageWidth={1920}
         imageHeight={1080}
         technologies={[

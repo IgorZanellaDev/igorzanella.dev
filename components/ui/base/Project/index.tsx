@@ -9,7 +9,7 @@ interface ProjectProps {
   imageWidth: number;
   imageHeight: number;
   title: string;
-  type: string;
+  role: string;
 }
 
 const Project: FunctionComponent<ProjectProps> = (props: ProjectProps) => {
@@ -34,7 +34,7 @@ const Project: FunctionComponent<ProjectProps> = (props: ProjectProps) => {
       </div>
       <div className="flex flex-col text-white justify-center mt-2 lg:mt-0">
         <p className="text-base font-semibold text-iz-blue-light tracking-wide uppercase">
-          {props.type}
+          {props.role}
         </p>
         <Link href={`/projects/${props.id}`}>
           <a>

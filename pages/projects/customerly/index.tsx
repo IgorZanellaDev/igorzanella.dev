@@ -8,7 +8,7 @@ const Customerly: NextPage = () => {
     <GlobalWrapper withLayout>
       <SEO title={"Customerly"} />
       <ProjectTitle
-        subtitle={"Freelance project"}
+        subtitle={"Full stack developer"}
         id={"customerly"}
         links={{
           web: "https://www.customerly.io",
