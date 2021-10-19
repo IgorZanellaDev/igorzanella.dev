@@ -20,7 +20,7 @@ const ProjectsSection: FunctionComponent = () => {
         role={"Full Stack Developer"}
         title={"Customerly"}
         description={
-          "Customer support and marketing automation service with more than 25K customers."
+          "Customer support and marketing automation SaaS with more than 25K customers."
         }
         imageWidth={1950}
         imageHeight={1010}
