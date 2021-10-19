@@ -129,6 +129,11 @@ export const TECHNOLOGIES: Technology[] = [
     category: TechnologyCategory.Backend,
   },
   {
+    name: "Redis",
+    id: "redis",
+    category: TechnologyCategory.Backend,
+  },
+  {
     name: "Node.JS",
     id: "nodejs",
     category: TechnologyCategory.Backend,
