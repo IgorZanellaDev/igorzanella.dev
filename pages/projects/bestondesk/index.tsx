@@ -23,8 +23,8 @@ const BestOnDesk: NextPage = () => {
           facebook: "https://www.facebook.com/bestondeskcom/",
           telegram: "https://t.me/bestondesk",
         }}
-        name={"CTO"}
-        subtitle={"Personal side project"}
+        name={"BestOnDesk"}
+        subtitle={"CTO"}
         imageWidth={1920}
         imageHeight={1080}
         technologies={[
