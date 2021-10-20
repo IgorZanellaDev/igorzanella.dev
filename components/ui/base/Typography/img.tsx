@@ -9,8 +9,13 @@ interface ImgProps {
 
 const Img: FunctionComponent<ImgProps> = (props: ImgProps) => {
   return (
-    <div className="my-4">
-      <Image {...props} className="rounded-lg md:rounded-xl lg:rounded-2xl" />
+    <div className="my-4 lg:mx-16 overflow-hidden rounded-lg md:rounded-xl lg:rounded-2xl">
+      <Image
+        {...props}
+        placeholder="blur"
+        blurDataURL={props.src}
+        className="overflow-hidden rounded-lg md:rounded-xl lg:rounded-2xl"
+      />
     </div>
   );
 };

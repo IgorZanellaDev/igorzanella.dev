@@ -22,12 +22,14 @@ const Project: FunctionComponent<ProjectProps> = (props: ProjectProps) => {
     >
       <div className="flex w-full lg:w-3/5 relative lg:p-10">
         <Link href={`/projects/${props.id}`}>
-          <a>
+          <a className="overflow-hidden rounded-lg md:rounded-xl lg:rounded-2xl">
             <Image
               src={`/projects/previews/${props.id}.jpg`}
               width={props.imageWidth}
               height={props.imageHeight}
-              className="rounded-2xl overflow-hidden"
+              className="overflow-hidden rounded-lg md:rounded-xl lg:rounded-2xl"
+              placeholder="blur"
+              blurDataURL={`/projects/previews/${props.id}.jpg`}
             />
           </a>
         </Link>

@@ -75,11 +75,13 @@ const ProjectTitle: FunctionComponent<ProjectTitleProps> = (
             ))}
           </div>
         </div>
-        <div className="w-full h-64 sm:h-96 lg:h-auto lg:w-1/2 relative">
+        <div className="w-full h-64 sm:h-96 lg:h-auto lg:w-1/2 relative overflow-hidden rounded-lg md:rounded-xl lg:rounded-2xl">
           <Image
             src={`/projects/${props.id}/main.jpg`}
             layout="fill"
             className="overflow-hidden rounded-lg md:rounded-xl lg:rounded-2xl object-cover"
+            placeholder="blur"
+            blurDataURL={`/projects/${props.id}/main.jpg`}
           />
         </div>
       </div>
