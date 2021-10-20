@@ -6,11 +6,14 @@ import H2 from "components/ui/base/Typography/h2";
 import P from "components/ui/base/Typography/p";
 import ProjectSection from "components/ui/base/ProjectSection";
 import H3 from "components/ui/base/Typography/h3";
+import A from "components/ui/base/Typography/a";
+import React from "react";
+import Img from "components/ui/base/Typography/img";
 
 const IzDev: NextPage = () => {
   return (
     <GlobalWrapper withLayout>
-      <SEO title={"Racing Line Motorsport"} />
+      <SEO title={"IZDev"} />
       <ProjectTitle
         category={"Portfolio website"}
         id={"izdev"}
@@ -64,6 +67,47 @@ const IzDev: NextPage = () => {
           good for simple projects, but maybe it won't be good for important
           project with super-custom styling, which would need something like
           Styled Components.
+        </P>
+        <H3>Open Source</H3>
+        <P>
+          Website is open source, you can find it on Github at this{" "}
+          <A
+            href={"https://github.com/IgorZanellaDev/igorzanella.dev"}
+            target="_blank"
+            rel="noopener"
+          >
+            link
+          </A>
+          .
+        </P>
+        <Img
+          src={"/projects/izdev/legacy-izdev.png"}
+          width={1437}
+          height={786}
+        />
+        <H2>Legacy website</H2>
+        <P>
+          The old website was based on Sapper, the Svelte static website
+          framework created before SvelteKit, now it's not supported anymore. I
+          think Svelte is super when you have to do something simple, or it's
+          been useful also to replace jQuery from code, because is more simple
+          than React, Angular or other frameworks.
+          <br />I used Tailwind also here, nice, but I didn't use component
+          logic, more difficult and more time-consuming approach, I didn't know
+          which it was also possible on Svelte.
+        </P>
+        <H3>Open Source</H3>
+        <P>
+          Also this website was open source and you can find it on Github at
+          this{" "}
+          <A
+            href={"https://github.com/IgorZanellaDev/legacy-igorzanella.dev"}
+            target="_blank"
+            rel="noopener"
+          >
+            link
+          </A>
+          .
         </P>
       </ProjectSection>
     </GlobalWrapper>
