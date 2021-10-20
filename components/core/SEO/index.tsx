@@ -62,6 +62,7 @@ const SEO: FunctionComponent<SEOProps> = (props: SEOProps) => {
       <meta name="msapplication-TileColor" content="#1f2937" />
       <meta name="msapplication-config" content="/favicons/browserconfig.xml" />
       <meta name="theme-color" content="#005CB4" />
+      <html lang="en" />
     </Head>
   );
 };
