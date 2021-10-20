@@ -84,8 +84,38 @@ const Customerly: NextPage = () => {
           like React Query and Recoil.
         </P>
         <H2>Knowledge base</H2>
+        <P>
+          The Knowledge Base section is created on PHP. We will rework it in the
+          future, to align it with the rest of style.
+        </P>
         <H2>Landing page</H2>
+        <P>
+          The landing page is made by me and another colleague.It's a static
+          website made with Gatsby, built on CircleCI and hosted on S3 with
+          Cloudfront cache.
+        </P>
+        <H2>Backend and APIs</H2>
+        <P>
+          Backend is mainly on PHP, with frameworks like Symfony and Laravel. DB
+          is SQL. API are on AWS servers on docker services.
+        </P>
         <H2>What I did most</H2>
+        <P>
+          I worked a lot on Messenger and backend to create Triggers, which are
+          workflows which let you shoot a message to some people on certain
+          conditions.
+          <br />
+          After that I did about 50% of the landing pages on Gatsby, with
+          another guy of the team, an hard work, but with good results.
+          <br />
+          Now we are recreating webapp on React, this will take in more
+          customers, because it will optimize UX of our customers.
+        </P>
+        <H2>Future</H2>
+        <P>
+          I will remain for a long time in this team, because the people with
+          whom I work are fantastic.
+        </P>
       </ProjectSection>
     </GlobalWrapper>
   );
