@@ -35,6 +35,17 @@ const ProjectsSection: FunctionComponent = () => {
         imageWidth={1920}
         imageHeight={1080}
       />
+      <Project
+        inverted
+        id={"izdev"}
+        role={"Freelancer Developer"}
+        title={"IZDev"}
+        description={
+          "My portfolio websites as Freelance Developer, also this one. They are all open source."
+        }
+        imageWidth={1920}
+        imageHeight={1080}
+      />
     </section>
   );
 };
