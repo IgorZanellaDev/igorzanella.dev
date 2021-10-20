@@ -5,6 +5,7 @@ import ProjectTitle from "components/ui/base/ProjectTitle";
 import H2 from "components/ui/base/Typography/h2";
 import ProjectSection from "components/ui/base/ProjectSection";
 import P from "components/ui/base/Typography/p";
+import Img from "components/ui/base/Typography/img";
 
 const Customerly: NextPage = () => {
   return (
@@ -73,6 +74,13 @@ const Customerly: NextPage = () => {
           base, campaigns notifications and triggers (a part which I mostly
           developed). It's been coded in React and StyledComponents for styling.
         </P>
+        <Img
+          src={
+            "/projects/customerly/live-chat-with-superpowers-from-customerly.jpg"
+          }
+          width={2236}
+          height={1434}
+        />
         <H2>App</H2>
         <P>
           The app is the product our users usually use most in their days, to
@@ -83,17 +91,28 @@ const Customerly: NextPage = () => {
           redesigning it from scratch, with React, using innovative technologies
           like React Query and Recoil.
         </P>
+        <Img src={"/projects/customerly/app.png"} width={2926} height={1880} />
         <H2>Knowledge base</H2>
         <P>
           The Knowledge Base section is created on PHP. We will rework it in the
           future, to align it with the rest of style.
         </P>
+        <Img
+          src={"/projects/customerly/help-center-software-with-live-chat.jpg"}
+          width={3257}
+          height={1930}
+        />
         <H2>Landing page</H2>
         <P>
           The landing page is made by me and another colleague.It's a static
           website made with Gatsby, built on CircleCI and hosted on S3 with
           Cloudfront cache.
         </P>
+        <Img
+          src={"/projects/customerly/landing.png"}
+          width={1440}
+          height={810}
+        />
         <H2>Backend and APIs</H2>
         <P>
           Backend is mainly on PHP, with frameworks like Symfony and Laravel. DB
