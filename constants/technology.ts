@@ -59,7 +59,7 @@ export const TECHNOLOGIES: Technology[] = [
   },
   {
     name: "SvelteKit",
-    id: "svelte",
+    id: "svelte-kit",
     category: TechnologyCategory.Frontend,
   },
   {
