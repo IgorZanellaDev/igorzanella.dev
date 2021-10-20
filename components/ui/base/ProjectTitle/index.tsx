@@ -65,7 +65,7 @@ const ProjectTitle: FunctionComponent<ProjectTitleProps> = (
           <h2 className="mt-6 text-2xl md:text-3xl font-semibold text-white sm:tracking-tight lg:text-4xl">
             Technologies
           </h2>
-          <div className="flex items-center flex-row flex-wrap -mx-4 mt-2">
+          <div className="flex items-center flex-row flex-wrap md:-mx-4 mt-2">
             {exportTechnologies(props.technologies).map((technology, i) => (
               <TechnologyElement
                 technology={technology}
