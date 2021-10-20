@@ -34,7 +34,7 @@ const Project: FunctionComponent<ProjectProps> = (props: ProjectProps) => {
           </a>
         </Link>
       </div>
-      <div className="flex flex-col text-white justify-center mt-2 lg:mt-0">
+      <div className="flex flex-col text-white justify-center mt-2 lg:mt-0 flex-1">
         <p className="text-base font-semibold text-iz-blue-light tracking-wide uppercase">
           {props.role}
         </p>
