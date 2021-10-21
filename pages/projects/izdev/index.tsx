@@ -80,11 +80,6 @@ const IzDev: NextPage = () => {
           </A>
           .
         </P>
-        <Img
-          src={"/projects/izdev/legacy-izdev.png"}
-          width={1437}
-          height={786}
-        />
         <H2>Legacy website</H2>
         <P>
           The old website was based on Sapper, the Svelte static website
@@ -96,6 +91,11 @@ const IzDev: NextPage = () => {
           logic, more difficult and more time-consuming approach, I didn't know
           which it was also possible on Svelte.
         </P>
+        <Img
+          src={"/projects/izdev/legacy-izdev.png"}
+          width={1437}
+          height={786}
+        />
         <H3>Open Source</H3>
         <P>
           Also this website was open source and you can find it on Github at
