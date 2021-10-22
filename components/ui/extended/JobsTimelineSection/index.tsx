@@ -12,7 +12,7 @@ const JobsTimelineSection: FunctionComponent = () => {
           <h3 className="leading-normal md:leading-relaxed text-3xl lg:text-5xl font-bold transition hover:border-b-8 border-white">
             My previous jobs
           </h3>
-          <p className="mt-2 text-xl text-gray-400 flex flex-wrap lg:max-w-lg">
+          <p className="mt-4 text-xl text-gray-400 flex flex-wrap lg:max-w-lg">
             I'm young but I still had some interesting experiences. I also did
             an experience in Poland for Erasmus.
           </p>
