@@ -8,7 +8,7 @@ const Footer: FunctionComponent = () => {
       <div className="py-12 md:flex md:items-center md:justify-between">
         <div className="flex justify-center space-x-6 md:order-2">
           {SOCIAL_LINKS.map((socialLink) => (
-            <FooterLink {...socialLink} />
+            <FooterLink {...socialLink} key={socialLink.link} />
           ))}
         </div>
         <div className="mt-8 md:mt-0 md:order-1">
