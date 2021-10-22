@@ -3,6 +3,11 @@ import Led from "../../base/Led";
 import TechnologyStack from "./TechnologyStack";
 
 const HeaderSection: FunctionComponent = () => {
+  const handleChatClick = () => {
+    //@ts-ignore
+    window.customerly.showNewMessage("Hi Igor! ");
+  };
+
   return (
     <section className="flex justify-between flex-col py-8 xl:flex-row xl:space-x-12 space-y-16 xl:space-y-0">
       <div className="flex justify-start items-start flex-col">
@@ -34,7 +39,10 @@ const HeaderSection: FunctionComponent = () => {
             my spare time. I love startups and new projects.
           </p>
         </div>
-        <button className="mt-6 py-4 px-6 rounded-xl text-lg font-bold text-white bg-gradient-to-b from-iz-blue-light to-iz-blue-dark hover:to-iz-blue-dark-darker-10">
+        <button
+          onClick={handleChatClick}
+          className="mt-6 py-4 px-6 rounded-xl text-lg font-bold text-white bg-gradient-to-b from-iz-blue-light to-iz-blue-dark hover:to-iz-blue-dark-darker-10"
+        >
           Let's get in touch!
         </button>
       </div>

@@ -5,6 +5,11 @@ const PresentationSection: FunctionComponent = () => {
   //@ts-ignore
   const age = ~~((Date.now() - new Date(Date.UTC(1998, 1, 2))) / 31557600000);
 
+  const handleChatClick = () => {
+    //@ts-ignore
+    window.customerly.showNewMessage("Hi Igor! ");
+  };
+
   return (
     <section>
       <div className="flex flex-col-reverse lg:flex-row mx-auto py-6 lg:space-y-0 lg:space-x-8">
