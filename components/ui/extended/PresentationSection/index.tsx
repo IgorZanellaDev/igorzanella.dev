@@ -35,6 +35,12 @@ const PresentationSection: FunctionComponent = () => {
             One of my biggest passion is motorsport, one of my dream is to do a
             car race.
           </p>
+          <button
+            onClick={handleChatClick}
+            className="mt-6 py-4 px-6 rounded-xl text-lg font-bold text-white bg-gradient-to-b from-iz-blue-light to-iz-blue-dark hover:to-iz-blue-dark-darker-10"
+          >
+            Chat with me!
+          </button>
         </div>
         <div className="w-full h-64 sm:h-96 lg:h-auto lg:w-1/2 relative overflow-hidden rounded-lg md:rounded-xl lg:rounded-2xl">
           <Image
