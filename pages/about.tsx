@@ -2,7 +2,8 @@ import type { NextPage } from "next";
 import GlobalWrapper from "components/core/GlobalWrapper";
 import SEO from "components/core/SEO";
 import TitleSection from "components/ui/base/TitleSection";
-import JobsTimeline from "components/ui/extended/JobsTimeline";
+import JobsTimelineSection from "components/ui/extended/JobsTimelineSection";
+import PresentationSection from "components/ui/extended/PresentationSection";
 
 const About: NextPage = () => {
   return (
@@ -13,7 +14,8 @@ const About: NextPage = () => {
         title={"Do you want to get to know me?"}
         description={"My previous jobs and passions."}
       />
-      <JobsTimeline />
+      <PresentationSection />
+      <JobsTimelineSection />
     </GlobalWrapper>
   );
 };
