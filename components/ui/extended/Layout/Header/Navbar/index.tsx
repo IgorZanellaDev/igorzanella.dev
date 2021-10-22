@@ -27,6 +27,7 @@ const Navbar: FunctionComponent = () => {
       </Link>
       <div className="flex justify-end items-center space-x-6">
         {/*//TODO: ADD DEV.to link*/}
+        {/*//TODO: ADD Spotify link*/}
         <NavbarItem href={GITHUB_URL}>
           <Icon size={24} type={"github"} />
         </NavbarItem>
