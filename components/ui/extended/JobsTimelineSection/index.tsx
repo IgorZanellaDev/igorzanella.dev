@@ -62,7 +62,7 @@ const JobsTimelineSection: FunctionComponent = () => {
               />
               <TimelineObject
                 type="right"
-                date="Dic 2017 - Sep 2020"
+                date="Dec 2017 - Sep 2020"
                 title="Metix"
                 description="IT Consultant"
                 link="https://metix.it/"
