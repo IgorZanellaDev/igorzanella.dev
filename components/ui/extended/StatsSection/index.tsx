@@ -1,0 +1,90 @@
+import React, { FunctionComponent } from "react";
+import { dehydrate, QueryClient } from "react-query";
+import {
+  getGithubStats,
+  GITHUB_STATS_KEY,
+  useGithubStats,
+} from "network/useGithubStats";
+
+export async function getStaticProps() {
+  const queryClient = new QueryClient();
+
+  await queryClient.prefetchQuery(GITHUB_STATS_KEY, getGithubStats);
+
+  return {
+    props: {
+      dehydratedState: dehydrate(queryClient),
+    },
+  };
+}
+
+interface StatsCardProps {
+  title: string;
+  value?: number;
+}
+
+const StatsCard: FunctionComponent<StatsCardProps> = (
+  props: StatsCardProps
+) => {
+  return (
+    <div className="pt-6">
+      <div className="flow-root bg-gray-800 rounded-lg px-6 pb-8">
+        <h3 className="mt-6 text-4xl font-bold text-white tracking-tight">
+          {props.title}
+        </h3>
+        <p className="mt-3 text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-b from-iz-yellow-light to-iz-yellow-dark">
+          {props.value}
+        </p>
+      </div>
+    </div>
+  );
+};
+
+const StatsSection: FunctionComponent = () => {
+  const { data: stats } = useGithubStats();
+
+  console.log(stats);
+
+  const thisYear = new Date().getFullYear();
+
+  const firstYear =
+    stats?.user.contributionsCollection.contributionYears[
+      stats?.user.contributionsCollection.contributionYears.length - 1
+    ];
+
+  const totalContributions =
+    stats?.user.contributionsCollection.contributionCalendar.totalContributions;
+
+  const totalRepositories =
+    stats?.user.contributionsCollection.totalRepositoriesWithContributedCommits;
+
+  return (
+    <section className="py-16">
+      <div className="mx-auto max-w-md text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
+        <p className="text-base font-semibold tracking-wider text-iz-blue-light uppercase">
+          On GitHub since {firstYear}
+        </p>
+        <h2 className="mt-2 text-3xl font-extrabold text-white tracking-tight sm:text-4xl">
+          {thisYear} GitHub Stats 📈
+        </h2>
+        <p className="mt-4 max-w-prose mx-auto text-xl text-gray-400">
+          These are my up to date GitHub stats of the last year. They are
+          updating themselves dynamically.
+        </p>
+        <div className="mt-12">
+          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
+            <StatsCard title={"Contributions"} value={totalContributions} />
+            <StatsCard title={"Repositories"} value={totalRepositories} />
+            <StatsCard title={"Best language"} value={totalContributions} />
+            <StatsCard
+              title={"Total contributions"}
+              value={totalContributions}
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default StatsSection;

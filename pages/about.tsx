@@ -4,6 +4,7 @@ import SEO from "components/core/SEO";
 import TitleSection from "components/ui/base/TitleSection";
 import JobsTimelineSection from "components/ui/extended/JobsTimelineSection";
 import PresentationSection from "components/ui/extended/PresentationSection";
+import StatsSection from "components/ui/extended/StatsSection";
 
 const About: NextPage = () => {
   return (
@@ -16,6 +17,7 @@ const About: NextPage = () => {
       />
       <PresentationSection />
       <JobsTimelineSection />
+      <StatsSection />
     </GlobalWrapper>
   );
 };
