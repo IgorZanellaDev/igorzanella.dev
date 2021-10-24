@@ -23,7 +23,7 @@ const PresentationSection: FunctionComponent = () => {
           <p className="mt-4 text-xl lg:text-3xl font-semibold tracking-wide uppercase text-transparent bg-clip-text bg-gradient-to-b from-iz-yellow-light to-iz-yellow-dark">
             {age} years
           </p>
-          <p className="mt-2 text-base lg:text-lg md:text-xl leading-normal text-gray-400 xl:w-2/3">
+          <p className="mt-2 text-base lg:text-lg md:text-xl leading-normal text-gray-400 xl:w-5/6">
             I'm a nerd but I'm also a super sporty person. I also love
             travelling and I would like to try also the digital nomad life.
           </p>
