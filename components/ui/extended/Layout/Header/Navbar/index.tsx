@@ -9,11 +9,11 @@ import Link from "next/link";
 const Navbar: FunctionComponent = () => {
   return (
     <nav
-      className="hidden md:grid grid-cols-3 w-full items-center pt-4 mb-12"
+      className="grid grid-cols-1 md:grid-cols-3 w-full items-center pt-4 mb-12"
       role="navigation"
       aria-label="Main navigation"
     >
-      <div className="flex flex-row items-center space-x-10">
+      <div className="flex flex-row items-center space-x-10 justify-center mt-4 md:mt-0 md:justify-start order-2 md:order-1">
         {MENU_LINKS.map((menuLink) => (
           <NavbarItem href={menuLink.link} key={menuLink.name}>
             {menuLink.name}
@@ -21,20 +21,20 @@ const Navbar: FunctionComponent = () => {
         ))}
       </div>
       <Link href={"/"}>
-        <a className="flex justify-center items-center h-auto">
+        <a className="flex justify-center items-center h-auto order-1 md:order-2">
           <Logo withoutText />
         </a>
       </Link>
-      <div className="flex justify-end items-center space-x-6">
+      <div className="flex justify-center md:justify-end mt-6 md:mt-0 items-center space-x-6 order-3">
         {/*//TODO: ADD DEV.to link*/}
         {/*//TODO: ADD Spotify link*/}
-        <NavbarItem href={GITHUB_URL}>
+        <NavbarItem href={GITHUB_URL} newTab>
           <Icon size={24} type={"github"} />
         </NavbarItem>
-        <NavbarItem href={LINKEDIN_URL}>
+        <NavbarItem href={LINKEDIN_URL} newTab>
           <Icon size={24} type={"linkedin"} />
         </NavbarItem>
-        <NavbarItem href={TWITTER_URL}>
+        <NavbarItem href={TWITTER_URL} newTab>
           <Icon size={24} type={"twitter"} />
         </NavbarItem>
       </div>
