@@ -1,7 +1,7 @@
 import React, { FunctionComponent } from "react";
 import Logo from "components/core/Logo";
 import Icon from "components/core/Icon";
-import NavbarItem from "./NavbarItem";
+import NavbarItem from "components/ui/extended/Layout/Header/Navbar/NavbarItem";
 import { GITHUB_URL, LINKEDIN_URL, TWITTER_URL } from "constants/url";
 import { MENU_LINKS } from "constants/navbar";
 import Link from "next/link";
