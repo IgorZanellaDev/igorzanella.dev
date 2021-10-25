@@ -5,6 +5,8 @@ import {
   GITHUB_STATS_KEY,
   useGithubStats,
 } from "network/useGithubStats";
+import CountUp from "react-countup";
+import { useInView } from "react-intersection-observer";
 
 export async function getStaticProps() {
   const queryClient = new QueryClient();
@@ -21,20 +23,38 @@ export async function getStaticProps() {
 interface StatsCardProps {
   title: string;
   value?: number;
+  textValue?: string;
 }
 
 const StatsCard: FunctionComponent<StatsCardProps> = (
   props: StatsCardProps
 ) => {
+  const [ref, inView] = useInView({ triggerOnce: true });
+
   return (
     <div className="pt-6">
       <div className="flow-root bg-gray-800 rounded-lg px-6 pb-8">
         <h3 className="mt-6 text-4xl font-bold text-white tracking-tight">
           {props.title}
         </h3>
-        <p className="mt-3 text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-b from-iz-yellow-light to-iz-yellow-dark">
-          {props.value}
-        </p>
+        {props.value && (
+          <p
+            ref={ref}
+            className="mt-3 text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-b from-iz-yellow-light to-iz-yellow-dark"
+          >
+            <CountUp
+              start={0}
+              end={inView ? props.value : 0}
+              duration={3}
+              useEasing
+            />
+          </p>
+        )}
+        {props.textValue && (
+          <p className="mt-3 text-4xl leading-snug font-extrabold text-transparent bg-clip-text bg-gradient-to-b from-iz-yellow-light to-iz-yellow-dark">
+            {props.textValue}
+          </p>
+        )}
       </div>
     </div>
   );
@@ -43,26 +63,13 @@ const StatsCard: FunctionComponent<StatsCardProps> = (
 const StatsSection: FunctionComponent = () => {
   const { data: stats } = useGithubStats();
 
-  console.log(stats);
-
   const thisYear = new Date().getFullYear();
-
-  const firstYear =
-    stats?.user.contributionsCollection.contributionYears[
-      stats?.user.contributionsCollection.contributionYears.length - 1
-    ];
-
-  const totalContributions =
-    stats?.user.contributionsCollection.contributionCalendar.totalContributions;
-
-  const totalRepositories =
-    stats?.user.contributionsCollection.totalRepositoriesWithContributedCommits;
 
   return (
     <section className="py-16">
       <div className="mx-auto max-w-md text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
         <p className="text-base font-semibold tracking-wider text-iz-blue-light uppercase">
-          On GitHub since {firstYear}
+          On GitHub since {stats?.first_year}
         </p>
         <h2 className="mt-2 text-3xl font-extrabold text-white tracking-tight sm:text-4xl">
           {thisYear} GitHub Stats 📈
@@ -72,14 +79,17 @@ const StatsSection: FunctionComponent = () => {
           updating themselves dynamically.
         </p>
         <div className="mt-12">
-          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
-            <StatsCard title={"Contributions"} value={totalContributions} />
-            <StatsCard title={"Repositories"} value={totalRepositories} />
-            <StatsCard title={"Best language"} value={totalContributions} />
+          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 xl:grid-cols-4">
             <StatsCard
-              title={"Total contributions"}
-              value={totalContributions}
+              title={"Contributions"}
+              value={stats?.total_contributions}
             />
+            <StatsCard
+              title={"Repositories"}
+              value={stats?.total_repositories}
+            />
+            <StatsCard title={"Starred repos"} value={stats?.starred_repos} />
+            <StatsCard title={"Top repo"} textValue={stats?.top_repo} />
           </div>
         </div>
       </div>

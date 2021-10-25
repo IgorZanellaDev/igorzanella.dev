@@ -1,20 +1,6 @@
 import { NextApiRequest, NextApiResponse } from "next";
 import { gql, GraphQLClient } from "graphql-request";
-
-interface GithubStatsApi {
-  user: {
-    contributionsCollection: {
-      totalRepositoriesWithContributedCommits: number;
-      contributionCalendar: {
-        totalContributions: number;
-      };
-      contributionYears: number[];
-    };
-    repositories: {
-      totalCount: number;
-    };
-  };
-}
+import { GithubStatsApi, GithubStatsGQLApi } from "types/github";
 
 export default async (
   req: NextApiRequest,
@@ -28,7 +14,7 @@ export default async (
     },
   });
 
-  const data = await graphQLClient.request(
+  const data = await graphQLClient.request<GithubStatsGQLApi>(
     gql`
       {
         user(login: "IgorZanellaDev") {
@@ -39,16 +25,34 @@ export default async (
               totalContributions
             }
           }
-          repositories(first: 100) {
+          starredRepositories {
+            totalCount
+          }
+          topRepositories(
+            orderBy: { direction: ASC, field: NAME }
+            first: 100
+          ) {
             nodes {
               name
             }
-            totalCount
           }
         }
       }
     `
   );
 
-  res.status(200).json(data);
+  res.status(200).json({
+    first_year:
+      data?.user.contributionsCollection.contributionYears[
+        data?.user.contributionsCollection.contributionYears.length - 1
+      ],
+    starred_repos: data?.user.starredRepositories.totalCount,
+    top_repo: data?.user.topRepositories.nodes[0].name,
+    total_contributions:
+      data?.user.contributionsCollection.contributionCalendar
+        .totalContributions,
+    total_repositories:
+      data?.user.contributionsCollection
+        .totalRepositoriesWithContributedCommits,
+  });
 };
