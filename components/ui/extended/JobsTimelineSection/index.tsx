@@ -25,25 +25,12 @@ const JobsTimelineSection: FunctionComponent = () => {
           <div className="container mx-auto w-full h-full">
             <div className="relative wrap overflow-hidden p-10 h-full">
               <div
-                className="absolute h-full border"
+                className="absolute h-full"
                 style={{
-                  right: "50%",
-                  borderWidth: "2px",
-                  borderStyle: "solid",
-                  borderImage:
-                    "linear-gradient(180deg, rgb(0,204,255), rgb(0,92,180)) 1",
-                  borderRadius: "1%",
-                }}
-              ></div>
-              <div
-                className="absolute h-full border"
-                style={{
-                  left: "50%",
-                  borderWidth: "2px",
-                  borderStyle: "solid",
-                  borderImage:
-                    "linear-gradient(180deg, rgb(0,204,255), rgb(0,92,180)) 1",
-                  borderRadius: "1%",
+                  left: "calc(50% - 8px)",
+                  width: "8px",
+                  background:
+                    "linear-gradient(180deg, rgb(0,204,255), rgb(0,92,180))",
                 }}
               ></div>
               <TimelineObject
