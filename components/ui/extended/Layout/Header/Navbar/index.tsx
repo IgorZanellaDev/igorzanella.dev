@@ -5,11 +5,14 @@ import NavbarItem from "components/ui/extended/Layout/Header/Navbar/NavbarItem";
 import { GITHUB_URL, LINKEDIN_URL, TWITTER_URL } from "constants/url";
 import { MENU_LINKS } from "constants/navbar";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 const Navbar: FunctionComponent = () => {
+  const isHomeActive = useRouter().pathname === "/";
+
   return (
     <nav
-      className="grid grid-cols-1 md:grid-cols-3 w-full items-center pt-4 mb-12"
+      className="grid grid-cols-1 md:grid-cols-3 w-full items-center pt-4 mb-6 md:mb-12"
       role="navigation"
       aria-label="Main navigation"
     >
@@ -21,7 +24,11 @@ const Navbar: FunctionComponent = () => {
         ))}
       </div>
       <Link href={"/"}>
-        <a className="flex justify-center items-center h-auto order-1 md:order-2">
+        <a
+          className={`flex justify-center items-center h-auto order-1 md:order-2 ${
+            isHomeActive && "pointer-events-none"
+          }`}
+        >
           <Logo withoutText />
         </a>
       </Link>
