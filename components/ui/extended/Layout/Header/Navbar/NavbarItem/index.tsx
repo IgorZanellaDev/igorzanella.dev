@@ -15,10 +15,10 @@ const NavbarItem: FunctionComponent<Props> = (props: Props) => {
   return (
     <Link {...props}>
       <a
-        className={
-          "cursor-pointer text-base hover:text-white focus:outline-none focus:text-white font-semibold leading-none transition fill-current " +
-          (isActive ? "text-white" : "text-gray-500")
+        className={`cursor-pointer text-base hover:text-white focus:outline-none focus:text-white font-semibold leading-none transition fill-current ${
+          isActive ? "text-white pointer-events-none" : "text-gray-500"
         }
+        `}
         rel={props.newTab ? "noopener" : undefined}
         target={props.newTab ? "_blank" : undefined}
       >

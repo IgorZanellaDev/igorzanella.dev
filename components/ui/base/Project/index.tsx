@@ -15,10 +15,9 @@ interface ProjectProps {
 const Project: FunctionComponent<ProjectProps> = (props: ProjectProps) => {
   return (
     <div
-      className={
-        "flex py-8 flex-col " +
-        (props.inverted ? "lg:flex-row-reverse" : "lg:flex-row")
-      }
+      className={`flex py-8 flex-col ${
+        props.inverted ? "lg:flex-row-reverse" : "lg:flex-row"
+      }`}
     >
       <div className="flex w-full lg:w-3/5 relative lg:p-10">
         <Link href={`/projects/${props.id}`}>
