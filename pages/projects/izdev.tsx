@@ -13,7 +13,10 @@ import Img from "components/core/Typography/Img";
 const IzDev: NextPage = () => {
   return (
     <GlobalWrapper withLayout>
-      <SEO title={"IZDev"} description="Test" />
+      <SEO
+        title="IZDev"
+        description="My portfolio websites. Check out the open source code of this and previous websites."
+      />
       <ProjectTitle
         category={"Portfolio website"}
         id={"izdev"}

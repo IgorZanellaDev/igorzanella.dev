@@ -9,7 +9,10 @@ import StatsSection from "components/ui/extended/StatsSection";
 const About: NextPage = () => {
   return (
     <GlobalWrapper withLayout>
-      <SEO title="About" description="Test" />
+      <SEO
+        title="About"
+        description="I'm not only a developer. My story and previous jobs experiences."
+      />
       <TitleSection
         subtitle={"About"}
         title={"Do you want to get to know me?"}

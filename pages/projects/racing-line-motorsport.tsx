@@ -13,7 +13,10 @@ import Img from "components/core/Typography/Img";
 const RacingLineMotorsport: NextPage = () => {
   return (
     <GlobalWrapper withLayout>
-      <SEO title={"Racing Line Motorsport"} description="Test" />
+      <SEO
+        title="Racing Line Motorsport"
+        description="One of the most important sim racing teams on Assetto Corsa Competizione. A team created by me and my friends."
+      />
       <ProjectTitle
         category={"Sim Racing"}
         links={{

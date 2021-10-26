@@ -12,7 +12,10 @@ import Img from "components/core/Typography/Img";
 const BestOnDesk: NextPage = () => {
   return (
     <GlobalWrapper withLayout>
-      <SEO title={"BestOnDesk"} description="Test" />
+      <SEO
+        title="BestOnDesk"
+        description="An Italian blog which I created with a friend of mine, Marco."
+      />
       <ProjectTitle
         category={"Affiliate marketing blog"}
         id={"bestondesk"}

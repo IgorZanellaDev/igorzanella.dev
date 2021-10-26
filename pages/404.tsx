@@ -4,11 +4,15 @@ import Logo from "components/core/Logo";
 import Link from "next/link";
 import Footer from "components/ui/extended/Layout/Footer";
 import SEO from "components/core/SEO";
+import GlobalWrapper from "components/core/GlobalWrapper";
 
 const Custom404: NextPage = () => {
   return (
-    <>
-      <SEO title={"404 - Page not found"} description="Test" />
+    <GlobalWrapper>
+      <SEO
+        title="404 - Page not found"
+        description="404 error, page not found. We're sorry but there is nothing to do."
+      />
       <div className="min-h-screen flex flex-col bg-gray-900">
         <main className="flex-grow flex flex-col justify-center max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex-shrink-0 flex justify-center">
@@ -43,7 +47,7 @@ const Custom404: NextPage = () => {
         </main>
         <Footer />
       </div>
-    </>
+    </GlobalWrapper>
   );
 };
 
