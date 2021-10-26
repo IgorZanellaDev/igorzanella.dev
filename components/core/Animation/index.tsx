@@ -25,7 +25,7 @@ const Animation: FunctionComponent<AnimationProps> = (
       ref={ref}
       className={`${
         inView ? `animate__animated animate__${props.type}` : "opacity-0"
-      } ${props.className}`}
+      } ${props.className ? props.className : ""}`}
       style={{ animationDelay: props.delay }}
     >
       {props.children}
