@@ -16,7 +16,7 @@ import TestimonialSection from "components/ui/extended/TestimonialSection";
 const Home: NextPage = () => {
   return (
     <GlobalWrapper withLayout>
-      <SEO title="Hello" />
+      <SEO title="Hello" description="Test" />
       <HeaderSection />
       <ServicesSection />
       <TestimonialSection />

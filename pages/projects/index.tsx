@@ -7,7 +7,7 @@ import ProjectSection from "components/ui/extended/ProjectsSection";
 const Projects: NextPage = () => {
   return (
     <GlobalWrapper withLayout>
-      <SEO title="Projects" />
+      <SEO title="Projects" description="Test" />
       <TitleSection
         subtitle={"Projects"}
         title={"This is not everything..."}

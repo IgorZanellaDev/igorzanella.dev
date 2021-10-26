@@ -10,7 +10,7 @@ import Img from "components/core/Typography/Img";
 const Customerly: NextPage = () => {
   return (
     <GlobalWrapper withLayout>
-      <SEO title={"Customerly"} />
+      <SEO title={"Customerly"} description="Test" />
       <ProjectTitle
         subtitle={"Full stack developer"}
         id={"customerly"}
