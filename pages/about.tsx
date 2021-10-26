@@ -12,6 +12,7 @@ const About: NextPage = () => {
       <SEO
         title="About"
         description="I'm not only a developer. My story and previous jobs experiences."
+        image="/about/igor-zanella.jpg"
       />
       <TitleSection
         subtitle={"About"}

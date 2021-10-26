@@ -13,6 +13,7 @@ const Customerly: NextPage = () => {
       <SEO
         title="Customerly"
         description="The First Customer Centric Communication Suite. A startup in which I'm participating."
+        image="/projects/customerly/main.jpg"
       />
       <ProjectTitle
         subtitle={"Full stack developer"}

@@ -15,6 +15,7 @@ const BestOnDesk: NextPage = () => {
       <SEO
         title="BestOnDesk"
         description="An Italian blog which I created with a friend of mine, Marco."
+        image="/projects/bestondesk/main.jpg"
       />
       <ProjectTitle
         category={"Affiliate marketing blog"}

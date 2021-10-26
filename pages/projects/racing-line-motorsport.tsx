@@ -16,6 +16,7 @@ const RacingLineMotorsport: NextPage = () => {
       <SEO
         title="Racing Line Motorsport"
         description="One of the most important sim racing teams on Assetto Corsa Competizione. A team created by me and my friends."
+        image="/projects/racing-line-motorsport/main.jpg"
       />
       <ProjectTitle
         category={"Sim Racing"}
