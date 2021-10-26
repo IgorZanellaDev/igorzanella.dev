@@ -22,7 +22,14 @@ const SEO: FunctionComponent<SEOProps> = (props: SEOProps) => {
     !props.withoutTitleSuffix ? TITLE_SUFFIX : ""
   }`;
 
-  const defaultStructuredData: WithContext<Thing>[] = [];
+  const defaultStructuredData: WithContext<Thing>[] = [
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      url: WEBSITE_URL,
+      logo: "/android-chrome-512x512.png",
+    },
+  ];
 
   return (
     <Head>
