@@ -13,7 +13,7 @@ const About: NextPage = () => {
       <TitleSection
         subtitle={"About"}
         title={"Do you want to get to know me?"}
-        description={"My previous jobs and passions."}
+        description={"I'm not only a developer. Life is not only code."}
       />
       <PresentationSection />
       <JobsTimelineSection />
