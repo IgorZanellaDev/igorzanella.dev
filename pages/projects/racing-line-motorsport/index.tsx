@@ -3,12 +3,12 @@ import type { NextPage } from "next";
 import GlobalWrapper from "components/core/GlobalWrapper";
 import SEO from "components/core/SEO";
 import ProjectTitle from "components/ui/base/ProjectTitle";
-import H2 from "components/ui/base/Typography/h2";
-import P from "components/ui/base/Typography/p";
+import H2 from "components/core/Typography/h2";
+import P from "components/core/Typography/p";
 import ProjectSection from "components/ui/base/ProjectSection";
-import A from "components/ui/base/Typography/a";
-import H3 from "components/ui/base/Typography/h3";
-import Img from "components/ui/base/Typography/img";
+import A from "components/core/Typography/a";
+import H3 from "components/core/Typography/h3";
+import Img from "components/core/Typography/img";
 
 const RacingLineMotorsport: NextPage = () => {
   return (
