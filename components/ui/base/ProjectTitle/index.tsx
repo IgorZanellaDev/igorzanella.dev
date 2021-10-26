@@ -3,6 +3,7 @@ import Image from "next/image";
 import TechnologyElement from "components/ui/extended/HeaderSection/TechnologyStack/Technology";
 import { exportTechnologies } from "utils/technology";
 import LinkIcon from "components/ui/base/ProjectTitle/LinkIcon";
+import Animation from "components/core/Animation";
 
 interface ProjectTitleProps {
   category: string;
@@ -29,7 +30,7 @@ const ProjectTitle: FunctionComponent<ProjectTitleProps> = (
   return (
     <section className="mb-8">
       <div className="flex flex-col lg:flex-row mx-auto py-6 space-y-6 lg:space-y-0 lg:space-x-8">
-        <div className="w-full lg:w-1/2">
+        <Animation type={"fadeInUp"} className="w-full lg:w-1/2">
           <p className="text-base font-semibold text-iz-blue-light tracking-wide uppercase">
             {props.subtitle}
           </p>
@@ -74,8 +75,11 @@ const ProjectTitle: FunctionComponent<ProjectTitleProps> = (
               />
             ))}
           </div>
-        </div>
-        <div className="w-full h-64 sm:h-96 lg:h-auto lg:w-1/2 relative overflow-hidden rounded-lg md:rounded-xl lg:rounded-2xl">
+        </Animation>
+        <Animation
+          type={"fadeInRight"}
+          className="w-full h-64 sm:h-96 lg:h-auto lg:w-1/2 relative overflow-hidden rounded-lg md:rounded-xl lg:rounded-2xl"
+        >
           <Image
             src={`/projects/${props.id}/main.jpg`}
             layout="fill"
@@ -83,7 +87,7 @@ const ProjectTitle: FunctionComponent<ProjectTitleProps> = (
             placeholder="blur"
             blurDataURL={`/projects/${props.id}/main.jpg`}
           />
-        </div>
+        </Animation>
       </div>
     </section>
   );

@@ -1,11 +1,15 @@
 import React, { FunctionComponent } from "react";
 import TimelineObject from "components/ui/extended/JobsTimelineSection/TimelineObject";
+import Animation from "components/core/Animation";
 
 const JobsTimelineSection: FunctionComponent = () => {
   return (
     <section className="text-white py-8">
       <div className="container mx-auto flex flex-col items-start lg:flex-row-reverse my-12 lg:my-24">
-        <div className="flex flex-col w-full sticky lg:top-36 lg:w-1/3 mt-2 md:mt-12 lg:px-8">
+        <Animation
+          type={"fadeInUp"}
+          className="flex flex-col w-full sticky lg:top-36 lg:w-1/3 mt-2 md:mt-12 lg:px-8"
+        >
           <p className="text-base font-semibold text-iz-blue-light tracking-wide uppercase">
             Timeline
           </p>
@@ -20,8 +24,11 @@ const JobsTimelineSection: FunctionComponent = () => {
             Now I'm a Freelance Full Stack Developer but I work almost full time
             for Customerly, an interesting startup.
           </p>
-        </div>
-        <div className="ml-0 lg:ml-12 w-full lg:w-2/3 sticky">
+        </Animation>
+        <Animation
+          type={"fadeInLeft"}
+          className="ml-0 lg:ml-12 w-full lg:w-2/3 sticky"
+        >
           <div className="container mx-auto w-full h-full">
             <div className="relative wrap overflow-hidden p-10 h-full">
               <div
@@ -32,7 +39,7 @@ const JobsTimelineSection: FunctionComponent = () => {
                   background:
                     "linear-gradient(180deg, rgb(0,204,255), rgb(0,92,180))",
                 }}
-              ></div>
+              />
               <TimelineObject
                 type="right"
                 date="Dec 2020 - Now"
@@ -84,7 +91,7 @@ const JobsTimelineSection: FunctionComponent = () => {
               />
             </div>
           </div>
-        </div>
+        </Animation>
       </div>
     </section>
   );
