@@ -11,7 +11,7 @@ const HeaderSection: FunctionComponent = () => {
 
   return (
     <section className="flex justify-between flex-col py-8 xl:flex-row xl:space-x-12 space-y-16 xl:space-y-0">
-      <div className="flex justify-start items-start flex-col lg:w-2/5">
+      <div className="flex justify-start items-start flex-col lg:w-5/12">
         <Animation
           delay={"500ms"}
           type="fadeInDown"
