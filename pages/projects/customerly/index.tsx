@@ -2,10 +2,10 @@ import type { NextPage } from "next";
 import GlobalWrapper from "components/core/GlobalWrapper";
 import SEO from "components/core/SEO";
 import ProjectTitle from "components/ui/base/ProjectTitle";
-import H2 from "components/core/Typography/h2";
+import H2 from "components/core/Typography/H2";
 import ProjectSection from "components/ui/base/ProjectSection";
-import P from "components/core/Typography/p";
-import Img from "components/core/Typography/img";
+import P from "components/core/Typography/P";
+import Img from "components/core/Typography/Img";
 
 const Customerly: NextPage = () => {
   return (

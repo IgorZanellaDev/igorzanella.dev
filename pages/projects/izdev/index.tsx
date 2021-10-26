@@ -1,14 +1,14 @@
+import React from "react";
 import type { NextPage } from "next";
 import GlobalWrapper from "components/core/GlobalWrapper";
 import SEO from "components/core/SEO";
 import ProjectTitle from "components/ui/base/ProjectTitle";
-import H2 from "components/core/Typography/h2";
-import P from "components/core/Typography/p";
+import H2 from "components/core/Typography/H2";
+import P from "components/core/Typography/P";
 import ProjectSection from "components/ui/base/ProjectSection";
-import H3 from "components/core/Typography/h3";
-import A from "components/core/Typography/a";
-import React from "react";
-import Img from "components/core/Typography/img";
+import H3 from "components/core/Typography/H3";
+import A from "components/core/Typography/A";
+import Img from "components/core/Typography/Img";
 
 const IzDev: NextPage = () => {
   return (
