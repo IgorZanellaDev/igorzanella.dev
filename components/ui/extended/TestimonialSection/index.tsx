@@ -1,5 +1,6 @@
 import React, { FunctionComponent } from "react";
 import Animation from "components/core/Animation";
+import Image from "next/image";
 
 const TestimonialSection: FunctionComponent = () => {
   return (
@@ -7,11 +8,14 @@ const TestimonialSection: FunctionComponent = () => {
       <Animation type={"fadeInUp"}>
         <div className="relative">
           <div className="relative py-24 px-8 bg-gradient-to-b from-iz-blue-light to-iz-blue-dark rounded-xl shadow-2xl overflow-hidden lg:px-16 lg:gap-x-8">
-            <div className="absolute inset-0 opacity-50 filter saturate-0 mix-blend-multiply">
-              <img
-                src="https://images.unsplash.com/photo-1601381718415-a05fb0a261f3?ixid=MXwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8ODl8fHxlbnwwfHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1216&q=80"
+            <div className="absolute w-full inset-0 opacity-50 filter saturate-0 mix-blend-multiply">
+              <Image
+                src="/hello/luca-micheli.jpg"
+                layout="fill"
                 alt=""
                 className="w-full h-full object-cover"
+                placeholder="blur"
+                blurDataURL="/hello/luca-micheli.jpg"
               />
             </div>
             <div className="relative">
