@@ -21,6 +21,7 @@ const SEO: FunctionComponent<SEOProps> = (props: SEOProps) => {
   const title = `${props.title} ${
     !props.withoutTitleSuffix ? TITLE_SUFFIX : ""
   }`;
+  const image = props.image ? WEBSITE_URL + props.image : DEFAULT_META_IMG_SRC;
 
   const defaultStructuredData: WithContext<Thing>[] = [
     {
@@ -48,14 +49,8 @@ const SEO: FunctionComponent<SEOProps> = (props: SEOProps) => {
         name="og:url"
         content={props.canonical ? props.canonical : canonical}
       />
-      <meta
-        name="og:image"
-        content={props.image ? props.image : DEFAULT_META_IMG_SRC}
-      />
-      <meta
-        name="twitter:image"
-        content={props.image ? props.image : DEFAULT_META_IMG_SRC}
-      />
+      <meta name="og:image" content={image} />
+      <meta name="twitter:image" content={image} />
       <meta
         name="og:image:alt"
         content={props.imageAlt ? props.imageAlt : TITLE}
