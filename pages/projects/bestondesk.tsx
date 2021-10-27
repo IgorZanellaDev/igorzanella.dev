@@ -84,6 +84,7 @@ const BestOnDesk: NextPage = () => {
           src={"/projects/bestondesk/website.jpg"}
           width={1920}
           height={1080}
+          alt="BestOnDesk website"
         />
         <H3>CMS</H3>
         <P>
@@ -106,6 +107,7 @@ const BestOnDesk: NextPage = () => {
           src={"/projects/bestondesk/website-legacy.jpg"}
           width={1902}
           height={947}
+          alt="BestOnDesk legacy website"
         />
         <H2>Collaborations</H2>
         <P>

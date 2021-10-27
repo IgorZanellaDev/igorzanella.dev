@@ -98,6 +98,7 @@ const IzDev: NextPage = () => {
           src={"/projects/izdev/legacy-izdev.png"}
           width={1437}
           height={786}
+          alt="IZDev legacy website"
         />
         <H3>Open Source</H3>
         <P>

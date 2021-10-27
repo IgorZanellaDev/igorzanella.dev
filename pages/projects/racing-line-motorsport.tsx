@@ -70,6 +70,7 @@ const RacingLineMotorsport: NextPage = () => {
           }
           width={1920}
           height={1080}
+          alt="Racing Line Motorsport Bentley at Silverstone"
         />
         <H2>Official website</H2>
         <P>
@@ -88,6 +89,7 @@ const RacingLineMotorsport: NextPage = () => {
           src={"/projects/racing-line-motorsport/website.jpg"}
           width={1440}
           height={786}
+          alt="Racing Line Motorsport website"
         />
         <H3>Frontend</H3>
         <P>
@@ -120,6 +122,7 @@ const RacingLineMotorsport: NextPage = () => {
           src={"/projects/racing-line-motorsport/news.jpg"}
           width={1440}
           height={850}
+          alt="Racing Line Motorsport news section"
         />
         <H2>Race/training servers</H2>
         <P>

@@ -84,6 +84,7 @@ const Customerly: NextPage = () => {
           }
           width={2236}
           height={1434}
+          alt="Customerly live chat"
         />
         <H2>App</H2>
         <P>
@@ -95,7 +96,12 @@ const Customerly: NextPage = () => {
           redesigning it from scratch, with React, using innovative technologies
           like React Query and Recoil.
         </P>
-        <Img src={"/projects/customerly/app.png"} width={2926} height={1880} />
+        <Img
+          src={"/projects/customerly/app.png"}
+          width={2926}
+          height={1880}
+          alt="Customerly app"
+        />
         <H2>Knowledge base</H2>
         <P>
           The Knowledge Base section is created on PHP. We will rework it in the
@@ -105,6 +111,7 @@ const Customerly: NextPage = () => {
           src={"/projects/customerly/help-center-software-with-live-chat.jpg"}
           width={3257}
           height={1930}
+          alt="Customerly help center"
         />
         <H2>Landing page</H2>
         <P>
@@ -116,6 +123,7 @@ const Customerly: NextPage = () => {
           src={"/projects/customerly/landing.png"}
           width={1440}
           height={810}
+          alt="Customerly landing website"
         />
         <H2>Backend and APIs</H2>
         <P>
