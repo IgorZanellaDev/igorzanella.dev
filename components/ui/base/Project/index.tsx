@@ -33,6 +33,7 @@ const Project: FunctionComponent<ProjectProps> = (props: ProjectProps) => {
               className="overflow-hidden rounded-lg md:rounded-xl lg:rounded-2xl"
               placeholder="blur"
               blurDataURL={`/projects/previews/${props.id}.jpg`}
+              alt={props.title}
             />
           </a>
         </Link>

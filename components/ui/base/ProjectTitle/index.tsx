@@ -87,6 +87,7 @@ const ProjectTitle: FunctionComponent<ProjectTitleProps> = (
             className="overflow-hidden rounded-lg md:rounded-xl lg:rounded-2xl object-cover"
             placeholder="blur"
             blurDataURL={`/projects/${props.id}/main.jpg`}
+            alt={props.name}
           />
         </Animation>
       </div>

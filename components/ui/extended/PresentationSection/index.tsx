@@ -68,6 +68,7 @@ const PresentationSection: FunctionComponent = () => {
             className="overflow-hidden rounded-lg md:rounded-xl lg:rounded-2xl object-cover"
             placeholder="blur"
             blurDataURL={"/about/igor-zanella.jpg"}
+            alt="Igor Zanella"
           />
         </Animation>
       </div>

@@ -17,6 +17,7 @@ const TechnologyElement: FunctionComponent<TechnologyElementProps> = (
       <img
         className="flex h-6 mr-2 md:mr-4"
         src={`/icons/${props.technology.id}.svg`}
+        alt={props.technology.name}
       />
       <span className="text-xs md:text-base leading-none text-white">
         {props.technology.name}
