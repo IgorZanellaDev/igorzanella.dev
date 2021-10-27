@@ -12,14 +12,18 @@ const TestimonialSection: FunctionComponent = () => {
               <Image
                 src="/hello/luca-micheli.jpg"
                 layout="fill"
-                alt=""
+                alt="Luca Micheli"
                 className="w-full h-full object-cover"
                 placeholder="blur"
                 blurDataURL="/hello/luca-micheli.jpg"
               />
             </div>
             <div className="relative">
-              <img className="h-12 w-auto" src="/icons/customerly.svg" alt="" />
+              <img
+                className="h-12 w-auto"
+                src="/icons/customerly.svg"
+                alt="Customerly"
+              />
               <blockquote className="mt-6 text-white">
                 <p className="text-base font-medium sm:text-2xl">
                   Igor is an amazing person to work with. He's talented and
