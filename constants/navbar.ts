@@ -1,4 +1,10 @@
-import { GITHUB_URL, LINKEDIN_URL } from "constants/url";
+import {
+  DEVTO_URL,
+  GITHUB_URL,
+  LINKEDIN_URL,
+  SPOTIFY_URL,
+  TWITTER_URL,
+} from "constants/url";
 import { IconType } from "components/core/Icon";
 
 export const MENU_LINKS = [
@@ -19,8 +25,18 @@ export const SOCIAL_LINKS: { name: string; icon: IconType; link: string }[] = [
     link: LINKEDIN_URL,
   },
   {
+    name: "Dev.to",
+    icon: "devto",
+    link: DEVTO_URL,
+  },
+  {
     name: "Twitter",
     icon: "twitter",
-    link: LINKEDIN_URL,
+    link: TWITTER_URL,
+  },
+  {
+    name: "Spotify",
+    icon: "spotify",
+    link: SPOTIFY_URL,
   },
 ];
