@@ -18,5 +18,17 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require("tailwindcss-animatecss")({
+      classes: [
+        "animate__animated",
+        "animate__fadeInUp",
+        "animate__fadeInDown",
+        "animate__fadeInRight",
+        "animate__fadeInLeft",
+      ],
+      settings: {},
+      variants: ["responsive"],
+    }),
+  ],
 };
