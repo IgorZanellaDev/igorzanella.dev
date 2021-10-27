@@ -11,7 +11,7 @@ const TechnologyStack = () => {
   );
 
   return (
-    <div className="container pt-10 lg:w-7/12">
+    <div className="container pt-10 lg:w-6/12">
       <div className="flex justify-start items-start flex-col space-y-10">
         <Animation type={"fadeInUp"}>
           <h2 className="xl:text-5xl md:text-4xl text-3xl font-extrabold text-white">
