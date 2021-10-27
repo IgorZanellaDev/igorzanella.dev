@@ -3,6 +3,11 @@ import React, { FunctionComponent } from "react";
 import Animation from "components/core/Animation";
 
 const CTASection: FunctionComponent = () => {
+  const handleChatClick = () => {
+    //@ts-ignore
+    window.customerly.showNewMessage("Hi Igor! ");
+  };
+
   return (
     <section className="py-16">
       <div className="flex flex-auto flex-col justify-center items-center">
@@ -19,7 +24,10 @@ const CTASection: FunctionComponent = () => {
         </Animation>
         <div className="flex flex-col md:flex-row justify-center items-center mt-8">
           <Animation type={"fadeInLeft"}>
-            <button className="flex m-2 py-6 px-8 rounded-xl text-xl md:text-2xl font-bold text-white bg-gradient-to-b from-iz-blue-light to-iz-blue-dark hover:to-iz-blue-dark-darker-10">
+            <button
+              onClick={handleChatClick}
+              className="flex m-2 py-6 px-8 rounded-xl text-xl md:text-2xl font-bold text-white bg-gradient-to-b from-iz-blue-light to-iz-blue-dark hover:to-iz-blue-dark-darker-10"
+            >
               Contact me
             </button>
           </Animation>
