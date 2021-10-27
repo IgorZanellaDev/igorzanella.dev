@@ -1,16 +1,14 @@
 import { FunctionComponent, ReactNode } from "react";
 import { useInView } from "react-intersection-observer";
 
+type Animation = "fadeInUp" | "fadeInDown" | "fadeInRight" | "fadeInLeft";
+
 interface AnimationProps {
   className?: string;
   children: ReactNode;
   delay?: string;
-  type:
-    | "fadeInUp"
-    | "fadeInDown"
-    | "fadeInRight"
-    | "fadeInLeft"
-    | "lightSpeedInLeft";
+  type: Animation;
+  typeMd?: Animation;
   triggerMore?: boolean;
 }
 
@@ -24,7 +22,11 @@ const Animation: FunctionComponent<AnimationProps> = (
     <div
       ref={ref}
       className={`${
-        inView ? `animate__animated animate__${props.type}` : "opacity-0"
+        inView
+          ? `animate__animated animate__${props.type} ${
+              props.typeMd ? `md:animate__${props.typeMd}` : ""
+            }`
+          : "opacity-0"
       } ${props.className ? props.className : ""}`}
       style={{ animationDelay: props.delay }}
     >

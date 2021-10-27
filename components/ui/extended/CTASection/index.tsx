@@ -23,7 +23,7 @@ const CTASection: FunctionComponent = () => {
           </h3>
         </Animation>
         <div className="flex flex-col md:flex-row justify-center items-center mt-8">
-          <Animation type={"fadeInLeft"}>
+          <Animation type={"fadeInUp"} typeMd={"fadeInLeft"}>
             <button
               onClick={handleChatClick}
               className="flex m-2 py-6 px-8 rounded-xl text-xl md:text-2xl font-bold text-white bg-gradient-to-b from-iz-blue-light to-iz-blue-dark hover:to-iz-blue-dark-darker-10"
@@ -31,7 +31,7 @@ const CTASection: FunctionComponent = () => {
               Contact me
             </button>
           </Animation>
-          <Animation type={"fadeInRight"}>
+          <Animation type={"fadeInUp"} typeMd={"fadeInRight"}>
             <Link href={"/projects"}>
               <a className="flex m-2 py-6 px-8 rounded-xl text-xl md:text-2xl font-bold text-white bg-gradient-to-b from-gray-700 to-gray-800">
                 Go to projects

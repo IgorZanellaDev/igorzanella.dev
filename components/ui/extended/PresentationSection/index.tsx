@@ -58,7 +58,8 @@ const PresentationSection: FunctionComponent = () => {
           </Animation>
         </div>
         <Animation
-          type={"fadeInRight"}
+          type={"fadeInUp"}
+          typeMd={"fadeInRight"}
           className="w-full h-64 sm:h-96 lg:h-auto lg:w-1/2 relative overflow-hidden rounded-lg md:rounded-xl lg:rounded-2xl"
         >
           <Image

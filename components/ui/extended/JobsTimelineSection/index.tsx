@@ -26,7 +26,8 @@ const JobsTimelineSection: FunctionComponent = () => {
           </p>
         </Animation>
         <Animation
-          type={"fadeInLeft"}
+          type={"fadeInUp"}
+          typeMd={"fadeInLeft"}
           className="ml-0 lg:ml-12 w-full lg:w-2/3 sticky"
         >
           <div className="container mx-auto w-full h-full">

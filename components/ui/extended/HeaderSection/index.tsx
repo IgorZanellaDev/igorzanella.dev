@@ -19,7 +19,7 @@ const HeaderSection: FunctionComponent = () => {
         >
           <Led color={"green"} className={"mr-2"} /> Available for new projects
         </Animation>
-        <Animation type="fadeInLeft">
+        <Animation type="fadeInUp" typeMd="fadeInLeft">
           <h1 className="md:text-7xl text-4xl font-black leading-tight text-white xl:w-4/5">
             Hello world, I am Igor Zanella 👋🏻
           </h1>
