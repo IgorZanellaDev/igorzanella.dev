@@ -2,8 +2,7 @@ import React, { FunctionComponent } from "react";
 import Logo from "components/core/Logo";
 import Icon from "components/core/Icon";
 import NavbarItem from "components/ui/extended/Layout/Header/Navbar/NavbarItem";
-import { GITHUB_URL, LINKEDIN_URL, TWITTER_URL } from "constants/url";
-import { MENU_LINKS } from "constants/navbar";
+import { MENU_LINKS, SOCIAL_LINKS } from "constants/navbar";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
@@ -35,15 +34,11 @@ const Navbar: FunctionComponent = () => {
       <div className="flex justify-center md:justify-end mt-6 md:mt-0 items-center space-x-6 order-3">
         {/*//TODO: ADD DEV.to link*/}
         {/*//TODO: ADD Spotify link*/}
-        <NavbarItem href={GITHUB_URL} newTab>
-          <Icon size={24} type={"github"} />
-        </NavbarItem>
-        <NavbarItem href={LINKEDIN_URL} newTab>
-          <Icon size={24} type={"linkedin"} />
-        </NavbarItem>
-        <NavbarItem href={TWITTER_URL} newTab>
-          <Icon size={24} type={"twitter"} />
-        </NavbarItem>
+        {SOCIAL_LINKS.map((social) => (
+          <NavbarItem href={social.link} key={social.name} newTab>
+            <Icon size={24} type={social.icon} />
+          </NavbarItem>
+        ))}
       </div>
     </nav>
   );
