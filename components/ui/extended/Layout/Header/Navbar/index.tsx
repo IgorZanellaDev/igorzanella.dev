@@ -32,8 +32,6 @@ const Navbar: FunctionComponent = () => {
         </a>
       </Link>
       <div className="flex justify-center md:justify-end mt-6 md:mt-0 items-center space-x-6 order-3">
-        {/*//TODO: ADD DEV.to link*/}
-        {/*//TODO: ADD Spotify link*/}
         {SOCIAL_LINKS.map((social) => (
           <NavbarItem href={social.link} key={social.name} newTab>
             <Icon size={24} type={social.icon} />
