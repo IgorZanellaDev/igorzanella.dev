@@ -5,17 +5,6 @@ const ProjectsSection: FunctionComponent = () => {
   return (
     <section>
       <Project
-        id={"bestondesk"}
-        role={"CTO"}
-        title={"BestOnDesk"}
-        description={
-          "Italian blog, business created to earn with affiliate marketing, Amazon and others."
-        }
-        imageWidth={1920}
-        imageHeight={1080}
-      />
-      <Project
-        inverted
         id={"customerly"}
         role={"Full Stack Developer"}
         title={"Customerly"}
@@ -24,6 +13,17 @@ const ProjectsSection: FunctionComponent = () => {
         }
         imageWidth={1950}
         imageHeight={1010}
+      />
+      <Project
+        inverted
+        id={"bestondesk"}
+        role={"CTO"}
+        title={"BestOnDesk"}
+        description={
+          "Italian blog, business created to earn with affiliate marketing, Amazon and others."
+        }
+        imageWidth={1920}
+        imageHeight={1080}
       />
       <Project
         id={"racing-line-motorsport"}
