@@ -14,7 +14,7 @@ const Projects: NextPage = () => {
       />
       <TitleSection
         subtitle={"Courses"}
-        title={"I can teach, or so I believe."}
+        title={"I also love teaching..."}
         description={
           "After some friends told me, I started teaching programming. So now I'm also creating courses, for people who wants to learn programming."
         }
