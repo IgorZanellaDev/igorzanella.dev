@@ -9,8 +9,8 @@ interface CourseProps {
   inverted?: boolean;
   imageWidth: number;
   imageHeight: number;
+  language: string;
   title: string;
-  type: string;
 }
 
 const Course: FunctionComponent<CourseProps> = (props: CourseProps) => {
@@ -43,7 +43,7 @@ const Course: FunctionComponent<CourseProps> = (props: CourseProps) => {
         className="flex flex-col text-white justify-center mt-2 lg:mt-0 flex-1"
       >
         <p className="text-base font-semibold text-iz-blue-light tracking-wide uppercase">
-          {props.type}
+          {props.language}
         </p>
         <Link href={`/course/${props.id}`}>
           <a>
