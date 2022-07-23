@@ -6,7 +6,7 @@ const CoursesSection: FunctionComponent = () => {
   return (
     <section>
       <Course
-        id={"bestondesk"}
+        id={"react-ts-sc"}
         type={"React"}
         title={"React, Typescript e Styled Components: da zero a webapp!"}
         description={
