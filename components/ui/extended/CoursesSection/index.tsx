@@ -7,7 +7,7 @@ const CoursesSection: FunctionComponent = () => {
     <section>
       <Course
         id={"react-ts-sc"}
-        type={"React"}
+        language={"🇮🇹 Italian"}
         title={"React, Typescript e Styled Components: da zero a webapp!"}
         description={
           "Italian blog, business created to earn with affiliate marketing, Amazon and others."
