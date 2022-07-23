@@ -27,7 +27,7 @@ const Course: FunctionComponent<CourseProps> = (props: CourseProps) => {
         <Link href={`/courses/${props.id}`}>
           <a className="overflow-hidden rounded-lg md:rounded-xl lg:rounded-2xl">
             <Image
-              src={`/course/previews/${props.id}.jpg`}
+              src={`/courses/previews/${props.id}.jpg`}
               width={props.imageWidth}
               height={props.imageHeight}
               className="overflow-hidden rounded-lg md:rounded-xl lg:rounded-2xl"
