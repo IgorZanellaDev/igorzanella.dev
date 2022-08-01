@@ -10,7 +10,7 @@ const CoursesSection: FunctionComponent = () => {
         language={"🇮🇹 Italian"}
         title={"React, Typescript e Styled Components: da zero a webapp!"}
         description={
-          "Italian blog, business created to earn with affiliate marketing, Amazon and others."
+          "Learn React basics, using Typescript to write better code, and using Styled Components to style your components."
         }
         imageWidth={1920}
         imageHeight={1080}
