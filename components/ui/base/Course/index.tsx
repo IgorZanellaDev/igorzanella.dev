@@ -32,7 +32,7 @@ const Course: FunctionComponent<CourseProps> = (props: CourseProps) => {
               height={props.imageHeight}
               className="overflow-hidden rounded-lg md:rounded-xl lg:rounded-2xl"
               placeholder="blur"
-              blurDataURL={`/course/previews/${props.id}.jpg`}
+              blurDataURL={`/courses/previews/${props.id}.jpg`}
               alt={props.title}
             />
           </a>
@@ -45,7 +45,7 @@ const Course: FunctionComponent<CourseProps> = (props: CourseProps) => {
         <p className="text-base font-semibold text-iz-blue-light tracking-wide uppercase">
           {props.language}
         </p>
-        <Link href={`/course/${props.id}`}>
+        <Link href={`/courses/${props.id}`}>
           <a>
             <h3 className="text-3xl lg:text-5xl font-bold transition hover:border-b-8 border-white">
               {props.title}
