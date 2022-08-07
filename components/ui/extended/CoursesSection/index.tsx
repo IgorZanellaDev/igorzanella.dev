@@ -12,6 +12,7 @@ const CoursesSection: FunctionComponent = () => {
         description={
           "Learn React basics, using Typescript to write better code, and using Styled Components to style your components."
         }
+        link={"https://google.com"}
         imageWidth={1920}
         imageHeight={1080}
       />
