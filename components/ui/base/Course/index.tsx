@@ -10,6 +10,7 @@ interface CourseProps {
   imageWidth: number;
   imageHeight: number;
   language: string;
+  link: string;
   title: string;
 }
 
@@ -24,19 +25,17 @@ const Course: FunctionComponent<CourseProps> = (props: CourseProps) => {
         type={"fadeInUp"}
         className="flex w-full lg:w-3/5 relative lg:p-10"
       >
-        <Link href={`/courses/${props.id}`}>
-          <a className="overflow-hidden rounded-lg md:rounded-xl lg:rounded-2xl">
-            <Image
-              src={`/courses/previews/${props.id}.jpg`}
-              width={props.imageWidth}
-              height={props.imageHeight}
-              className="overflow-hidden rounded-lg md:rounded-xl lg:rounded-2xl"
-              placeholder="blur"
-              blurDataURL={`/courses/previews/${props.id}.jpg`}
-              alt={props.title}
-            />
-          </a>
-        </Link>
+        <a href={props.link} className="overflow-hidden rounded-lg md:rounded-xl lg:rounded-2xl" target="_blank" rel="noopener noreferrer">
+          <Image
+            src={`/courses/previews/${props.id}.jpg`}
+            width={props.imageWidth}
+            height={props.imageHeight}
+            className="overflow-hidden rounded-lg md:rounded-xl lg:rounded-2xl"
+            placeholder="blur"
+            blurDataURL={`/courses/previews/${props.id}.jpg`}
+            alt={props.title}
+          />
+        </a>
       </Animation>
       <Animation
         type={"fadeInUp"}
@@ -45,13 +44,11 @@ const Course: FunctionComponent<CourseProps> = (props: CourseProps) => {
         <p className="text-base font-semibold text-iz-blue-light tracking-wide uppercase">
           {props.language}
         </p>
-        <Link href={`/courses/${props.id}`}>
-          <a>
-            <h3 className="text-3xl lg:text-5xl font-bold transition hover:border-b-8 border-white">
-              {props.title}
-            </h3>
-          </a>
-        </Link>
+        <a href={props.link} target="_blank" rel="noopener noreferrer">
+          <h3 className="text-3xl lg:text-5xl font-bold transition hover:border-b-8 border-white">
+            {props.title}
+          </h3>
+        </a>
         <p className="mt-2 text-xl text-gray-500 flex flex-wrap max-w-lg">
           {props.description}
         </p>
