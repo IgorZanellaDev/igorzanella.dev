@@ -25,7 +25,7 @@ const Course: FunctionComponent<CourseProps> = (props: CourseProps) => {
         type={"fadeInUp"}
         className="flex w-full lg:w-3/5 relative lg:p-10"
       >
-        <a href={props.link} className="overflow-hidden rounded-lg md:rounded-xl lg:rounded-2xl" target="_blank" rel="noopener noreferrer">
+        <a href={props.link} className="overflow-hidden rounded-lg md:rounded-xl lg:rounded-2xl" target="_blank" rel="noopener">
           <Image
             src={`/courses/previews/${props.id}.jpg`}
             width={props.imageWidth}
@@ -44,7 +44,7 @@ const Course: FunctionComponent<CourseProps> = (props: CourseProps) => {
         <p className="text-base font-semibold text-iz-blue-light tracking-wide uppercase">
           {props.language}
         </p>
-        <a href={props.link} target="_blank" rel="noopener noreferrer">
+        <a href={props.link} target="_blank" rel="noopener">
           <h3 className="text-3xl lg:text-5xl font-bold transition hover:border-b-8 border-white">
             {props.title}
           </h3>
