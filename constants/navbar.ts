@@ -10,6 +10,7 @@ import { IconType } from "components/core/Icon";
 export const MENU_LINKS = [
   { name: "Hello", link: "/" },
   { name: "Projects", link: "/projects" },
+  { name: "Courses", link: "/courses" },
   { name: "About", link: "/about" },
 ];
 
