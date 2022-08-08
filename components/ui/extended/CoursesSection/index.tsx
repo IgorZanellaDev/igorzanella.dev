@@ -12,7 +12,7 @@ const CoursesSection: FunctionComponent = () => {
         description={
           "Learn React basics, using Typescript to write better code, and using Styled Components to style your components."
         }
-        link={"https://www.udemy.com/course/draft/4624624/?referralCode=36449F31118CB6A9A61C"}
+        link={"https://www.udemy.com/course/react-typescript-e-styled-components-da-zero-a-web-app/?referralCode=36449F31118CB6A9A61C"}
         imageWidth={1920}
         imageHeight={1080}
       />
