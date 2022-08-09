@@ -11,8 +11,9 @@ const Home: NextPage = () => {
   return (
     <GlobalWrapper withLayout>
       <SEO
-        title="Hello"
-        description="Welcome to my personal developer portfolio, with some of my projects and my personal info."
+        withoutTitleSuffix
+        title="Hello, I'm Igor, Freelance Full Stack Developer"
+        description="Looking for a Freelance Developer? You are in luck! I'm an Experienced Full Stack Developer and DevOps Specialist from Italy. How can I help you?"
       />
       <HeaderSection />
       <ServicesSection />
