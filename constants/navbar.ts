@@ -2,6 +2,7 @@ import {
   DEVTO_URL,
   GITHUB_URL,
   LINKEDIN_URL,
+  MEDIUM_URL,
   SPOTIFY_URL,
   TWITTER_URL,
 } from "constants/url";
@@ -24,6 +25,11 @@ export const SOCIAL_LINKS: { name: string; icon: IconType; link: string }[] = [
     name: "Linkedin",
     icon: "linkedin",
     link: LINKEDIN_URL,
+  },
+  {
+    name: "Medium",
+    icon: "medium",
+    link: MEDIUM_URL,
   },
   {
     name: "Dev.to",

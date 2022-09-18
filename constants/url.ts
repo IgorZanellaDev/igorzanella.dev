@@ -6,3 +6,4 @@ export const DEVTO_URL = "https://dev.to/igorzanelladev";
 export const SPOTIFY_URL =
   "https://open.spotify.com/user/11126271502?si=bbe625bd9431448a";
 export const TWITTER_ID = "@IgorZanellaDev";
+export const MEDIUM_URL = "https://medium.com/@igorzanella.dev";
