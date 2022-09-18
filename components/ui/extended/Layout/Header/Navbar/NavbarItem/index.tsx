@@ -5,6 +5,7 @@ import { useRouter } from "next/router";
 
 interface NavbarItemProps {
   newTab?: boolean;
+  title?: string;
 }
 
 type Props = React.PropsWithChildren<LinkProps> & NavbarItemProps;
@@ -21,6 +22,7 @@ const NavbarItem: FunctionComponent<Props> = (props: Props) => {
         `}
         rel={props.newTab ? "noopener" : undefined}
         target={props.newTab ? "_blank" : undefined}
+        title={props.title}
       >
         {props.children}
       </a>

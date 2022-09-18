@@ -15,6 +15,7 @@ const FooterLink: FunctionComponent<FooterLinkProps> = (
       key={props.name}
       href={props.link}
       className="cursor-pointer text-base hover:text-white focus:outline-none focus:text-white font-semibold leading-none transition fill-current text-gray-500"
+      title={props.name}
     >
       <span className="sr-only">{props.name}</span>
       <Icon

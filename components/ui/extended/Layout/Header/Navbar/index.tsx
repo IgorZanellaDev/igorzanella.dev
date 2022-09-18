@@ -33,7 +33,12 @@ const Navbar: FunctionComponent = () => {
       </Link>
       <div className="flex justify-center md:justify-end mt-6 md:mt-0 items-center space-x-6 order-3">
         {SOCIAL_LINKS.map((social) => (
-          <NavbarItem href={social.link} key={social.name} newTab>
+          <NavbarItem
+            newTab
+            href={social.link}
+            key={social.name}
+            title={social.name}
+          >
             <Icon size={24} type={social.icon} />
           </NavbarItem>
         ))}
