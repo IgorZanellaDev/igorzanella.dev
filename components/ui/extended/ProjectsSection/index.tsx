@@ -16,6 +16,16 @@ const ProjectsSection: FunctionComponent = () => {
       />
       <Project
         inverted
+        id={"ethereum-validator"}
+        role={"Consultant"}
+        title={"Ethereum validator"}
+        description={
+          "Ethereum 2.0 validator server, installed for earning from staking rewards."
+        }
+        imageWidth={1920}
+        imageHeight={1080}
+      />
+      <Project
         id={"bestondesk"}
         role={"CTO"}
         title={"BestOnDesk"}
@@ -26,6 +36,7 @@ const ProjectsSection: FunctionComponent = () => {
         imageHeight={1080}
       />
       <Project
+        inverted
         id={"racing-line-motorsport"}
         role={"Staff member"}
         title={"Racing Line Motorsport"}
@@ -36,7 +47,6 @@ const ProjectsSection: FunctionComponent = () => {
         imageHeight={1080}
       />
       <Project
-        inverted
         id={"izdev"}
         role={"Freelancer Developer"}
         title={"IZDev"}
