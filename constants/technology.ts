@@ -119,11 +119,6 @@ export const TECHNOLOGIES: Technology[] = [
     category: TechnologyCategory.Backend,
   },
   {
-    name: "Laravel",
-    id: "laravel",
-    category: TechnologyCategory.Backend,
-  },
-  {
     name: "Symfony",
     id: "symfony",
     category: TechnologyCategory.Backend,
