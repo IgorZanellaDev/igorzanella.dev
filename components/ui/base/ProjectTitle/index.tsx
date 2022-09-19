@@ -8,7 +8,7 @@ import Animation from "components/core/Animation";
 interface ProjectTitleProps {
   category: string;
   id: string;
-  links: {
+  links?: {
     web?: string;
     github?: string;
     instagram?: string;
@@ -40,29 +40,31 @@ const ProjectTitle: FunctionComponent<ProjectTitleProps> = (
           <p className="mt-2 text-xl sm:text-xl lg:text-3xl font-semibold tracking-wide uppercase text-transparent bg-clip-text bg-gradient-to-b from-iz-yellow-light to-iz-yellow-dark">
             {props.category}
           </p>
-          <div className="flex mt-6 space-x-2 md:space-x-4 lg:space-x-5">
-            {props.links.web && (
-              <LinkIcon icon={"globe"} href={props.links.web} />
-            )}
-            {props.links.github && (
-              <LinkIcon icon={"github"} href={props.links.github} />
-            )}
-            {props.links.instagram && (
-              <LinkIcon icon={"instagram"} href={props.links.instagram} />
-            )}
-            {props.links.facebook && (
-              <LinkIcon icon={"facebook"} href={props.links.facebook} />
-            )}
-            {props.links.telegram && (
-              <LinkIcon icon={"telegram"} href={props.links.telegram} />
-            )}
-            {props.links.twitter && (
-              <LinkIcon icon={"twitter"} href={props.links.twitter} />
-            )}
-            {props.links.linkedin && (
-              <LinkIcon icon={"linkedin"} href={props.links.linkedin} />
-            )}
-          </div>
+          {props.links && (
+            <div className="flex mt-6 space-x-2 md:space-x-4 lg:space-x-5">
+              {props.links.web && (
+                <LinkIcon icon={"globe"} href={props.links.web} />
+              )}
+              {props.links.github && (
+                <LinkIcon icon={"github"} href={props.links.github} />
+              )}
+              {props.links.instagram && (
+                <LinkIcon icon={"instagram"} href={props.links.instagram} />
+              )}
+              {props.links.facebook && (
+                <LinkIcon icon={"facebook"} href={props.links.facebook} />
+              )}
+              {props.links.telegram && (
+                <LinkIcon icon={"telegram"} href={props.links.telegram} />
+              )}
+              {props.links.twitter && (
+                <LinkIcon icon={"twitter"} href={props.links.twitter} />
+              )}
+              {props.links.linkedin && (
+                <LinkIcon icon={"linkedin"} href={props.links.linkedin} />
+              )}
+            </div>
+          )}
           <h2 className="mt-6 text-2xl md:text-3xl font-semibold text-white sm:tracking-tight lg:text-4xl">
             Technologies
           </h2>
