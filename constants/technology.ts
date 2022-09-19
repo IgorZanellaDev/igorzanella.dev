@@ -279,6 +279,21 @@ export const TECHNOLOGIES: Technology[] = [
     id: "ethereum",
     category: TechnologyCategory.Devops,
   },
+  {
+    name: "Geth",
+    id: "geth",
+    category: TechnologyCategory.Devops,
+  },
+  {
+    name: "Prysm",
+    id: "prysm",
+    category: TechnologyCategory.Devops,
+  },
+  {
+    name: "Grafana",
+    id: "grafana",
+    category: TechnologyCategory.Devops,
+  },
   // Other
   {
     name: "Python",
