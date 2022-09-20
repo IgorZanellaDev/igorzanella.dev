@@ -18,7 +18,7 @@ const EthereumValidator: NextPage = () => {
   return (
     <GlobalWrapper withLayout>
       <SEO
-        title="Customerly"
+        title="Ethereum validator server"
         description="The First Customer Centric Communication Suite. A startup in which I'm participating."
         image="/projects/customerly/main.jpg"
       />
@@ -51,7 +51,7 @@ const EthereumValidator: NextPage = () => {
         <H2>Which are the budget requirements?</H2>
         <P>
           To start an ethereum validator you need to block 32 ETH in the
-          network, at the start of the project (in 2020), 32 ETH were equals to
+          network, at the start of this project (in 2020), 32 ETH were equals to
           20-30k USD, a big investment on the network. You can check the actual
           price on{" "}
           <A
@@ -74,8 +74,9 @@ const EthereumValidator: NextPage = () => {
         </P>
         <H2>Client diversity</H2>
         <P>
-          When I started the server, there were not so many different execution
-          clients and consensus clients. So I chose the most used which was{" "}
+          When I started the server (in 2020), there were not so many different
+          execution clients and consensus clients. So I chose the most used
+          which was{" "}
           <A
             href={"https://geth.ethereum.org/"}
             target={"_blank"}
