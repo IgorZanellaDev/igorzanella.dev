@@ -6,6 +6,7 @@ import ProjectSection from "components/ui/base/ProjectSection";
 import H2 from "components/core/Typography/H2";
 import P from "components/core/Typography/P";
 import A from "components/core/Typography/A";
+import Img from "components/core/Typography/Img";
 
 const EthereumValidator: NextPage = () => {
   const handleChatClick = () => {
@@ -113,6 +114,12 @@ const EthereumValidator: NextPage = () => {
           Grafana on the server, to let the owner check if server is up and
           running.
         </P>
+        <Img
+          src={"/projects/ethereum-validator/grafana.jpg"}
+          width={1917}
+          height={961}
+          alt="Grafana ethereum validator"
+        />
         <H2>Future</H2>
         <P>
           Server needs to be updated, so I continue maintaining this server. If
