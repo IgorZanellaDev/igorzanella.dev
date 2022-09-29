@@ -35,11 +35,14 @@ const SEO: FunctionComponent<SEOProps> = (props: SEOProps) => {
   return (
     <Head>
       <title>{title}</title>
-      <meta name="og:title" content={title} />
+      <meta name="title" property="og:title" content={title} />
       <meta name="twitter:title" content={title} />
-      <meta name="og:site_name" content={TITLE} />
-      <meta name="description" content={props.description} />
-      <meta name="og:description" content={props.description} />
+      <meta name="site_name" property="og:site_name" content={TITLE} />
+      <meta
+        name="description"
+        property="og:description"
+        content={props.description}
+      />
       <meta name="twitter:description" content={props.description} />
       <link
         rel="canonical"
@@ -49,7 +52,7 @@ const SEO: FunctionComponent<SEOProps> = (props: SEOProps) => {
         name="og:url"
         content={props.canonical ? props.canonical : canonical}
       />
-      <meta name="og:image" content={image} />
+      <meta name="image" property="og:image" content={image} />
       <meta name="twitter:image" content={image} />
       <meta
         name="og:image:alt"
