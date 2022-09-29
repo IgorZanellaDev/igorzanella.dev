@@ -20,8 +20,8 @@ const EthereumValidator: NextPage = () => {
     <GlobalWrapper withLayout>
       <SEO
         title="Ethereum validator server"
-        description="The First Customer Centric Communication Suite. A startup in which I'm participating."
-        image="/projects/customerly/main.jpg"
+        description="Etehereum 2.0 validator staking server. Created and maintaining since 2020."
+        image="/projects/ethereum-validator/main.jpg"
       />
       <ProjectTitle
         subtitle={"Consultant"}
