@@ -55,7 +55,8 @@ const SEO: FunctionComponent<SEOProps> = (props: SEOProps) => {
       <meta name="image" property="og:image" content={image} />
       <meta name="twitter:image" content={image} />
       <meta
-        name="og:image:alt"
+        name="image:alt"
+        property="og:image:alt"
         content={props.imageAlt ? props.imageAlt : TITLE}
       />
       <meta name="twitter:card" content="summary_large_image" />
