@@ -37,6 +37,16 @@ const ProjectsSection: FunctionComponent = () => {
       />
       <Project
         inverted
+        id={"computer-portatile"}
+        role={"Owner"}
+        title={"ComputerPortatile"}
+        description={
+          "Affiliate marketing website, created to advice laptops to people who are searching."
+        }
+        imageWidth={1920}
+        imageHeight={1080}
+      />
+      <Project
         id={"bestondesk"}
         role={"CTO"}
         title={"BestOnDesk"}
@@ -47,6 +57,7 @@ const ProjectsSection: FunctionComponent = () => {
         imageHeight={1080}
       />
       <Project
+        inverted
         id={"racing-line-motorsport"}
         role={"Staff member"}
         title={"Racing Line Motorsport"}
