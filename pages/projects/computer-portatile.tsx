@@ -20,7 +20,7 @@ const ComputerPortatile: NextPage = () => {
         subtitle={"Owner"}
         id={"computer-portatile"}
         links={{
-          web: "https://www.bestondesk.com",
+          web: "https://www.computerportatile.com",
         }}
         name={"ComputerPortatile"}
         category={"Affiliate marketing website"}
