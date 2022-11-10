@@ -2,7 +2,6 @@ import type { NextPage } from "next";
 import GlobalWrapper from "../../components/core/GlobalWrapper";
 import SEO from "../../components/core/SEO";
 import TitleSection from "components/ui/base/TitleSection";
-import ProjectsSection from "components/ui/extended/ProjectsSection";
 import CoursesSection from "components/ui/extended/CoursesSection";
 
 const Projects: NextPage = () => {
@@ -10,7 +9,7 @@ const Projects: NextPage = () => {
     <GlobalWrapper withLayout>
       <SEO
         title="Courses"
-        description="Some of the most important projects which I created or took part."
+        description="My public programming courses, some of them with a discount code just for you."
       />
       <TitleSection
         subtitle={"Courses"}
