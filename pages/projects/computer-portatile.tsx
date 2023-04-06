@@ -62,28 +62,28 @@ const ComputerPortatile: NextPage = () => {
         </P>
         <H2>Are there plan for some ads?</H2>
         <P>
-          Now I'm testing some keywords and SEO tricks, so I currently don't
-          want to invest money in this project, because could be difficult to
-          pay ads for these keywords.
+          Now I&apos;m testing some keywords and SEO tricks, so I currently
+          don&apos;t want to invest money in this project, because could be
+          difficult to pay ads for these keywords.
         </P>
         <H2>How do I think this site will grow organically?</H2>
         <P>
-          As I said, there are some keywords and SEO tricks which I'm trying and
-          which I will try, to climb Google Rank and try to get to the top of
-          Google Search.
+          As I said, there are some keywords and SEO tricks which I&apos;m
+          trying and which I will try, to climb Google Rank and try to get to
+          the top of Google Search.
         </P>
-        <H2>Why didn't I publish the code?</H2>
+        <H2>Why didn&apos;t I publish the code?</H2>
         <P>
-          I didn't publish the code because there are some SEO tricks I want to
-          try and maybe keep them for other websites, so for now I don't want to
-          publish the code. If you have a valid reason to see the code contact
-          me, but no promises.
+          I didn&apos;t publish the code because there are some SEO tricks I
+          want to try and maybe keep them for other websites, so for now I
+          don&apos;t want to publish the code. If you have a valid reason to see
+          the code contact me, but no promises.
         </P>
         <H2>Future</H2>
         <P>
           This is a website created in 10 days in free time, so about 20 hours,
-          this means I didn't invest much time and money, because I don't have
-          expectations. Let's see how it goes.
+          this means I didn&apos;t invest much time and money, because I
+          don&apos;t have expectations. Let&apos;s see how it goes.
         </P>
       </ProjectSection>
     </GlobalWrapper>

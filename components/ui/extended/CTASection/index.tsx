@@ -19,7 +19,7 @@ const CTASection: FunctionComponent = () => {
             Do you have an idea?
           </h2>
           <h3 className="mt-2 text-3xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-b from-iz-yellow-light to-iz-yellow-dark">
-            Let's talk about it!
+            Let&apos;s talk about it!
           </h3>
         </Animation>
         <div className="flex flex-col md:flex-row justify-center items-center mt-8">

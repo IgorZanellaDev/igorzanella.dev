@@ -93,16 +93,16 @@ const RacingLineMotorsport: NextPage = () => {
         />
         <H3>Frontend</H3>
         <P>
-          I completely created the frontend by my own, it's based on React, with
-          2 available languages, I used Bootstrap as CSS Framework, then there
-          is Redux for state management and i18next. It's CI-built on Netlify.
-          We use Google Analytics for visitors analysis.
+          I completely created the frontend by my own, it&apos;s based on React,
+          with 2 available languages, I used Bootstrap as CSS Framework, then
+          there is Redux for state management and i18next. It&apos;s CI-built on
+          Netlify. We use Google Analytics for visitors analysis.
         </P>
         <H3>Backend</H3>
         <P>
           Backend has been made by another team member, but I helped him
-          sometimes. Backend is on Node.JS and Express, on MongoDB, it's hosted
-          on AWS, with Serverless framework.
+          sometimes. Backend is on Node.JS and Express, on MongoDB, it&apos;s
+          hosted on AWS, with Serverless framework.
         </P>
         <H3>News section</H3>
         <P>
@@ -114,9 +114,9 @@ const RacingLineMotorsport: NextPage = () => {
           >
             news section
           </A>{" "}
-          based on Gatsby framework. It's a separate section to optimize SEO for
-          news. CMS is Contentful, where Gatsby download posts on every build.
-          Hosted on Netlify.
+          based on Gatsby framework. It&apos;s a separate section to optimize
+          SEO for news. CMS is Contentful, where Gatsby download posts on every
+          build. Hosted on Netlify.
         </P>
         <Img
           src={"/projects/racing-line-motorsport/news.jpg"}

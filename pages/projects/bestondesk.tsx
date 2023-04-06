@@ -69,7 +69,7 @@ const BestOnDesk: NextPage = () => {
         </P>
         <H3>Open Source</H3>
         <P>
-          The project is Open Source and it's available on Github in{" "}
+          The project is Open Source and it&apos;s available on Github in{" "}
           <A href="https://github.com/BestOnDesk/gatsby-bod">this repository</A>
           , where you can find obviously only the frontend.
         </P>
@@ -90,10 +90,11 @@ const BestOnDesk: NextPage = () => {
         <P>
           Wordpress is the CMS I used in this project, because the legacy
           website was on Wordpress, and there were more than 400 articles. I
-          didn't have time to move the articles on another CMS, also because I
-          used on Wordpress a plugin to show Amazon products, which are the core
-          business of the website, so I continue to use Wordpress with the same
-          plugin, but I redesigned the website and did it static with Gatsby.
+          didn&apos;t have time to move the articles on another CMS, also
+          because I used on Wordpress a plugin to show Amazon products, which
+          are the core business of the website, so I continue to use Wordpress
+          with the same plugin, but I redesigned the website and did it static
+          with Gatsby.
         </P>
         <H3>Legacy website</H3>
         <P>

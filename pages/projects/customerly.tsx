@@ -64,8 +64,8 @@ const Customerly: NextPage = () => {
         <P>
           Customerly is a communication suite, its core business is the customer
           support with a chat widget for websites. But it has also marketing
-          automation and customer satisfaction features. I'm in the startup team
-          as a Full Stack Dev and I help the other people in developing the
+          automation and customer satisfaction features. I&apos;m in the startup
+          team as a Full Stack Dev and I help the other people in developing the
           product in all its parts, from frontend to backend and database. The
           mission is to help and inspire at least 1 billion people.
         </P>
@@ -73,10 +73,11 @@ const Customerly: NextPage = () => {
         <P>
           The first thing people usually see is the messenger, the widget you
           can also find in this website, in the bottom right part of the screen.
-          That's the first way the customers connect to Customerly, that allows
-          your customers to contact you, but not only. It also has the knowledge
-          base, campaigns notifications and triggers (a part which I mostly
-          developed). It's been coded in React and StyledComponents for styling.
+          That&apos;s the first way the customers connect to Customerly, that
+          allows your customers to contact you, but not only. It also has the
+          knowledge base, campaigns notifications and triggers (a part which I
+          mostly developed). It&apos;s been coded in React and StyledComponents
+          for styling.
         </P>
         <Img
           src={
@@ -115,9 +116,9 @@ const Customerly: NextPage = () => {
         />
         <H2>Landing page</H2>
         <P>
-          The landing page is made by me and another colleague.It's a static
-          website made with Gatsby, built on CircleCI and hosted on S3 with
-          Cloudfront cache.
+          The landing page is made by me and another colleague.It&apos;s a
+          static website made with Gatsby, built on CircleCI and hosted on S3
+          with Cloudfront cache.
         </P>
         <Img
           src={"/projects/customerly/landing.png"}

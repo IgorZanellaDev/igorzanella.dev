@@ -49,7 +49,7 @@ const HeaderSection: FunctionComponent = () => {
             onClick={handleChatClick}
             className="mt-6 py-4 px-6 rounded-xl text-lg font-bold text-white bg-gradient-to-b from-iz-blue-light to-iz-blue-dark hover:to-iz-blue-dark-darker-10"
           >
-            Let's get in touch!
+            Let&apos;s get in touch!
           </button>
         </Animation>
       </div>

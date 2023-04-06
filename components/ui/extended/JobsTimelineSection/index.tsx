@@ -17,12 +17,12 @@ const JobsTimelineSection: FunctionComponent = () => {
             My previous jobs
           </h3>
           <p className="mt-4 text-xl text-gray-400 flex flex-wrap lg:max-w-lg">
-            I'm young but I still had some interesting experiences. I also did
-            an experience in Poland for Erasmus.
+            I&apos;m young but I still had some interesting experiences. I also
+            did an experience in Poland for Erasmus.
           </p>
           <p className="mt-2 text-xl text-gray-400 flex flex-wrap lg:max-w-lg">
-            Now I'm a Freelance Full Stack Developer but I work almost full time
-            for Customerly, an interesting startup.
+            Now I&apos;m a Freelance Full Stack Developer but I work almost full
+            time for Customerly, an interesting startup.
           </p>
         </Animation>
         <Animation

@@ -45,7 +45,7 @@ const EthereumValidator: NextPage = () => {
         <P>
           The server has to be up as long as possible, to earn more and to not
           get penalties. Theoretically server needs to have at minimum 90-95%
-          uptime, but if you keep it above, it's obviously better. The
+          uptime, but if you keep it above, it&apos;s obviously better. The
           requirements are big storage (starting with 1TB), high network uptime
           and obviously infrastructure stability.
         </P>
@@ -62,16 +62,16 @@ const EthereumValidator: NextPage = () => {
           >
             CoinMarketCap
           </A>
-          . These ETH can't be sell until the shard chains update. It's an
-          investment in the future of Ethereum.
+          . These ETH can&apos;t be sell until the shard chains update.
+          It&apos;s an investment in the future of Ethereum.
         </P>
         <H2>Decentralization</H2>
         <P>
           One of the most important parts of blockchains is decentralization, so
-          it's a good practice to host this server at home, but sometimes there
-          can be some problems, for example noise, power consumption, uptime,
-          etc.. So, I decided to host the server on a small but stable service
-          provider.
+          it&apos;s a good practice to host this server at home, but sometimes
+          there can be some problems, for example noise, power consumption,
+          uptime, etc.. So, I decided to host the server on a small but stable
+          service provider.
         </P>
         <H2>Client diversity</H2>
         <P>

@@ -26,14 +26,14 @@ const TestimonialSection: FunctionComponent = () => {
               />
               <blockquote className="mt-6 text-white">
                 <p className="text-base font-medium sm:text-2xl">
-                  Igor is an amazing person to work with. He's talented and
-                  passionate about what he does. He's always searching for the
-                  best technology to use. He's a continuous learner and
+                  Igor is an amazing person to work with. He&apos;s talented and
+                  passionate about what he does. He&apos;s always searching for
+                  the best technology to use. He&apos;s a continuous learner and
                   listener. He joined the Customerly culture from the very first
-                  day and I believe is one of the best developers I've ever
+                  day and I believe is one of the best developers I&apos;ve ever
                   known. His creations at Customerly are astonishing and brought
-                  immense value to the platform. On the human side, he's a great
-                  person with soft skills and moreover a great friend.
+                  immense value to the platform. On the human side, he&apos;s a
+                  great person with soft skills and moreover a great friend.
                 </p>
                 <footer className="mt-6">
                   <p className="flex flex-col font-medium">

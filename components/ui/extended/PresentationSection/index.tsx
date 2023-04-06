@@ -32,8 +32,9 @@ const PresentationSection: FunctionComponent = () => {
           </Animation>
           <Animation type={"fadeInUp"}>
             <p className="mt-2 text-base lg:text-lg md:text-xl leading-normal text-gray-400 xl:w-5/6">
-              I'm a nerd but I'm also a super sporty person. I also love
-              travelling and I would like to try also the digital nomad life.
+              I&apos;m a nerd but I&apos;m also a super sporty person. I also
+              love travelling and I would like to try also the digital nomad
+              life.
             </p>
           </Animation>
           <Animation type={"fadeInUp"}>
