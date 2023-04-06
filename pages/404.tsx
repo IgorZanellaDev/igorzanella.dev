@@ -16,10 +16,10 @@ const Custom404: NextPage = () => {
       <div className="min-h-screen flex flex-col bg-gray-900">
         <main className="flex-grow flex flex-col justify-center max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex-shrink-0 flex justify-center">
-            <a href="/" className="inline-flex">
+            <Link href="/" className="inline-flex">
               <span className="sr-only">IZDev</span>
               <Logo />
-            </a>
+            </Link>
           </div>
           <div className="py-6">
             <div className="text-center">
