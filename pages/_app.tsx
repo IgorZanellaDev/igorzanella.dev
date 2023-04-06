@@ -23,7 +23,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     <QueryClientProvider client={queryClient}>
       <Hydrate state={pageProps.dehydratedState}>
         <Component {...pageProps} />
-        <Script type="text/javascript">
+        <Script type="text/javascript" id={"iubenda-script"}>
           {`
               var _iub = _iub || [];
               _iub.csConfiguration = {
