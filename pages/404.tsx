@@ -33,13 +33,11 @@ const Custom404: NextPage = () => {
                 Sorry, we couldn’t find the page you’re looking for.
               </p>
               <div className="mt-6">
-                <Link href={"/"}>
-                  <a
-                    href="#"
-                    className="text-base font-medium text-iz-blue-light hover:text-iz-blue-light-darker-10 transition"
-                  >
-                    Go back home<span aria-hidden="true"> &rarr;</span>
-                  </a>
+                <Link
+                  href="#"
+                  className="text-base font-medium text-iz-blue-light hover:text-iz-blue-light-darker-10 transition"
+                >
+                  Go back home<span aria-hidden="true"> &rarr;</span>
                 </Link>
               </div>
             </div>

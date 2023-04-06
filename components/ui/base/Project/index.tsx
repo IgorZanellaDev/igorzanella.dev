@@ -24,18 +24,19 @@ const Project: FunctionComponent<ProjectProps> = (props: ProjectProps) => {
         type={"fadeInUp"}
         className="flex w-full lg:w-3/5 relative lg:p-10"
       >
-        <Link href={`/projects/${props.id}`}>
-          <a className="overflow-hidden rounded-lg md:rounded-xl lg:rounded-2xl">
-            <Image
-              src={`/projects/previews/${props.id}.jpg`}
-              width={props.imageWidth}
-              height={props.imageHeight}
-              className="overflow-hidden rounded-lg md:rounded-xl lg:rounded-2xl"
-              placeholder="blur"
-              blurDataURL={`/projects/previews/${props.id}.jpg`}
-              alt={props.title}
-            />
-          </a>
+        <Link
+          href={`/projects/${props.id}`}
+          className="overflow-hidden rounded-lg md:rounded-xl lg:rounded-2xl"
+        >
+          <Image
+            src={`/projects/previews/${props.id}.jpg`}
+            width={props.imageWidth}
+            height={props.imageHeight}
+            className="overflow-hidden rounded-lg md:rounded-xl lg:rounded-2xl"
+            placeholder="blur"
+            blurDataURL={`/projects/previews/${props.id}.jpg`}
+            alt={props.title}
+          />
         </Link>
       </Animation>
       <Animation
@@ -46,11 +47,9 @@ const Project: FunctionComponent<ProjectProps> = (props: ProjectProps) => {
           {props.role}
         </p>
         <Link href={`/projects/${props.id}`}>
-          <a>
-            <h3 className="text-3xl lg:text-5xl font-bold transition hover:border-b-8 border-white">
-              {props.title}
-            </h3>
-          </a>
+          <h3 className="text-3xl lg:text-5xl font-bold transition hover:border-b-8 border-white">
+            {props.title}
+          </h3>
         </Link>
         <p className="mt-2 text-xl text-gray-500 flex flex-wrap max-w-lg">
           {props.description}

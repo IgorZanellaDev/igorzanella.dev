@@ -9,14 +9,12 @@ interface LinkIconProps {
 
 const LinkIcon: FunctionComponent<LinkIconProps> = (props: LinkIconProps) => {
   return (
-    <Link href={props.href}>
-      <a target="_blank" rel="noopener">
-        <Icon
-          size={32}
-          type={props.icon}
-          className="fill-current text-gray-200 hover:text-white transition-all h-6 md:h-7 lg:h-8"
-        />
-      </a>
+    <Link href={props.href} target="_blank" rel="noopener">
+      <Icon
+        size={32}
+        type={props.icon}
+        className="fill-current text-gray-200 hover:text-white transition-all h-6 md:h-7 lg:h-8"
+      />
     </Link>
   );
 };

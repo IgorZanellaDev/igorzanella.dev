@@ -14,18 +14,17 @@ const NavbarItem: FunctionComponent<Props> = (props: Props) => {
   const isActive = props.href === useRouter().pathname;
 
   return (
-    <Link {...props}>
-      <a
-        className={`cursor-pointer text-base hover:text-white focus:outline-none focus:text-white font-semibold leading-none transition fill-current ${
-          isActive ? "text-white pointer-events-none" : "text-gray-500"
-        }
+    <Link
+      {...props}
+      className={`cursor-pointer text-base hover:text-white focus:outline-none focus:text-white font-semibold leading-none transition fill-current ${
+        isActive ? "text-white pointer-events-none" : "text-gray-500"
+      }
         `}
-        rel={props.newTab ? "noopener" : undefined}
-        target={props.newTab ? "_blank" : undefined}
-        title={props.title}
-      >
-        {props.children}
-      </a>
+      rel={props.newTab ? "noopener" : undefined}
+      target={props.newTab ? "_blank" : undefined}
+      title={props.title}
+    >
+      {props.children}
     </Link>
   );
 };

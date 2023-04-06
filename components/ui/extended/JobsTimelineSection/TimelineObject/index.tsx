@@ -25,12 +25,10 @@ const TimelineObject: FunctionComponent<TimelineObjectProps> = (
         }`}
       >
         <p className="text-base md:text-lg text-iz-blue-light">{props.date}</p>
-        <Link href={props.link}>
-          <a rel="noopener" target="_blank">
-            <h4 className="font-bold text-2xl md:text-3xl hover:underline">
-              {props.title}
-            </h4>
-          </a>
+        <Link href={props.link} rel="noopener" target="_blank">
+          <h4 className="font-bold text-2xl md:text-3xl hover:underline">
+            {props.title}
+          </h4>
         </Link>
         <p className="text-base md:text-lg leading-snug text-iz-yellow-light text-opacity-100 font-semibold">
           {props.description}

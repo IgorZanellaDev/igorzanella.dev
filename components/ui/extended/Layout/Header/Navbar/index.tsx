@@ -22,14 +22,13 @@ const Navbar: FunctionComponent = () => {
           </NavbarItem>
         ))}
       </div>
-      <Link href={"/"}>
-        <a
-          className={`flex justify-center items-center h-auto order-1 md:order-2 ${
-            isHomeActive && "pointer-events-none"
-          }`}
-        >
-          <Logo withoutText />
-        </a>
+      <Link
+        href={"/"}
+        className={`flex justify-center items-center h-auto order-1 md:order-2 ${
+          isHomeActive && "pointer-events-none"
+        }`}
+      >
+        <Logo withoutText />
       </Link>
       <div className="flex justify-center md:justify-end mt-6 md:mt-0 items-center space-x-6 order-3">
         {SOCIAL_LINKS.map((social) => (

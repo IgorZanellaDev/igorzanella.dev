@@ -32,10 +32,11 @@ const CTASection: FunctionComponent = () => {
             </button>
           </Animation>
           <Animation type={"fadeInUp"} typeMd={"fadeInRight"}>
-            <Link href={"/projects"}>
-              <a className="flex m-2 py-6 px-8 rounded-xl text-xl md:text-2xl font-bold text-white bg-gradient-to-b from-gray-700 to-gray-800">
-                Go to projects
-              </a>
+            <Link
+              href={"/projects"}
+              className="flex m-2 py-6 px-8 rounded-xl text-xl md:text-2xl font-bold text-white bg-gradient-to-b from-gray-700 to-gray-800"
+            >
+              Go to projects
             </Link>
           </Animation>
         </div>

@@ -7,13 +7,12 @@ const A: FunctionComponent<React.AnchorHTMLAttributes<HTMLAnchorElement>> = ({
   ...rest
 }) => {
   return (
-    <Link href={href ? href : "/"}>
-      <a
-        {...rest}
-        className="text-iz-blue-light hover:text-iz-blue-light-darker-10 transition"
-      >
-        {children}
-      </a>
+    <Link
+      {...rest}
+      href={href ? href : "/"}
+      className="text-iz-blue-light hover:text-iz-blue-light-darker-10 transition"
+    >
+      {children}
     </Link>
   );
 };
