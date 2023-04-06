@@ -404,6 +404,7 @@ const Icon: FunctionComponent<Props> = (props: Props) => {
     case "racing-line-motorsport":
       return (
         <Image
+          alt={"Racing Line Motorsport"}
           src="/icons/rlm.png"
           width={props.size}
           height={props.size}
