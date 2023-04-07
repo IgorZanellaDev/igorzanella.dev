@@ -10,21 +10,28 @@ interface NavbarItemProps {
 
 type Props = React.PropsWithChildren<LinkProps> & NavbarItemProps;
 
-const NavbarItem: FunctionComponent<Props> = (props: Props) => {
-  const isActive = props.href === useRouter().pathname;
+const NavbarItem: FunctionComponent<Props> = ({
+  children,
+  href,
+  newTab,
+  title,
+  ...rest
+}) => {
+  const isActive = href === useRouter().pathname;
 
   return (
     <Link
-      {...props}
+      {...rest}
+      href={href}
       className={`cursor-pointer text-base hover:text-white focus:outline-none focus:text-white font-semibold leading-none transition fill-current ${
         isActive ? "text-white pointer-events-none" : "text-gray-500"
       }
         `}
-      rel={props.newTab ? "noopener" : undefined}
-      target={props.newTab ? "_blank" : undefined}
-      title={props.title}
+      rel={newTab ? "noopener" : undefined}
+      target={newTab ? "_blank" : undefined}
+      title={title}
     >
-      {props.children}
+      {children}
     </Link>
   );
 };
