@@ -16,12 +16,12 @@
     "graphql": "^15.6.1",
     "graphql-request": "^3.6.1",
     "next": "^13.2.4",
+    "next-absolute-url": "^1.2.2",
     "react": "^18.2.0",
     "react-countup": "^6.0.0",
     "react-dom": "^18.2.0",
     "react-gtm-module": "^2.0.11",
     "react-intersection-observer": "^8.32.1",
-    "react-query": "^3.28.0",
     "tailwindcss-animatecss": "^1.0.7"
   },
   "devDependencies": {

@@ -5,7 +5,6 @@ import type { AppProps } from "next/app";
 import { GTM_ID } from "constants/seo";
 import React, { useEffect } from "react";
 import TagManager from "react-gtm-module";
-import { Hydrate, QueryClient, QueryClientProvider } from "react-query";
 import Script from "next/script";
 
 const tagManagerArgs = {
@@ -13,18 +12,15 @@ const tagManagerArgs = {
 };
 
 function MyApp({ Component, pageProps }: AppProps) {
-  const [queryClient] = React.useState(() => new QueryClient());
-
   useEffect(() => {
     TagManager.initialize(tagManagerArgs);
   }, []);
 
   return (
-    <QueryClientProvider client={queryClient}>
-      <Hydrate state={pageProps.dehydratedState}>
-        <Component {...pageProps} />
-        <Script type="text/javascript" id={"iubenda-script"}>
-          {`
+    <>
+      <Component {...pageProps} />
+      <Script type="text/javascript" id={"iubenda-script"}>
+        {`
               var _iub = _iub || [];
               _iub.csConfiguration = {
                 "enableCcpa":true,
@@ -82,19 +78,15 @@ function MyApp({ Component, pageProps }: AppProps) {
                 }
               };
             `}
-        </Script>
-        <Script
-          type="text/javascript"
-          src="//cdn.iubenda.com/cs/ccpa/stub.js"
-        />
-        <Script
-          type="text/javascript"
-          src="//cdn.iubenda.com/cs/iubenda_cs.js"
-          charSet="UTF-8"
-          async
-        />
-      </Hydrate>
-    </QueryClientProvider>
+      </Script>
+      <Script type="text/javascript" src="//cdn.iubenda.com/cs/ccpa/stub.js" />
+      <Script
+        type="text/javascript"
+        src="//cdn.iubenda.com/cs/iubenda_cs.js"
+        charSet="UTF-8"
+        async
+      />
+    </>
   );
 }
 
