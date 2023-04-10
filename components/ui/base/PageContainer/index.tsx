@@ -8,7 +8,7 @@ const PageContainer: FunctionComponent<PageContainerProps> = (
   props: PageContainerProps
 ) => {
   return (
-    <div className="mx-auto container px-6 lg:px-14 xl:px-0">
+    <div className="flex flex-col flex-1 mx-auto container px-6 lg:px-14 xl:px-0">
       {props.children}
     </div>
   );

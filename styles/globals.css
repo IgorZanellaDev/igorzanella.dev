@@ -4,6 +4,7 @@
   @apply min-h-screen;
   @apply flex;
   @apply flex-col;
+  @apply flex-1;
 }
 
 html,
