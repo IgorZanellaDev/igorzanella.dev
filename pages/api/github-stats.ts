@@ -1,14 +1,13 @@
 import { NextApiRequest, NextApiResponse } from "next";
 import { gql, GraphQLClient } from "graphql-request";
 import { GithubStatsApi, GithubStatsGQLApi } from "types/github";
+import { GITHUB_ENDPOINT } from "constants/api";
 
 export default async (
   req: NextApiRequest,
   res: NextApiResponse<GithubStatsApi>
 ) => {
-  const endpoint = "https://api.github.com/graphql";
-
-  const graphQLClient = new GraphQLClient(endpoint, {
+  const graphQLClient = new GraphQLClient(GITHUB_ENDPOINT, {
     headers: {
       authorization: `Bearer ${process.env.GITHUB_API_TOKEN}`,
     },
