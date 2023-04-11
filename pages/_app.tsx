@@ -23,28 +23,32 @@ function MyApp({ Component, pageProps }: AppProps) {
         {`
               var _iub = _iub || [];
               _iub.csConfiguration = {
-                "enableCcpa":true,
+                "askConsentAtCookiePolicyUpdate":true,
                 "countryDetection":true,
-                "reloadOnConsent":false,
-                "consentOnContinuedBrowsing":false,
-                "ccpaAcknowledgeOnDisplay":true,
-                "whitelabel":false,
+                "enableLgpd":true,
+                "enableUspr":true,
                 "lang":"en",
+                "reloadOnConsent":true,
+                "whitelabel":false,
                 "siteId":2016555,
                 "cookiePolicyId":36569385,
                 "banner": {
-                  "acceptButtonDisplay":true,
-                  "customizeButtonDisplay":true,
-                  "rejectButtonDisplay":true,
-                  "position":"float-bottom-left",
-                  "acceptButtonColor":"#0073CE",
                   "acceptButtonCaptionColor":"white",
-                  "customizeButtonColor":"#DADADA",
+                  "acceptButtonColor":"#0073CE",
+                  "acceptButtonDisplay":true,
+                  "backgroundColor":"white",
+                  "closeButtonRejects":true,
                   "customizeButtonCaptionColor":"#4D4D4D",
-                  "rejectButtonColor":"#0073CE",
+                  "customizeButtonColor":"#DADADA",
+                  "customizeButtonDisplay":true,
+                  "explicitWithdrawal":true,
+                  "listPurposes":true,
+                  "position":"float-bottom-left",
                   "rejectButtonCaptionColor":"white",
-                  "textColor":"black",
-                  "backgroundColor":"white"
+                  "rejectButtonColor":"#0073CE",
+                  "rejectButtonDisplay":true,
+                  "showPurposesToggles":true,
+                  "textColor":"black"
                 },
                 "callback": {
                   onPreferenceExpressedOrNotNeeded: function(preference) {
