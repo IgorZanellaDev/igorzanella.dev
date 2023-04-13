@@ -62,7 +62,7 @@ const InsertEmailInput: FunctionComponent<InsertEmailInputProps> = ({
           <input
             placeholder={"example@gmail.com"}
             className={
-              "w-80 px-4 py-2 outline-none text-gray-200 bg-gray-600 rounded-md text-lg"
+              "w-full sm:w-80 px-4 py-2 outline-none text-gray-200 bg-gray-600 rounded-md text-lg"
             }
             onKeyDown={(event) => {
               if (event.key === "Enter") {
@@ -75,7 +75,7 @@ const InsertEmailInput: FunctionComponent<InsertEmailInputProps> = ({
           <button
             disabled={!email || cookieConsent}
             onClick={() => handleSendClick()}
-            className={`w-80 py-4 px-6 rounded-xl text-lg font-bold text-white ${
+            className={`w-full sm:w-80 py-4 px-6 rounded-xl text-lg font-bold text-white ${
               sent
                 ? "bg-iz-blue-dark-darker-10 cursor-default"
                 : "bg-gradient-to-b from-iz-blue-light to-iz-blue-dark hover:to-iz-blue-dark-darker-10"
