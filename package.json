@@ -10,6 +10,8 @@
     "postbuild": "next-sitemap"
   },
   "dependencies": {
+    "@google-cloud/recaptcha-enterprise": "^3.4.0",
+    "@types/grecaptcha": "^3.0.4",
     "animate.css": "^4.1.1",
     "axios": "^0.23.0",
     "cookies-next": "^2.1.1",
