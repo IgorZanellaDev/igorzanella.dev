@@ -12,16 +12,20 @@ export type IconType =
   | "globe"
   | "google"
   | "instagram"
+  | "iterm"
   | "linkedin"
   | "medium"
+  | "phpstorm"
   | "play"
   | "plus"
+  | "pycharm"
   | "slash"
   | "spotify"
   | "racing-line-motorsport"
   | "telegram"
   | "terminal"
-  | "twitter";
+  | "twitter"
+  | "webstorm";
 
 interface IconProps {
   size: number;
@@ -315,6 +319,108 @@ const Icon: FunctionComponent<Props> = (props: Props) => {
           <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
         </svg>
       );
+    case "iterm":
+      return (
+        <svg
+          width={props.size}
+          height={props.size}
+          className={props.className}
+          viewBox="0 0 1024 1024"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g filter="url(#filter0_d)">
+            <rect
+              x="100"
+              y="100"
+              width="824"
+              height="824"
+              rx="179"
+              fill="url(#paint0_linear)"
+            />
+          </g>
+          <rect
+            x="121.788"
+            y="121.789"
+            width="780.423"
+            height="780.423"
+            rx="156"
+            fill="black"
+          />
+          <rect
+            x="183.192"
+            y="183.192"
+            width="657.615"
+            height="657.615"
+            rx="94"
+            fill="#202A2F"
+          />
+          <rect
+            x="367.404"
+            y="226.769"
+            width="89.1346"
+            height="178.269"
+            fill="#0EE827"
+            fillOpacity="0.35"
+          />
+          <path
+            d="M274.468 374.622C269.807 374.227 265.438 373.568 261.36 372.645C257.427 371.59 253.786 370.47 250.436 369.284C247.232 368.097 244.392 366.977 241.916 365.922C239.586 364.736 237.838 363.813 236.673 363.154L246.067 345.754C247.086 346.413 248.834 347.335 251.31 348.522C253.786 349.708 256.553 350.96 259.612 352.279C262.816 353.465 266.093 354.52 269.443 355.442C272.793 356.365 275.924 356.827 278.837 356.827C293.402 356.827 300.684 351.356 300.684 340.415C300.684 337.778 300.174 335.603 299.154 333.89C298.281 332.176 296.897 330.726 295.004 329.54C293.256 328.221 291.071 327.101 288.45 326.178C285.974 325.124 283.134 324.069 279.929 323.015C273.812 320.905 268.351 318.73 263.544 316.489C258.884 314.117 254.878 311.48 251.529 308.58C248.179 305.68 245.63 302.385 243.882 298.694C242.135 295.003 241.261 290.784 241.261 286.039C241.261 282.348 242.062 278.789 243.664 275.361C245.266 271.934 247.523 268.902 250.436 266.266C253.349 263.498 256.845 261.191 260.923 259.345C265.001 257.368 269.516 255.984 274.468 255.193V226.769H292.382V254.797C296.169 255.193 299.81 255.786 303.305 256.577C306.801 257.368 309.932 258.225 312.699 259.147C315.467 260.07 317.797 260.993 319.69 261.916C321.729 262.707 323.186 263.3 324.06 263.695L315.321 279.909C314.156 279.382 312.481 278.723 310.296 277.932C308.257 277.009 305.927 276.086 303.305 275.164C300.684 274.241 297.844 273.45 294.785 272.791C291.727 272.132 288.668 271.802 285.61 271.802C280.658 271.802 276.215 272.725 272.283 274.57C268.496 276.284 266.603 279.25 266.603 283.468C266.603 286.105 267.113 288.478 268.132 290.587C269.297 292.564 270.899 294.344 272.938 295.925C275.123 297.507 277.745 299.023 280.803 300.473C284.007 301.791 287.649 303.11 291.727 304.428C297.115 306.405 301.922 308.448 306.145 310.558C310.369 312.667 313.937 315.039 316.85 317.676C319.763 320.312 321.948 323.344 323.404 326.771C325.006 330.199 325.807 334.219 325.807 338.833C325.807 342.788 325.079 346.61 323.623 350.301C322.312 353.992 320.2 357.42 317.287 360.583C314.52 363.747 311.025 366.515 306.801 368.888C302.723 371.129 297.916 372.777 292.382 373.831V403.058H274.468V374.622Z"
+            fill="#0EE827"
+          />
+          <defs>
+            <filter
+              id="filter0_d"
+              x="78"
+              y="86"
+              width="868"
+              height="868"
+              filterUnits="userSpaceOnUse"
+              colorInterpolationFilters="sRGB"
+            >
+              <feFlood floodOpacity="0" result="BackgroundImageFix" />
+              <feColorMatrix
+                in="SourceAlpha"
+                type="matrix"
+                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+              />
+              <feMorphology
+                radius="2"
+                operator="dilate"
+                in="SourceAlpha"
+                result="effect1_dropShadow"
+              />
+              <feOffset dy="8" />
+              <feGaussianBlur stdDeviation="10" />
+              <feColorMatrix
+                type="matrix"
+                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
+              />
+              <feBlend
+                mode="normal"
+                in2="BackgroundImageFix"
+                result="effect1_dropShadow"
+              />
+              <feBlend
+                mode="normal"
+                in="SourceGraphic"
+                in2="effect1_dropShadow"
+                result="shape"
+              />
+            </filter>
+            <linearGradient
+              id="paint0_linear"
+              x1="512"
+              y1="100"
+              x2="512"
+              y2="924"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stopColor="#D4E6E8" />
+              <stop offset="1" stopColor="#767573" />
+            </linearGradient>
+          </defs>
+        </svg>
+      );
     case "linkedin":
       return (
         <svg
@@ -341,6 +447,96 @@ const Icon: FunctionComponent<Props> = (props: Props) => {
           viewBox="0 0 30 30"
         >
           <path d="M8.5 7A8.5 8.5 0 108.5 24 8.5 8.5 0 108.5 7zM22 8A4 7.5 0 1022 23 4 7.5 0 1022 8zM28.5 9A1.5 6.5 0 1028.5 22 1.5 6.5 0 1028.5 9z" />
+        </svg>
+      );
+    case "phpstorm":
+      return (
+        <svg
+          width={props.size}
+          height={props.size}
+          className={props.className}
+          id="Layer_1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 70 70"
+        >
+          <linearGradient
+            id="PHPSVGID_1_"
+            gradientUnits="userSpaceOnUse"
+            x1=".551"
+            y1="25.16"
+            x2="29.941"
+            y2="63.98"
+            gradientTransform="matrix(1 0 0 -1 0 72)"
+          >
+            <stop offset=".016" stopColor="#765af8" />
+            <stop offset=".382" stopColor="#b345f1" />
+            <stop offset=".758" stopColor="#fa3293" />
+            <stop offset=".941" stopColor="#ff318c" />
+          </linearGradient>
+          <path
+            style={{ fill: "url(#PHPSVGID_1_)" }}
+            d="M39.6 15.2l-3.3-10L11.9 0 0 13.5l37.2 19z"
+          />
+          <linearGradient
+            id="PHPSVGID_2_"
+            gradientUnits="userSpaceOnUse"
+            x1="2.709"
+            y1="23.637"
+            x2="32.052"
+            y2="62.394"
+            gradientTransform="matrix(1 0 0 -1 0 72)"
+          >
+            <stop offset=".016" stopColor="#765af8" />
+            <stop offset=".382" stopColor="#b345f1" />
+            <stop offset=".758" stopColor="#fa3293" />
+            <stop offset=".941" stopColor="#ff318c" />
+          </linearGradient>
+          <path
+            style={{ fill: "url(#PHPSVGID_2_)" }}
+            d="M28 41.4l-.7-20.8L0 13.5l6.7 40.1 21.3-.2z"
+          />
+          <linearGradient
+            id="PHPSVGID_3_"
+            gradientUnits="userSpaceOnUse"
+            x1="50.856"
+            y1="25.595"
+            x2="34.273"
+            y2="64.952"
+            gradientTransform="matrix(1 0 0 -1 0 72)"
+          >
+            <stop offset=".183" stopColor="#765af8" />
+            <stop offset=".238" stopColor="#8655f6" />
+            <stop offset=".345" stopColor="#9f4cf3" />
+            <stop offset=".443" stopColor="#ae47f2" />
+            <stop offset=".522" stopColor="#b345f1" />
+          </linearGradient>
+          <path
+            style={{ fill: "url(#PHPSVGID_3_)" }}
+            d="M22.1 41l1.3-16.5L43.2 4.2l17.7 3.2L70 30.1l-9.5 9.4L45 37l-9.6 10.1z"
+          />
+          <linearGradient
+            id="PHPSVGID_4_"
+            gradientUnits="userSpaceOnUse"
+            x1="63.251"
+            y1="14.642"
+            x2="24.683"
+            y2="44.465"
+            gradientTransform="matrix(1 0 0 -1 0 72)"
+          >
+            <stop offset=".016" stopColor="#765af8" />
+            <stop offset=".382" stopColor="#b345f1" />
+          </linearGradient>
+          <path
+            style={{ fill: "url(#PHPSVGID_4_)" }}
+            d="M43.2 4.2L14.8 29.4l5.5 32.4L43.9 70 70 54.4z"
+          />
+          <g>
+            <path d="M13.4 13.4h43.2v43.2H13.4z" />
+            <path
+              fill="#FFF"
+              d="M17.5 48.5h16.2v2.7H17.5zM17.3 19h7.3c4.3 0 6.9 2.5 6.9 6.2v.1c0 4.2-3.2 6.3-7.3 6.3h-3V37h-3.9V19zm7.1 9c2 0 3.1-1.2 3.1-2.7v-.1c0-1.8-1.2-2.7-3.2-2.7h-3V28h3.1zM32.5 34.4l2.3-2.8c1.6 1.3 3.3 2.2 5.4 2.2 1.6 0 2.6-.6 2.6-1.7V32c0-1-.6-1.5-3.6-2.3-3.6-.9-6-1.9-6-5.5v-.1c0-3.3 2.6-5.4 6.3-5.4 2.6 0 4.9.8 6.7 2.3l-2.1 3c-1.6-1.1-3.2-1.8-4.7-1.8s-2.3.7-2.3 1.6v.1c0 1.2.8 1.6 3.9 2.4 3.6 1 5.7 2.3 5.7 5.4v.1c0 3.6-2.7 5.6-6.6 5.6-2.7-.1-5.4-1.1-7.6-3"
+            />
+          </g>
         </svg>
       );
     case "play":
@@ -372,6 +568,145 @@ const Icon: FunctionComponent<Props> = (props: Props) => {
           viewBox="0 0 24 24"
         >
           <path d="M24 10h-10v-10h-4v10h-10v4h10v10h4v-10h10z" />
+        </svg>
+      );
+    case "pycharm":
+      return (
+        <svg
+          width={props.size}
+          height={props.size}
+          className={props.className}
+          version="1.1"
+          id="Layer_1"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlnsXlink="http://www.w3.org/1999/xlink"
+          x="0px"
+          y="0px"
+          viewBox="0 0 70 70"
+          xmlSpace="preserve"
+        >
+          <g>
+            <g>
+              <linearGradient
+                id="SVGID_1_"
+                gradientUnits="userSpaceOnUse"
+                x1="24.9985"
+                y1="27.0461"
+                x2="66.6565"
+                y2="27.0461"
+              >
+                <stop offset="0" stopColor="#21D789" />
+                <stop offset="1" stopColor="#07C3F2" />
+              </linearGradient>
+              <polygon
+                style={{ fill: "url(#SVGID_1_);" }}
+                points="49.1,11 69.5,28.1 62.2,43 49.8,39.6 39.2,39.6 		"
+              />
+              <linearGradient
+                id="SVGID_2_"
+                gradientUnits="userSpaceOnUse"
+                x1="-24.5594"
+                y1="59.0806"
+                x2="61.2196"
+                y2="-4.2413"
+              >
+                <stop offset="1.075269e-002" stopColor="#FCF84A" />
+                <stop offset="0.1116" stopColor="#A7EB62" />
+                <stop offset="0.2056" stopColor="#5FE077" />
+                <stop offset="0.2727" stopColor="#32DA84" />
+                <stop offset="0.3065" stopColor="#21D789" />
+                <stop offset="0.5768" stopColor="#21D789" />
+                <stop offset="0.5968" stopColor="#21D789" />
+                <stop offset="0.686" stopColor="#20D68C" />
+                <stop offset="0.7627" stopColor="#1ED497" />
+                <stop offset="0.8348" stopColor="#19D1A9" />
+                <stop offset="0.904" stopColor="#13CCC2" />
+                <stop offset="0.9707" stopColor="#0BC6E1" />
+                <stop offset="1" stopColor="#07C3F2" />
+              </linearGradient>
+              <polygon
+                style={{ fill: "url(#SVGID_2_);" }}
+                points="28.5,22.1 24.5,43 24.1,50.2 14.2,54.5 0,56 4.3,10.7 29.9,0 45.7,10.4 		"
+              />
+              <linearGradient
+                id="SVGID_3_"
+                gradientUnits="userSpaceOnUse"
+                x1="9.3301"
+                y1="77.6536"
+                x2="23.6369"
+                y2="32.7598"
+              >
+                <stop offset="0" stopColor="#21D789" />
+                <stop offset="0.1638" stopColor="#24D788" />
+                <stop offset="0.3047" stopColor="#2FD886" />
+                <stop offset="0.4371" stopColor="#41DA82" />
+                <stop offset="0.5644" stopColor="#5ADC7D" />
+                <stop offset="0.6881" stopColor="#7AE077" />
+                <stop offset="0.809" stopColor="#A1E36E" />
+                <stop offset="0.9254" stopColor="#CFE865" />
+                <stop offset="1" stopColor="#F1EB5E" />
+              </linearGradient>
+              <polygon
+                style={{ fill: "url(#SVGID_3_);" }}
+                points="28.5,22.1 30.4,62.5 24,70 0,56 19.7,26.6 		"
+              />
+              <linearGradient
+                id="SVGID_4_"
+                gradientUnits="userSpaceOnUse"
+                x1="28.2753"
+                y1="38.6231"
+                x2="59.4088"
+                y2="-3.2358"
+              >
+                <stop offset="0" stopColor="#21D789" />
+                <stop offset="6.081050e-002" stopColor="#24D788" />
+                <stop offset="0.1131" stopColor="#2FD886" />
+                <stop offset="0.1622" stopColor="#41DA82" />
+                <stop offset="0.2094" stopColor="#5ADD7D" />
+                <stop offset="0.2548" stopColor="#79E077" />
+                <stop offset="0.2581" stopColor="#7CE076" />
+                <stop offset="0.4986" stopColor="#8CE173" />
+                <stop offset="0.9247" stopColor="#B2E56B" />
+              </linearGradient>
+              <polygon
+                style={{ fill: "url(#SVGID_4_);" }}
+                points="54.9,19.1 30.6,19.1 52.1,0 		"
+              />
+              <linearGradient
+                id="SVGID_5_"
+                gradientUnits="userSpaceOnUse"
+                x1="75.8893"
+                y1="43.9496"
+                x2="13.1579"
+                y2="43.3687"
+              >
+                <stop offset="0.3871" stopColor="#FCF84A" />
+                <stop offset="0.5358" stopColor="#ECF451" />
+                <stop offset="0.8259" stopColor="#C2E964" />
+                <stop offset="0.9247" stopColor="#B2E56B" />
+              </linearGradient>
+              <polygon
+                style={{ fill: "url(#SVGID_5_);" }}
+                points="70,62.6 48.6,69.9 20.2,61.9 28.5,22.1 31.8,19.1 49.1,17.5 47.5,34.9 61.3,29.6
+			"
+              />
+            </g>
+            <g>
+              <rect x="13.4" y="13.4" fill="#000" width="43.2" height="43.2" />
+              <rect x="17.5" y="48.5" fill="#FFF" width="16.2" height="2.7" />
+              <path
+                fill="#FFF"
+                d="M17.3,19.1h7.3c4.3,0,6.9,2.5,6.9,6.2v0.1c0,4.1-3.2,6.3-7.2,6.3h-3V37h-3.9V19.1z M24.4,28.1
+			c2,0,3.1-1.2,3.1-2.7v-0.1c0-1.8-1.2-2.7-3.2-2.7h-3v5.5H24.4z"
+              />
+              <path
+                fill="#FFF"
+                d="M33.1,28.1L33.1,28.1c0-5.1,3.8-9.3,9.3-9.3c3.4,0,5.4,1.1,7.1,2.8l-2.5,2.9c-1.4-1.3-2.8-2-4.6-2
+			c-3,0-5.2,2.5-5.2,5.6V28c0,3.1,2.1,5.6,5.2,5.6c2,0,3.3-0.8,4.7-2.1l2.5,2.5c-1.8,2-3.9,3.2-7.3,3.2C37,37.3,33.1,33.2,33.1,28.1
+			"
+              />
+            </g>
+          </g>
         </svg>
       );
     case "slash":
@@ -469,6 +804,73 @@ const Icon: FunctionComponent<Props> = (props: Props) => {
             fill="inherit"
             d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"
           />
+        </svg>
+      );
+    case "webstorm":
+      return (
+        <svg
+          width={props.size}
+          height={props.size}
+          className={props.className}
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlnsXlink="http://www.w3.org/1999/xlink"
+          viewBox="0 0 128 128"
+        >
+          <defs>
+            <linearGradient
+              id="a"
+              x1="45.79"
+              y1="-651.52"
+              x2="78.92"
+              y2="-770.77"
+              gradientTransform="matrix(1 0 0 -1 0 -648.86)"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop offset=".28" stopColor="#00cdd7" />
+              <stop offset=".94" stopColor="#2086d7" />
+            </linearGradient>
+            <linearGradient
+              id="b"
+              x1="56.07"
+              y1="-666.71"
+              x2="112.11"
+              y2="-748.88"
+              gradientTransform="matrix(1 0 0 -1 0 -648.86)"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop offset=".14" stopColor="#fff045" />
+              <stop offset=".37" stopColor="#00cdd7" />
+            </linearGradient>
+            <linearGradient
+              id="c"
+              x1="111.71"
+              y1="-676.79"
+              x2="119.07"
+              y2="-702.86"
+              xlinkHref="#a"
+            />
+          </defs>
+          <title>icon_WebStorm</title>
+          <path
+            fill="url(#a)"
+            d="M17.2 115.6L0 13.4 32 .2l20.2 12L71 2.2l38.8 15L88 128l-70.8-12.4z"
+          />
+          <path
+            fill="url(#b)"
+            d="M128 43.4L111.4 2.6 81.6 0 35.2 44.4l12.4 57.4L71 118l57-33.8L114 58l14-14.6z"
+          />
+          <path
+            fill="url(#c)"
+            d="M102.4 37.2L114 58l14-14.6L117.8 18l-15.4 19.2z"
+          />
+          <g>
+            <path d="M24 24h80v80H24z" />
+            <path
+              fill="#fff"
+              d="M31.6 89h30v5h-30zM70.8 62.8l4.2-5.2c3 2.4 6 4 9.8 4 3 0 4.8-1.2 4.8-3.2 0-1.8-1.2-2.8-6.6-4.2-6.6-1.8-10.8-3.6-10.8-10.2v-.2c0-6 4.8-10 11.4-10A19.58 19.58 0 0 1 95.8 38L92 43.6a15.24 15.24 0 0 0-8.4-3.2c-2.6 0-4.2 1.2-4.2 3 0 2.2 1.4 3 7 4.4 6.6 1.8 10.4 4.2 10.4 10 0 6.6-5 10.4-12 10.4a23.06 23.06 0 0 1-14-5.4M64.4 34.4l-5 19.2-5.6-19.2h-5.6l-5.6 19.2-5-19.2h-7.8l9.6 33.2h6.2L51 48.4l5.4 19.2h6.2l9.6-33.2h-7.8z"
+            />
+          </g>
         </svg>
       );
   }
