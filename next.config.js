@@ -2,7 +2,7 @@
 module.exports = {
   reactStrictMode: true,
   images: {
-    domains: ["www.google.com"],
+    domains: ["www.google.com", "raw.githubusercontent.com"],
   },
   async redirects() {
     return [
