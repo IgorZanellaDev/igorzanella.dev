@@ -8,14 +8,14 @@ const Tools: NextPage = () => {
   return (
     <GlobalWrapper withLayout>
       <SEO
-        title="Tools"
+        title="My Developer Arsenal"
         description="Discover the tools I use every day as a developer, but also in my life."
       />
       <TitleSection
         subtitle={"Tools"}
-        title={"Do you want to know the tools I use daily?"}
+        title={"My Developer Arsenal"}
         description={
-          "Discover what I use every day as a developer, but also in my life."
+          "Get ahead of the competition with my top developer tools."
         }
       />
       <ToolsSection />

@@ -57,7 +57,7 @@ const InsertEmailInput: FunctionComponent<InsertEmailInputProps> = ({
           }`}
         >
           <p className={"mt-4 mx-auto text-2xl text-white font-semibold"}>
-            Insert your email to receive my tools list
+            Enter your email to unlock the secret tools
           </p>
           <input
             placeholder={"example@gmail.com"}
@@ -81,7 +81,7 @@ const InsertEmailInput: FunctionComponent<InsertEmailInputProps> = ({
                 : "bg-gradient-to-b from-iz-blue-light to-iz-blue-dark hover:to-iz-blue-dark-darker-10"
             }`}
           >
-            {sent ? "Email sent! Check your inbox" : "Send me the email!"}
+            {sent ? "Email sent! Check your inbox" : "Get Access Now!"}
           </button>
         </div>
       </Animation>

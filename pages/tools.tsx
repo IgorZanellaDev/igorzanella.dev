@@ -14,14 +14,14 @@ const Tools: NextPage<ToolsProps> = ({ cookieConsent }) => {
   return (
     <GlobalWrapper withLayout>
       <SEO
-        title="Tools"
-        description="Discover the tools I use every day as a developer, but also in my life."
+        title="Unlock My Developer Arsenal"
+        description="Unlock my top 10 developer tools and supercharge your productivity. Subscribe now!"
       />
       <TitleSection
         subtitle={"Tools"}
-        title={"Do you want to know the tools I use daily?"}
+        title={"Unlock My Developer Arsenal"}
         description={
-          "Discover what I use every day as a developer, but also in my life."
+          "Subscribe with your email and discover the tools that boost my productivity."
         }
       />
       <InsertEmailInput cookieConsent={cookieConsent} />
