@@ -90,6 +90,9 @@ function MyApp({ Component, pageProps }: AppProps) {
         charSet="UTF-8"
         async
       />
+      <Script
+        src={`https://www.google.com/recaptcha/enterprise.js?render=${process.env.NEXT_PUBLIC_RECAPTCHA_KEY}`}
+      />
     </>
   );
 }

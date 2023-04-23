@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "prebuild": "echo $GOOGLE_APPLICATION_CREDENTIALS_BASE64 | base64 -d > $GOOGLE_APPLICATION_CREDENTIALS",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
@@ -10,8 +11,11 @@
     "postbuild": "next-sitemap"
   },
   "dependencies": {
+    "@google-cloud/recaptcha-enterprise": "^3.4.0",
+    "@types/grecaptcha": "^3.0.4",
     "animate.css": "^4.1.1",
     "axios": "^0.23.0",
+    "cookies-next": "^2.1.1",
     "eslint-config-prettier": "^8.8.0",
     "graphql": "^15.6.1",
     "graphql-request": "^3.6.1",
