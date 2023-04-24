@@ -1,10 +1,22 @@
 import { RecaptchaEnterpriseServiceClient } from "@google-cloud/recaptcha-enterprise";
 import { NextApiRequest, NextApiResponse } from "next";
+import { createFileFromBase64, fileExists } from "utils/file";
 
 export default async function createAssessment(
   req: NextApiRequest,
   res: NextApiResponse
 ) {
+  if (
+    process.env.GOOGLE_APPLICATION_CREDENTIALS &&
+    process.env.GOOGLE_APPLICATION_CREDENTIALS_BASE64 &&
+    !fileExists(process.env.GOOGLE_APPLICATION_CREDENTIALS)
+  ) {
+    createFileFromBase64(
+      process.env.GOOGLE_APPLICATION_CREDENTIALS_BASE64,
+      process.env.GOOGLE_APPLICATION_CREDENTIALS
+    );
+  }
+
   const client = new RecaptchaEnterpriseServiceClient();
   const projectPath = client.projectPath("igorzanelladev-w-1681079157939");
   const request = {
