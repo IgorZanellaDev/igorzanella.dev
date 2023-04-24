@@ -73,7 +73,7 @@ const InsertEmailInput: FunctionComponent<InsertEmailInputProps> = ({
             onChange={(event) => setEmail(event.target.value)}
           />
           <button
-            disabled={!email || cookieConsent}
+            disabled={!email || !cookieConsent}
             onClick={() => handleSendClick()}
             className={`w-full sm:w-80 py-4 px-6 rounded-xl text-lg font-bold text-white ${
               sent
