@@ -175,6 +175,14 @@ export const TOOLS: {
     rounded: true,
   },
   {
+    name: "Short.io",
+    domain: "short.io",
+    link: "https://short.io/",
+    description:
+      "Short.io is a link shortener that helps you create branded links, track clicks, and manage your links. It's perfect for marketing.",
+    rounded: true,
+  },
+  {
     name: "RayCast",
     domain: "www.raycast.com",
     link: "https://www.raycast.com/",
