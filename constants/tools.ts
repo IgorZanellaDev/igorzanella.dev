@@ -12,7 +12,7 @@ export const TOOLS: {
   {
     name: "Customerly",
     domain: "www.customerly.io",
-    link: "https://customerly.io",
+    link: "https://go.igorzanella.dev/customerly",
     description:
       "Customerly is the best tool you can use for marketing automation. It's also good for customer support and customer satisfaction.",
   },
