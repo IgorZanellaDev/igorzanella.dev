@@ -17,6 +17,18 @@ const CoursesSection: FunctionComponent = () => {
         imageWidth={1920}
         imageHeight={1080}
       />
+      <Course
+        inverted
+        id={"mrl"}
+        language={"🇺🇸 English"}
+        title={"(-30%) Master React Libraries (with Customerly codebase)"}
+        description={
+          "Learn the most used React libraries: React Router, Tanstack Query, Recoil and i18next with Customerly production codebase!"
+        }
+        link={"https://go.igorzanella.dev/courses/mrl-izdev"}
+        imageWidth={1920}
+        imageHeight={1080}
+      />
     </section>
   );
 };
