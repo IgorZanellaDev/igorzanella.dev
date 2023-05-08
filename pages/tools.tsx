@@ -5,6 +5,7 @@ import InsertEmailInput from "components/ui/extended/InsertEmailInput";
 import { GetServerSideProps, NextPage } from "next";
 import { getCookie } from "cookies-next";
 import { IUBENDA_COOKIE_NAME } from "constants/cookie";
+import { TOOLS } from "constants/tools";
 
 interface ToolsProps {
   cookieConsent: boolean;
@@ -15,7 +16,7 @@ const Tools: NextPage<ToolsProps> = ({ cookieConsent }) => {
     <GlobalWrapper withLayout>
       <SEO
         title="Unlock My Developer Arsenal"
-        description="Unlock my top 10 developer tools and supercharge your productivity. Subscribe now!"
+        description={`Unlock my top ${TOOLS.length} developer tools and supercharge your productivity. Subscribe now!`}
       />
       <TitleSection
         subtitle={"Tools"}
