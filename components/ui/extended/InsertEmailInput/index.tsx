@@ -1,4 +1,4 @@
-import React, { FunctionComponent, useState } from "react";
+import React, { FunctionComponent, useEffect, useState } from "react";
 import Animation from "components/core/Animation";
 import axios from "axios";
 import { TOOLS_TAG } from "constants/customerly";
@@ -14,6 +14,7 @@ const InsertEmailInput: FunctionComponent<InsertEmailInputProps> = ({
 }) => {
   const [email, setEmail] = useState<string>("");
   const [sent, setSent] = useState<boolean>(false);
+  const [error, setError] = useState<string>();
 
   const handleSendClick = async () => {
     if (cookieConsent && !sent && EMAIL_REGEX.test(email)) {
@@ -23,14 +24,34 @@ const InsertEmailInput: FunctionComponent<InsertEmailInputProps> = ({
       );
 
       if (isRecaptchaPass) {
-        await axios
-          .post("/api/customerly-lead", { email, tags: [TOOLS_TAG] })
-          .then(() => {
-            setSent(true);
-          });
+        const { disposable } = (
+          await axios.get<{ disposable: string }>(
+            "https://disposable.debounce.io",
+            {
+              params: { email: email },
+            }
+          )
+        ).data;
+
+        if (disposable === "true") {
+          setError("Please, insert a valid email (not temporary)");
+        } else {
+          setError(undefined);
+          await axios
+            .post("/api/customerly-lead", { email, tags: [TOOLS_TAG] })
+            .then(() => {
+              setSent(true);
+            });
+        }
+      } else {
+        setError("Please, verify that you are not a robot");
       }
     }
   };
+
+  useEffect(() => {
+    setError(undefined);
+  }, [email]);
 
   return (
     <section className={"flex flex-col flex-1 justify-center"}>
@@ -72,6 +93,7 @@ const InsertEmailInput: FunctionComponent<InsertEmailInputProps> = ({
             value={email}
             onChange={(event) => setEmail(event.target.value)}
           />
+          {error && <span className={"text-red-500 text-sm"}>{error}</span>}
           <button
             disabled={!email || !cookieConsent}
             onClick={() => handleSendClick()}
