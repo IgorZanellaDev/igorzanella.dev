@@ -57,7 +57,7 @@ export const TOOLS: {
   {
     name: "Clockify",
     domain: "clockify.me",
-    link: "https://clockify.me/",
+    link: "https://go.igorzanella.dev/clockify",
     description:
       "Clockify helps you track time spent on tasks, manage projects, and increase productivity. It's great for efficient time management.",
   },
