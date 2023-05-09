@@ -15,6 +15,7 @@ const InsertEmailInput: FunctionComponent<InsertEmailInputProps> = ({
   const [email, setEmail] = useState<string>("");
   const [sent, setSent] = useState<boolean>(false);
   const [error, setError] = useState<string>();
+  const [consent, setConsent] = useState<boolean>(false);
 
   const handleSendClick = async () => {
     if (cookieConsent && !sent && EMAIL_REGEX.test(email)) {
@@ -46,6 +47,8 @@ const InsertEmailInput: FunctionComponent<InsertEmailInputProps> = ({
       } else {
         setError("Please, verify that you are not a robot");
       }
+    } else {
+      setError("Please, insert a valid email");
     }
   };
 
@@ -94,10 +97,21 @@ const InsertEmailInput: FunctionComponent<InsertEmailInputProps> = ({
             onChange={(event) => setEmail(event.target.value)}
           />
           {error && <span className={"text-red-500 text-sm"}>{error}</span>}
+          <div className={"flex gap-2"}>
+            <input
+              type={"checkbox"}
+              id={"consent"}
+              checked={consent}
+              onChange={(event) => setConsent(event.target.checked)}
+            />
+            <label htmlFor={"consent"} className={"text-white text-sm"}>
+              I consent to receive communications by email.
+            </label>
+          </div>
           <button
-            disabled={!email || !cookieConsent}
+            disabled={!email || !cookieConsent || !consent}
             onClick={() => handleSendClick()}
-            className={`w-full sm:w-80 py-4 px-6 rounded-xl text-lg font-bold text-white ${
+            className={`w-full sm:w-80 py-4 px-6 rounded-xl text-lg font-bold text-white transition disabled:opacity-30 ${
               sent
                 ? "bg-iz-blue-dark-darker-10 cursor-default"
                 : "bg-gradient-to-b from-iz-blue-light to-iz-blue-dark hover:to-iz-blue-dark-darker-10"
