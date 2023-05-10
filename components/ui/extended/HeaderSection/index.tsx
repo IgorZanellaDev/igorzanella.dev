@@ -1,5 +1,4 @@
 import React, { FunctionComponent } from "react";
-import Led from "components/ui/base/Led";
 import TechnologyStack from "./TechnologyStack";
 import Animation from "components/core/Animation";
 
@@ -17,7 +16,10 @@ const HeaderSection: FunctionComponent = () => {
           type="fadeInDown"
           className="flex mb-1 justify-center items-center text-lg lg:text-xl text-gray-400 py-1 px-3 bg-gray-800 rounded-full"
         >
-          <Led color={"green"} className={"mr-2"} /> Available for new projects
+          <span className={"mr-1.5"}>🚀</span>Working with
+          <a className={"ml-1"} href={"https://go.igorzanella.dev/customerly"}>
+            Customerly
+          </a>
         </Animation>
         <Animation type="fadeInUp" typeMd="fadeInLeft">
           <h1 className="md:text-7xl text-4xl font-black leading-tight text-white xl:w-4/5">
