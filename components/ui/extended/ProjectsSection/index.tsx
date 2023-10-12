@@ -6,7 +6,7 @@ const ProjectsSection: FunctionComponent = () => {
     <section>
       <Project
         id={"customerly"}
-        role={"Full Stack Developer"}
+        role={"Partner and Full Stack Developer"}
         title={"Customerly"}
         description={
           "Customer support and marketing automation SaaS with more than 25K customers."
