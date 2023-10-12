@@ -33,7 +33,7 @@ const HeaderSection: FunctionComponent = () => {
         </Animation>
         <Animation type={"fadeInUp"} delay={"750ms"} className="md:mt-4 mt-2">
           <p className="text-base md:text-lg leading-normal text-gray-400 xl:w-96">
-            I am a Freelance Full Stack Developer located in{" "}
+            I am a Freelance Full Stack Developer and startupper located in{" "}
             <a
               className="text-gray-200 underline"
               href="https://it.wikipedia.org/wiki/Ciano_del_Montello"
@@ -42,8 +42,8 @@ const HeaderSection: FunctionComponent = () => {
             >
               Ciano
             </a>{" "}
-            (near Venice), Italy. I am also an entrepreneur and sporty person in
-            my spare time. I love startups and new projects.
+            (near Venice), Italy. I am also a sporty person in my spare time. I
+            love startups and new projects.
           </p>
         </Animation>
         <Animation type={"fadeInUp"} delay={"1s"}>
