@@ -1,6 +1,7 @@
 import { GeistMono } from "geist/font/mono";
 import { GeistSans } from "geist/font/sans";
 import type { Metadata } from "next";
+import { ThemeProvider } from "next-themes";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -15,10 +16,15 @@ const RootLayout = ({
 }>) => {
   return (
     <html
+      suppressHydrationWarning
       lang="en"
       className={`${GeistSans.variable} ${GeistMono.variable} antialiased`}
     >
-      <body>{children}</body>
+      <body>
+        <ThemeProvider enableSystem defaultTheme={"system"}>
+          {children}
+        </ThemeProvider>
+      </body>
     </html>
   );
 };
