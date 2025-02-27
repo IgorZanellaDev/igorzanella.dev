@@ -1,3 +1,4 @@
+import { ThemeProvider } from "@/components/theme-provider";
 import { GeistMono } from "geist/font/mono";
 import { GeistSans } from "geist/font/sans";
 import type { Metadata } from "next";
@@ -14,11 +15,12 @@ const RootLayout = ({
   children: React.ReactNode;
 }>) => {
   return (
-    <html
-      lang="en"
-      className={`${GeistSans.variable} ${GeistMono.variable} antialiased`}
-    >
-      <body>{children}</body>
+    <html suppressHydrationWarning lang={"en"} className={`${GeistSans.variable} ${GeistMono.variable} antialiased`}>
+      <body>
+        <ThemeProvider disableTransitionOnChange enableSystem attribute={"class"} defaultTheme={"system"}>
+          {children}
+        </ThemeProvider>
+      </body>
     </html>
   );
 };
