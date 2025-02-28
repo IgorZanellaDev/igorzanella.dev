@@ -1,3 +1,4 @@
+import Sidebar from "@/components/sidebar";
 import { ThemeProvider } from "@/components/theme-provider";
 import { GeistMono } from "geist/font/mono";
 import { GeistSans } from "geist/font/sans";
@@ -16,8 +17,9 @@ const RootLayout = ({
 }>) => {
   return (
     <html suppressHydrationWarning lang={"en"} className={`${GeistSans.variable} ${GeistMono.variable} antialiased`}>
-      <body>
+      <body className={"mx-auto flex max-w-screen-lg"}>
         <ThemeProvider disableTransitionOnChange enableSystem attribute={"class"} defaultTheme={"system"}>
+          <Sidebar />
           {children}
         </ThemeProvider>
       </body>
