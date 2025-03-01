@@ -1,5 +1,6 @@
 import Logo from "@/components/logo";
 import Nav from "@/components/sidebar/nav";
+import Socials from "@/components/sidebar/socials";
 import ThemeChooser from "@/components/sidebar/theme-chooser";
 import { Card, CardContent } from "@/components/ui/card";
 import { FC } from "react";
@@ -24,7 +25,14 @@ const Sidebar: FC = () => {
         </CardContent>
       </Card>
       <Card className={"mt-6"}>
-        <ThemeChooser />
+        <CardContent className={"p-2"}>
+          <Socials />
+        </CardContent>
+      </Card>
+      <Card className={"mt-6"}>
+        <CardContent className={"p-2"}>
+          <ThemeChooser />
+        </CardContent>
       </Card>
     </aside>
   );
