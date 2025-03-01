@@ -1,36 +1,36 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { BookText, Compass, House, User, Video } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { FC } from "react";
+import { LuBookText, LuCompass, LuHouse, LuUser, LuVideo } from "react-icons/lu";
 
 const NAV_LINKS = [
   {
     label: "Home",
     link: "/",
-    icon: House,
+    icon: LuHouse,
   },
   {
     label: "Projects",
     link: "/projects",
-    icon: BookText,
+    icon: LuBookText,
   },
   {
     label: "Guides",
     link: "/guides",
-    icon: Compass,
+    icon: LuCompass,
   },
   {
     label: "Courses",
     link: "/courses",
-    icon: Video,
+    icon: LuVideo,
   },
   {
     label: "About",
     link: "/about",
-    icon: User,
+    icon: LuUser,
   },
 ];
 

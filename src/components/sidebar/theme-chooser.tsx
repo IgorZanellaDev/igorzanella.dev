@@ -2,9 +2,9 @@
 
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import { Monitor, Moon, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
 import { FC, ReactNode, useEffect, useState } from "react";
+import { LuMonitor, LuMoon, LuSun } from "react-icons/lu";
 
 const useThemeSwitcher = (): [string | undefined, (theme: string) => void] => {
   const [mode, setMode] = useState<string>();
@@ -35,13 +35,13 @@ const ThemeChooser: FC = () => {
   return (
     <div className={"flex gap-1 p-2"}>
       <ThemeButton theme={"system"}>
-        <Monitor />
+        <LuMonitor />
       </ThemeButton>
       <ThemeButton theme={"light"}>
-        <Sun />
+        <LuSun />
       </ThemeButton>
       <ThemeButton theme={"dark"}>
-        <Moon />
+        <LuMoon />
       </ThemeButton>
     </div>
   );
