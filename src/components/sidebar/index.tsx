@@ -8,7 +8,7 @@ import { LuBadgeCheck } from "react-icons/lu";
 
 const Sidebar: FC = () => {
   return (
-    <aside className={"sticky top-0 mt-8 flex h-full flex-col"}>
+    <aside className={"sticky top-0 mt-6 flex h-full w-fit flex-col"}>
       <div className={"flex items-center gap-2 pr-4"}>
         <Logo />
         <div className={"flex flex-col"}>
