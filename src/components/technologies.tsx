@@ -80,7 +80,9 @@ const TechMatrix: FC<{
         <Marquee pauseOnHover key={rowIndex} reverse={rowIndex % 2 === 1}>
           {row.map((tech) => (
             <Link
-              className={"flex items-center gap-2 rounded-2xl bg-muted px-3 py-1"}
+              className={
+                "flex items-center gap-2 rounded-2xl bg-muted px-3 py-1 transition-colors hover:bg-muted-foreground/10"
+              }
               key={tech.name}
               href={tech.link}
               target={"_blank"}
