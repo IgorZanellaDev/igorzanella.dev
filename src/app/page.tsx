@@ -1,3 +1,4 @@
+import ClyTestimonial from "@/components/cly-testimonial";
 import Technologies from "@/components/technologies";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
@@ -16,7 +17,9 @@ const Home: FC = () => {
       </p>
       <hr className={"my-3"} />
       <Technologies />
-      <hr className={"my-3"} />
+      <hr className={"mb-5 mt-3"} />
+      <ClyTestimonial />
+      <hr className={"my-5"} />
       <Card className={"bg-muted"}>
         <CardHeader className={"pb-3"}>
           <CardTitle className={"inline-flex items-center gap-2"}>
