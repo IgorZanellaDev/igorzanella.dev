@@ -72,8 +72,6 @@ const TechMatrix: FC<{
 }> = ({ rows }) => {
   const { theme, systemTheme } = useTheme();
 
-  console.log(theme);
-
   return (
     <div className={"relative flex w-full flex-col overflow-hidden"}>
       {rows.map((row, rowIndex) => (
