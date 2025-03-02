@@ -1,3 +1,4 @@
+import IubendaScripts from "@/components/iubenda-scripts";
 import Sidebar from "@/components/sidebar";
 import { ThemeProvider } from "@/components/theme-provider";
 import { GeistMono } from "geist/font/mono";
@@ -19,6 +20,7 @@ const RootLayout = ({
     <html suppressHydrationWarning lang={"en"} className={`${GeistSans.variable} ${GeistMono.variable} antialiased`}>
       <body className={"mx-auto mt-4 flex max-w-screen-lg gap-2"}>
         <ThemeProvider disableTransitionOnChange enableSystem attribute={"class"} defaultTheme={"system"}>
+          <IubendaScripts />
           <Sidebar />
           <main className={"flex flex-1 flex-col overflow-x-hidden p-8"}>{children}</main>
         </ThemeProvider>
