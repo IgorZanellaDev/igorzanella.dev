@@ -6,15 +6,19 @@ const ClyTestimonial: FC = () => {
   return (
     <Card
       className={
-        "from-seagull-500 to-seagull-800 dark:from-seagull-800 dark:to-seagull-950 relative overflow-hidden bg-gradient-to-b"
+        "relative overflow-hidden bg-gradient-to-b from-seagull-500 to-seagull-800 dark:from-seagull-800 dark:to-seagull-950"
       }
     >
       <Image
-        className={"absolute inset-0 w-full opacity-50 mix-blend-multiply saturate-0 filter"}
+        className={
+          "absolute inset-0 left-[50%] top-[50%] h-full w-full -translate-x-1/2 -translate-y-1/2 object-cover opacity-50 mix-blend-multiply saturate-0 filter"
+        }
         src={"/images/testimonials/luca-micheli.jpg"}
         alt={"Luca Micheli"}
-        layout={"fill"}
-        objectFit={"cover"}
+        width={2436}
+        height={1624}
+        placeholder={"blur"}
+        blurDataURL={"/images/testimonials/luca-micheli.jpg"}
       />
       <CardContent className={"relative z-10 flex flex-col items-start p-8"}>
         <Image
