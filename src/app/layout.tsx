@@ -1,6 +1,8 @@
 import IubendaScripts from "@/components/iubenda-scripts";
 import Sidebar from "@/components/sidebar";
 import { ThemeProvider } from "@/components/theme-provider";
+import { GTM_ID } from "@/constants/seo";
+import { GoogleTagManager } from "@next/third-parties/google";
 import { GeistMono } from "geist/font/mono";
 import { GeistSans } from "geist/font/sans";
 import type { Metadata } from "next";
@@ -18,6 +20,7 @@ const RootLayout = ({
 }>) => {
   return (
     <html suppressHydrationWarning lang={"en"} className={`${GeistSans.variable} ${GeistMono.variable} antialiased`}>
+      <GoogleTagManager gtmId={GTM_ID} />
       <body className={"mx-auto mt-4 flex max-w-screen-lg gap-2"}>
         <ThemeProvider disableTransitionOnChange enableSystem attribute={"class"} defaultTheme={"system"}>
           <IubendaScripts />
