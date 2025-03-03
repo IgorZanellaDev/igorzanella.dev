@@ -4,7 +4,7 @@ import Socials from "@/components/sidebar/socials";
 import ThemeChooser from "@/components/sidebar/theme-chooser";
 import { Card, CardContent } from "@/components/ui/card";
 import { FC } from "react";
-import { LuBadgeCheck } from "react-icons/lu";
+import { PiSealCheckFill } from "react-icons/pi";
 
 const Sidebar: FC = () => {
   return (
@@ -14,7 +14,7 @@ const Sidebar: FC = () => {
         <div className={"flex flex-col"}>
           <div className={"flex items-center gap-1"}>
             <h1 className={"text-xl font-medium"}>Igor Zanella</h1>
-            <LuBadgeCheck className={"inline-block h-5 w-5 text-blue-500"} />
+            <PiSealCheckFill className={"inline-block h-5 w-5 text-blue-500"} />
           </div>
           <p className={"text-sm text-muted-foreground"}>Software & DevOps</p>
         </div>
