@@ -1,0 +1,52 @@
+export const PROJECTS = [
+  {
+    title: "Customerly",
+    description: "The Customer Operating System for SaaS",
+    id: "customerly",
+    imageSize: { width: 1200, height: 630 },
+    status: "working",
+    main: true,
+  },
+  {
+    title: "ComputerPortatile",
+    description: "Affiliate marketing website",
+    id: "computerportatile",
+    imageSize: { width: 1920, height: 1080 },
+    status: "working",
+  },
+  {
+    title: "BJJ Radar",
+    description: "BJJ competitions aggregator",
+    id: "bjjradar",
+    imageSize: { width: 1200, height: 630 },
+    status: "working",
+  },
+  {
+    title: "Ethereum Validator",
+    description: "A server for staking Ethereum",
+    id: "ethereum-validator",
+    imageSize: { width: 1920, height: 1080 },
+    status: "working",
+  },
+  {
+    title: "IgorZanellaDev",
+    description: "Website for a developer",
+    id: "izdev",
+    imageSize: { width: 1920, height: 1080 },
+    status: "working",
+  },
+  {
+    title: "BestOnDesk",
+    description: "A website for a best on desk shop",
+    id: "bestondesk",
+    imageSize: { width: 1920, height: 1080 },
+    status: "closed",
+  },
+  {
+    title: "Racing Line Motorsport",
+    description: "A website for a racing line motorsport shop",
+    id: "racing-line-motorsport",
+    imageSize: { width: 1920, height: 1080 },
+    status: "closed",
+  },
+];
