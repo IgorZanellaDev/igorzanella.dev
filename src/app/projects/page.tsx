@@ -1,30 +1,26 @@
 import { Card } from "@/components/ui/card";
-import { PROJECTS } from "@/constants/projects";
+import { PROJECTS, PROJECTS_STATUS_SETTINGS } from "@/constants/projects";
 import { cn } from "@/lib/utils";
+import { ProjectStatus } from "@/types/project";
 import Image from "next/image";
 import Link from "next/link";
 import { FC } from "react";
-import { LuX } from "react-icons/lu";
-import { MdWork } from "react-icons/md";
 
 const ProjectCard: FC<{
   title: string;
   description: string;
   id: string;
   imageSize: { width: number; height: number };
-  status: string;
+  status: ProjectStatus;
 }> = ({ title, description, id, imageSize: { width, height }, status }) => {
+  const { icon: Icon, color } = PROJECTS_STATUS_SETTINGS[status];
+
   return (
     <Link key={id} href={`/projects/${id}`}>
       <Card className={"relative flex h-full flex-col overflow-hidden"}>
-        <div
-          className={cn(
-            "absolute right-2 top-2 flex items-center gap-1 rounded-lg px-2 py-1 text-sm font-medium text-white",
-            status === "working" ? "bg-green-500" : "bg-red-500",
-          )}
-        >
-          {status === "working" ? <MdWork className={"h-4 w-4"} /> : <LuX className={"h-4 w-4"} />}
-          <span>{status}</span>
+        <div className={cn("absolute right-2 top-2 flex items-center gap-1 rounded-lg px-2 py-1 text-white", color)}>
+          <Icon className={"h-4 w-4"} />
+          <span className={"text-sm font-medium leading-none"}>{status}</span>
         </div>
         <Image
           className={"flex-1 object-cover"}
@@ -43,8 +39,8 @@ const ProjectCard: FC<{
 };
 
 const Projects: FC = () => {
-  const mainProject = PROJECTS.find((project) => project.main);
-  const otherProjects = PROJECTS.filter((project) => !project.main);
+  const mainProject = PROJECTS().find((project) => project.main);
+  const otherProjects = PROJECTS().filter((project) => !project.main);
 
   return (
     <>

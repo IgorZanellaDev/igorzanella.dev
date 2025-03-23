@@ -2,6 +2,7 @@ import { ReactNode } from "react";
 
 export enum ProjectStatus {
   Working = "working",
+  Active = "active",
   Closed = "closed",
 }
 

@@ -1,8 +1,9 @@
 "use client";
 
 import TechMatrix from "@/components/technologies/tech-matrix";
-import { PROJECTS } from "@/constants/projects";
+import { PROJECTS, PROJECTS_STATUS_SETTINGS } from "@/constants/projects";
 import { TECHNOLOGIES_BY_ID } from "@/constants/technologies";
+import { cn } from "@/lib/utils";
 import { TechnologyId } from "@/types/technology";
 import { chunkArray } from "@/utils/array";
 import Image from "next/image";
@@ -12,12 +13,17 @@ import { FC } from "react";
 const Project: FC = () => {
   const { project } = useParams();
 
-  const projectData = PROJECTS.find((p) => p.id === project);
+  const showNewMessage = (message: string) => {
+    window.customerly?.showNewMessage(message);
+  };
+
+  const projectData = PROJECTS(showNewMessage).find((p) => p.id === project);
 
   if (!projectData) {
     return notFound();
   }
 
+  const { icon: Icon, color } = PROJECTS_STATUS_SETTINGS[projectData.status];
   const technologies = projectData.technologies?.map((technology) => TECHNOLOGIES_BY_ID[technology as TechnologyId]);
   const technologiesArrays =
     technologies &&
@@ -27,18 +33,24 @@ const Project: FC = () => {
     <>
       <h2 className={"text-3xl font-semibold"}>{projectData.title}</h2>
       <p className={"text-lg font-medium text-muted-foreground"}>{projectData.description}</p>
-      <Image
-        className={"mt-8 rounded-xl"}
-        src={`/images/projects/${projectData.id}/main.jpg`}
-        alt={projectData.title}
-        width={projectData.imageSize.width}
-        height={projectData.imageSize.height}
-      />
+      <div className={"relative mt-8"}>
+        <div className={cn("absolute right-2 top-2 flex items-center gap-1 rounded-lg px-2 py-1 text-white", color)}>
+          <Icon className={"h-4 w-4"} />
+          <span className={"text-sm font-medium leading-none"}>{projectData.status}</span>
+        </div>
+        <Image
+          className={"rounded-xl"}
+          src={`/images/projects/${projectData.id}/main.jpg`}
+          alt={projectData.title}
+          width={projectData.imageSize.width}
+          height={projectData.imageSize.height}
+        />
+      </div>
       <h3 className={"mb-1 mt-6 text-xl font-medium"}>Technologies</h3>
       {technologiesArrays && <TechMatrix rows={technologiesArrays} />}
       <div
         className={
-          "[&>h3]:mb-1 [&>h3]:mt-6 [&>h3]:text-xl [&>h3]:font-medium [&>img]:my-2 [&>img]:w-full [&>img]:rounded-xl [&>p>a]:underline [&>p]:leading-relaxed"
+          "[&>h3]:mb-1 [&>h3]:mt-6 [&>h3]:text-xl [&>h3]:font-medium [&>img]:my-2 [&>img]:w-full [&>img]:rounded-xl [&>p>a]:underline [&>p>button]:underline [&>p]:leading-relaxed"
         }
       >
         {projectData.content}

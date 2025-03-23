@@ -1,8 +1,16 @@
 import { Project, ProjectStatus } from "@/types/project";
 import { TechnologyId } from "@/types/technology";
 import Image from "next/image";
+import { IconType } from "react-icons";
+import { LuSettings, LuX, LuZap } from "react-icons/lu";
 
-export const PROJECTS: Project[] = [
+export const PROJECTS_STATUS_SETTINGS: Record<ProjectStatus, { icon: IconType; color: string }> = {
+  [ProjectStatus.Working]: { icon: LuSettings, color: "bg-green-500" },
+  [ProjectStatus.Active]: { icon: LuZap, color: "bg-green-500" },
+  [ProjectStatus.Closed]: { icon: LuX, color: "bg-red-500" },
+};
+
+export const PROJECTS: (showCustomerlyMessage?: (message: string) => void) => Project[] = (showCustomerlyMessage) => [
   {
     title: "Customerly",
     description: "The Customer Operating System for SaaS",
@@ -133,7 +141,7 @@ export const PROJECTS: Project[] = [
     description: "Affiliate marketing website",
     id: "computerportatile",
     imageSize: { width: 1920, height: 1080 },
-    status: ProjectStatus.Working,
+    status: ProjectStatus.Active,
     technologiesChunkSize: 6,
     technologies: [
       TechnologyId.React,
@@ -154,8 +162,8 @@ export const PROJECTS: Project[] = [
       <>
         <h3>What is ComputerPortatile?</h3>
         <p>
-          A lot of friends often ask me which model of laptop should they buy, I help them searching on Amazon, but the
-          laptops I advice are usually the same.
+          Many friends often ask me which laptop model they should buy, I help them searching on Amazon, but the laptops
+          I advice are usually the same.
           <br />
           For this reason I created{" "}
           <a href={"https://computerportatile.com"} target={"_blank"} rel={"noopener"}>
@@ -166,16 +174,16 @@ export const PROJECTS: Project[] = [
         <h3>Amazon Affiliate Program</h3>
         <p>
           The links to Amazon are affiliate links, so if you buy a laptop through my website I get a small commission. I
-          was already part of Amazon Affiilate Program some years ago with BestOnDesk, so I decided to reenter the
+          was already part of Amazon Affiliate Program some years ago with BestOnDesk, so I decided to reenter the
           program with ComputerPortatile.
         </p>
         <h3>How it started and how it changed</h3>
         <p>
           I started the project in 2022 with the simple idea to write articles in it and update them some times.
           <br />
-          The problem is that I don&apos;t have much time to update articles often, so in 2023 I had an idea on the AI
-          wave: I could use AI not only to write the articles for me, but it can also help me to find the best laptops
-          on Amazon.it.
+          The problem is that I don&apos;t have much time to frequently update articles, so in 2023 I had an idea on the
+          AI wave: I could use AI not only to write the articles for me, but it can also help me to find the best
+          laptops on Amazon.it.
         </p>
         <h3>Frontend technologies</h3>
         <p>
@@ -203,7 +211,7 @@ export const PROJECTS: Project[] = [
     description: "BJJ competitions aggregator",
     id: "bjjradar",
     imageSize: { width: 1200, height: 630 },
-    status: ProjectStatus.Working,
+    status: ProjectStatus.Active,
     technologies: [
       TechnologyId.React,
       TechnologyId.Nextjs,
@@ -247,10 +255,10 @@ export const PROJECTS: Project[] = [
   },
   {
     title: "Ethereum Validator",
-    description: "A server for staking Ethereum",
+    description: "Ethereum staking validator server",
     id: "ethereum-validator",
     imageSize: { width: 1920, height: 1080 },
-    status: ProjectStatus.Working,
+    status: ProjectStatus.Active,
     technologies: [
       TechnologyId.Linux,
       TechnologyId.Nimbus,
@@ -258,13 +266,132 @@ export const PROJECTS: Project[] = [
       TechnologyId.Prometheus,
       TechnologyId.Grafana,
     ],
+    content: (
+      <>
+        <h3>What is an Ethereum Validator server?</h3>
+        <p>
+          An Ethereum Validator server is a server that participates in the Ethereum blockchain consensus. It is
+          responsible for validating transactions and blocks, and adding them to the blockchain. It&apos;s a server that
+          runs 24/7 to ensure the network is secure and decentralized. Running the validator server rewards the owner
+          with ETH from the network fees.
+        </p>
+        <h3>What are the hardware requirements?</h3>
+        <p>
+          The server needs to be up 24/7 to be a validator. It needs to have a good amount of RAM to be able to run the
+          validator software. It also needs a good amount of storage to store the blockchain data (2-3TB), high network
+          uptime and infrastructure stability.
+        </p>
+        <h3>What&apos;s the budget needed to run a validator server?</h3>
+        <p>
+          To start a validator server you need to deposit 32 ETH (check the price on{" "}
+          <a href={"https://coinmarketcap.com/currencies/ethereum/"} target={"_blank"} rel={"noopener"}>
+            CoinMarketCap
+          </a>
+          ). In the past the rewards couldn&apos;t be withdrawn, but after some updates it started to be possible. If
+          you want to withdraw the starting deposit you need to terminate the validator.
+        </p>
+        <h3>Client Diversity</h3>
+        <p>
+          In the world of decentralization, there are many clients that can be used to run a validator. If the majority
+          of validators use the same client, the network is less decentralized and in case of a bug of the validator
+          client, the network could be compromised.
+          <br />
+          So, I started this server for a client in 2020 using{" "}
+          <a href={"https://geth.ethereum.org/"} target={"_blank"} rel={"noopener"}>
+            Geth
+          </a>{" "}
+          and{" "}
+          <a href={"https://prysmaticlabs.com/"} target={"_blank"} rel={"noopener"}>
+            Prysm
+          </a>
+          , but then after trying different clients, I and the client decided to switch to{" "}
+          <a href={"https://nimbus.team/"} target={"_blank"} rel={"noopener"}>
+            Nimbus
+          </a>{" "}
+          and{" "}
+          <a href={"https://besu.hyperledger.org/"} target={"_blank"} rel={"noopener"}>
+            Besu
+          </a>
+          , which are less used but still secure and stable as you can see on{" "}
+          <a href={"https://clientdiversity.org/"}>Client Diversity</a> website.
+        </p>
+        <h3>Monitoring</h3>
+        <p>
+          There are different ways to monitor a validator server. Starting from online dashboards, like{" "}
+          <a href={"https://beaconcha.in/"} target={"_blank"} rel={"noopener"}>
+            Beaconcha.in
+          </a>
+          , but it&apos;s also important to monitor the server itself.
+          <br />
+          For this reason I installed{" "}
+          <a href={"https://prometheus.io/"} target={"_blank"} rel={"noopener"}>
+            Prometheus
+          </a>{" "}
+          and{" "}
+          <a href={"https://grafana.com/"} target={"_blank"} rel={"noopener"}>
+            Grafana
+          </a>{" "}
+          to monitor the server (example below).
+        </p>
+        <Image
+          src={"/images/projects/ethereum-validator/grafana.jpg"}
+          width={1917}
+          height={961}
+          alt={"Grafana dashboard"}
+        />
+        <h3>Do you want to run a validator server?</h3>
+        <p>
+          If you want to run a ETH validator server or you search for someone who maintains yours, you can{" "}
+          <button
+            onClick={() =>
+              showCustomerlyMessage?.(
+                "Hi Igor! I would like to have more information for an Ethereum validator server.",
+              )
+            }
+          >
+            contact me.
+          </button>
+        </p>
+      </>
+    ),
   },
   {
     title: "IgorZanellaDev",
-    description: "Website for a developer",
+    description: "This website",
     id: "izdev",
     imageSize: { width: 1920, height: 1080 },
-    status: ProjectStatus.Working,
+    status: ProjectStatus.Active,
+    technologies: [
+      TechnologyId.React,
+      TechnologyId.Nextjs,
+      TechnologyId.Typescript,
+      TechnologyId.Tailwind,
+      TechnologyId.Shadcn,
+      TechnologyId.Vercel,
+      TechnologyId.Yarn,
+    ],
+    content: (
+      <>
+        <h3>This website</h3>
+        <p>
+          As every developer, I need a website to show my projects and share my knowledge, so I have this website that I
+          try to update often with new projects and articles.
+        </p>
+        <h3>Technologies</h3>
+        <p>
+          The website is built on NextJS, with TailwindCSS and components based on Shadcn. The CI/CD is managed with
+          Vercel which also hosts the website for free.
+        </p>
+        <h3>Open source</h3>
+        <p>
+          The website is open source, you can find it on{" "}
+          <a href={"https://github.com/IgorZanellaDev/igorzanella.devs"} target={"_blank"} rel={"noopener"}>
+            GitHub
+          </a>
+          .
+        </p>
+      </>
+    ),
   },
   {
     title: "BestOnDesk",
@@ -272,6 +399,57 @@ export const PROJECTS: Project[] = [
     id: "bestondesk",
     imageSize: { width: 1920, height: 1080 },
     status: ProjectStatus.Closed,
+    technologies: [
+      TechnologyId.React,
+      TechnologyId.Gatsby,
+      TechnologyId.Typescript,
+      TechnologyId.StyledComponents,
+      TechnologyId.Graphql,
+      TechnologyId.Aws,
+      TechnologyId.Terraform,
+    ],
+    content: (
+      <>
+        <h3>What was BestOnDesk?</h3>
+        <p>
+          BestOnDesk was an Italian blog, created for the office workers, to give the best advices about products, but
+          also articles on motivation, personal growth and personal finance. The idea came from a friend of mine, Marco
+          Campagnolo, who wrotes the article, while I was working on the code side.
+        </p>
+        <h3>Website</h3>
+        <p>
+          The website was first built with Wordpress, but after we grew in terms of traffic, we decided to revamp the UI
+          and the code, so we switched to Gatsby in March 2021. I decided to keep Wordpress as CMS for the articles,
+          because we had more than 400 articles at that time and it was easier to manage them with Wordpress. So, Gatsby
+          was loading articles from Wordpress during build using GraphQL.
+        </p>
+        <Image src={"/images/projects/bestondesk/website.jpg"} width={1920} height={1080} alt={"BestOnDesk"} />
+        <h3>Infrastructure</h3>
+        <p>
+          Firstly we were hosting the Wordpress website on a free EC2 on AWS on an OpenLiteSpeed server, which had a
+          good cache system with LiteSpeed Cache plugin.
+          <br />
+          After we switched to Gatsby, we decided to host the website on S3, behind a Cloudfront distribution, still on
+          AWS but with infrastructure wrote on Terraform.
+        </p>
+        <h3>Collaborations</h3>
+        <p>
+          We collaborated with some startups like 4Books and we were affiliate of Amazon, Fiverr, BigCommerce, GearBest,
+          SkyScanneer and some other companies.
+        </p>
+        <h3>Telegram channel</h3>
+        <p>
+          We also had a channel for Amazon deals, managed by a bot, which was scanning Amazon multiple times per day to
+          find the best deals for our users. The deals were real, because I created a script which checked the price
+          based on the previous prices in time, checking the discount with a logarithmic expression.
+        </p>
+        <h3>Why we closed the project</h3>
+        <p>
+          After 3 years of activity, we decided to close the project because in the last months the earnings went down
+          and we didn&apos;t have enough time to keep the articles updated anymore.
+        </p>
+      </>
+    ),
   },
   {
     title: "Racing Line Motorsport",
@@ -279,5 +457,115 @@ export const PROJECTS: Project[] = [
     id: "racing-line-motorsport",
     imageSize: { width: 1920, height: 1080 },
     status: ProjectStatus.Closed,
+    technologies: [
+      TechnologyId.React,
+      TechnologyId.Gatsby,
+      TechnologyId.Typescript,
+      TechnologyId.Bootstrap,
+      TechnologyId.Redux,
+      TechnologyId.I18next,
+      TechnologyId.Yarn,
+      TechnologyId.Nodejs,
+      TechnologyId.Mongodb,
+      TechnologyId.Aws,
+    ],
+    content: (
+      <>
+        <h3>What was Racing Line Motorsport?</h3>
+        <p>
+          Racing Line Motorsport was a sim racing team, founded by me and other passionate sim racers. The team competed
+          in the most important championships on Assetto Corsa Competizione, like the{" "}
+          <a href={"https://www.gt-world-challenge-europe.com/"} target={"_blank"} rel={"noopener"}>
+            GT World Challenge Endurance
+          </a>
+          , where the team managed to get a top 10 in 2020 and a{" "}
+          <a
+            href={
+              "https://www.gt-world-challenge-europe.com/news/2199/esports-fda-esports-clinches-endurance-series-title-as-racing-line-motorsport-dominates-at-barcelona"
+            }
+            target={"_blank"}
+            rel={"noopener"}
+          >
+            2nd place in the championship in the 2021 season
+          </a>
+          , behind the Ferrari Driver Academy Esports team, in front of famous official teams like BMW and Aston Martin,
+          also sponsored by RedBull.
+          <br />
+          <br />
+          The team also won numerous other races and championships and was considered one of the best sim racing teams
+          in the world.
+        </p>
+        <Image
+          src={"/images/projects/racing-line-motorsport/audi-spa.jpg"}
+          width={1920}
+          height={1080}
+          alt={"Racing Line Motorsport"}
+        />
+        <h3>Online platform</h3>
+        <p>
+          We created a platform for different reasons, first of all to have a website to show our team and services
+          (like professional coaching), but also to have a platform to organize races.
+        </p>
+        <Image
+          src={"/images/projects/racing-line-motorsport/website.jpg"}
+          width={1440}
+          height={786}
+          alt={"Racing Line Motorsport"}
+        />
+        <p>
+          As a team we raced almost always, but sometimes we organized some races with other pro teams, so we needed to
+          have a platform for standings and organization (subscribing to the races, etc.).
+          <br />I managed to create the frontend part on React with the CRA framework for the internal app, using
+          Bootstrap for styling. The backend part was managed by another developer, crafted with NodeJS and MongoDB, run
+          on Serverless functions in AWS.
+        </p>
+        <h3>News section</h3>
+        <Image
+          src={"/images/projects/racing-line-motorsport/news.jpg"}
+          width={1440}
+          height={786}
+          alt={"Racing Line Motorsport"}
+        />
+        <p>
+          On our online platform we created a part for news, created on Gatsby with Contentful as CMS. The news were
+          about team results and races.
+        </p>
+        <h3>Race/training servers</h3>
+        <p>
+          For training, but also for races, we had some gaming servers running with Windows on EC2 in AWS. We also used
+          a software to manage them without getting inside the servers using RDS.
+        </p>
+        <Image
+          src={"/images/projects/racing-line-motorsport/bentley-silverstone.jpg"}
+          width={1920}
+          height={1080}
+          alt={"Racing Line Motorsport"}
+        />
+        <h3>My YouTube channel</h3>
+        <p>
+          I started being known in the sim racing community, and different people were asking advices to me. So, after I
+          got some similar questions, in 2020 I decided to open a YouTube channel which was{" "}
+          <a href={"https://www.youtube.com/@IgorZanella"} target={"_blank"} rel={"noopener"}>
+            Igor Zanella
+          </a>{" "}
+          to answer to the questions.
+          <br />I shared a lot of technical and non-technical content, like tips, tricks, reviews, tutorials, etc., but
+          I also created some content on real car racing because I knew a lot of drivers through the sim racing
+          experience.
+          <br />I had more than 2k subscribers, more than 200k views and different videos with tens of thousands of
+          views.
+        </p>
+        <h3>Why team has been closed</h3>
+        <p>
+          The sim racing at professional level requires a lot of time, after Covid-19 pandemic the team members had less
+          time to dedicate to the team, I became a freelancer and, at the same time, some of the top drivers, in
+          agreement with the team, switched to Mercedes AMG official sim racing team. At the time we didn&apos;t have
+          big sponsors, so we couldn&apos;t afford to keep the team running.
+          <br />
+          The team started to have less results at the top championships and other members who wanted to continue in the
+          racing world switched to other teams.
+        </p>
+      </>
+    ),
   },
 ];
