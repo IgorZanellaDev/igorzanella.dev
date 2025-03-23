@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { FC } from "react";
-import { LuBookText, LuCompass, LuHouse, LuUser, LuVideo } from "react-icons/lu";
+import { LuBookText, LuHouse, LuUser, LuVideo } from "react-icons/lu";
 
 const NAV_LINKS = [
   {
@@ -17,11 +17,6 @@ const NAV_LINKS = [
     label: "Projects",
     link: "/projects",
     icon: LuBookText,
-  },
-  {
-    label: "Guides",
-    link: "/guides",
-    icon: LuCompass,
   },
   {
     label: "Courses",
