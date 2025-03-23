@@ -7,7 +7,7 @@ import { chunkArray } from "@/utils/array";
 import { FC } from "react";
 
 const Technologies: FC = () => {
-  const frontendRows = chunkArray(TECHNOLOGIES_BY_TYPE[TechnologyType.Frontend], 8);
+  const frontendRows = chunkArray(TECHNOLOGIES_BY_TYPE[TechnologyType.Frontend], 10);
   const backendRows = chunkArray(TECHNOLOGIES_BY_TYPE[TechnologyType.Backend], 7);
   const infrastructureRows = chunkArray(TECHNOLOGIES_BY_TYPE[TechnologyType.Infrastructure], 10);
 

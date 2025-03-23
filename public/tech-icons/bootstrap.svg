@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="100"
+   height="100"
+   viewBox="0 0 26.458333 26.458333"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1">
+    <linearGradient
+       id="bs-logo-a"
+       x1="76.079002"
+       x2="523.47998"
+       y1="10.798"
+       y2="365.94501"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         stop-color="#9013fe"
+         id="stop1" />
+      <stop
+         offset="1"
+         stop-color="#6610f2"
+         id="stop2" />
+    </linearGradient>
+    <linearGradient
+       id="bs-logo-b"
+       x1="193.508"
+       x2="293.51401"
+       y1="109.74"
+       y2="278.87201"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         stop-color="#fff"
+         id="stop3" />
+      <stop
+         offset="1"
+         stop-color="#f1e5fc"
+         id="stop4" />
+    </linearGradient>
+    <filter
+       id="bs-logo-c"
+       width="197"
+       height="249"
+       x="161.901"
+       y="83.457001"
+       color-interpolation-filters="sRGB"
+       filterUnits="userSpaceOnUse">
+      <feFlood
+         flood-opacity="0"
+         result="BackgroundImageFix"
+         id="feFlood4" />
+      <feColorMatrix
+         in="SourceAlpha"
+         values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+         id="feColorMatrix4" />
+      <feOffset
+         dy="4"
+         id="feOffset4" />
+      <feGaussianBlur
+         stdDeviation="8"
+         id="feGaussianBlur4" />
+      <feColorMatrix
+         values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"
+         id="feColorMatrix5" />
+      <feBlend
+         in2="BackgroundImageFix"
+         result="effect1_dropShadow"
+         id="feBlend5"
+         mode="normal" />
+      <feBlend
+         in="SourceGraphic"
+         in2="effect1_dropShadow"
+         result="shape"
+         id="feBlend6"
+         mode="normal" />
+    </filter>
+  </defs>
+  <g
+     id="layer1">
+    <g
+       id="g7"
+       transform="matrix(0.0506429,0,0,0.0506429,0.26458427,2.8980151)">
+      <path
+         fill="url(#bs-logo-a)"
+         d="M 56.481,53.32 C 55.515,25.58 77.128,0 106.342,0 h 299.353 c 29.214,0 50.827,25.58 49.861,53.32 -0.928,26.647 0.277,61.165 8.964,89.31 8.715,28.232 23.411,46.077 47.48,48.37 v 26 c -24.069,2.293 -38.765,20.138 -47.48,48.37 -8.687,28.145 -9.892,62.663 -8.964,89.311 C 456.522,382.42 434.909,408 405.695,408 H 106.342 C 77.128,408 55.515,382.42 56.482,354.681 57.409,328.033 56.204,293.515 47.516,265.37 38.802,237.138 24.07,219.293 0,217 v -26 c 24.069,-2.293 38.802,-20.138 47.516,-48.37 8.688,-28.145 9.893,-62.663 8.965,-89.31 z"
+         id="path6"
+         style="fill:url(#bs-logo-a)" />
+      <path
+         fill="url(#bs-logo-b)"
+         filter="url(#bs-logo-c)"
+         stroke="#ffffff"
+         d="m 267.103,312.457 c 47.297,0 75.798,-23.158 75.798,-61.355 0,-28.873 -20.336,-49.776 -50.532,-53.085 v -1.203 c 22.185,-3.609 39.594,-24.211 39.594,-47.219 0,-32.783 -25.882,-54.138 -65.322,-54.138 h -88.74 v 217 z m -54.692,-189.48 h 45.911 c 24.958,0 39.131,11.128 39.131,31.279 0,21.505 -16.484,33.535 -46.372,33.535 h -38.67 z m 0,161.961 v -71.431 h 45.602 c 32.661,0 49.608,12.03 49.608,35.49 0,23.459 -16.484,35.941 -47.605,35.941 z"
+         id="path7"
+         style="fill:url(#bs-logo-b)" />
+    </g>
+  </g>
+</svg>

@@ -23,12 +23,26 @@ export const TECHNOLOGIES: Technology[] = [
     link: "https://nextjs.org/",
     type: TechnologyType.Frontend,
   },
+  {
+    id: TechnologyId.Gatsby,
+    name: "Gatsby",
+    icon: "gatsby",
+    link: "https://www.gatsbyjs.com/",
+    type: TechnologyType.Frontend,
+  },
   { id: TechnologyId.Vite, name: "Vite", icon: "vite", link: "https://vite.dev/", type: TechnologyType.Frontend },
   {
     id: TechnologyId.Tanstack,
     name: "Tanstack Query",
     icon: "tanstack",
     link: "https://tanstack.com/query/latest",
+    type: TechnologyType.Frontend,
+  },
+  {
+    id: TechnologyId.Graphql,
+    name: "GraphQL",
+    icon: "graphql",
+    link: "https://graphql.org/",
     type: TechnologyType.Frontend,
   },
   {
@@ -54,6 +68,13 @@ export const TECHNOLOGIES: Technology[] = [
     type: TechnologyType.Frontend,
   },
   {
+    id: TechnologyId.Bootstrap,
+    name: "Bootstrap",
+    icon: "bootstrap",
+    link: "https://getbootstrap.com/",
+    type: TechnologyType.Frontend,
+  },
+  {
     id: TechnologyId.SocketIo,
     name: "Socket.io",
     icon: "socket-io",
@@ -73,6 +94,13 @@ export const TECHNOLOGIES: Technology[] = [
     name: "Jotai",
     icon: "jotai",
     link: "https://jotai.org/",
+    type: TechnologyType.Frontend,
+  },
+  {
+    id: TechnologyId.Redux,
+    name: "Redux",
+    icon: "redux",
+    link: "https://redux.js.org/",
     type: TechnologyType.Frontend,
   },
   {
