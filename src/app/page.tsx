@@ -1,4 +1,5 @@
 import ClyTestimonial from "@/components/cly-testimonial";
+import Header from "@/components/header";
 import Technologies from "@/components/technologies";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
@@ -8,9 +9,8 @@ import { LuRocket } from "react-icons/lu";
 const Home: FC = () => {
   return (
     <>
-      <h2 className={"text-3xl font-semibold"}>Hello world! I&apos;m Igor 👋🏻</h2>
-      <p className={"mt-1 font-medium text-muted-foreground"}>Based in Treviso, Italy 🇮🇹</p>
-      <p className={"mt-6 leading-relaxed"}>
+      <Header title={"Hello world! I'm Igor 👋🏻"} description={"Based in Treviso, Italy 🇮🇹"} />
+      <p className={"leading-relaxed"}>
         Full Stack Developer & DevOps Engineer. I love building products and startups. Specialized in React, but I also
         work on backend and infrastructure side. I usually work with or manage teams to deliver products in a fast but
         quality way.

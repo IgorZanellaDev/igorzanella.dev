@@ -1,5 +1,6 @@
 "use client";
 
+import Header from "@/components/header";
 import TechMatrix from "@/components/technologies/tech-matrix";
 import { PROJECTS, PROJECTS_STATUS_SETTINGS } from "@/constants/projects";
 import { TECHNOLOGIES_BY_ID } from "@/constants/technologies";
@@ -31,9 +32,8 @@ const Project: FC = () => {
 
   return (
     <>
-      <h2 className={"text-3xl font-semibold"}>{projectData.title}</h2>
-      <p className={"text-lg font-medium text-muted-foreground"}>{projectData.description}</p>
-      <div className={"relative mt-8"}>
+      <Header title={projectData.title} description={projectData.description} />
+      <div className={"relative"}>
         <div className={cn("absolute right-2 top-2 flex items-center gap-1 rounded-lg px-2 py-1 text-white", color)}>
           <Icon className={"h-4 w-4"} />
           <span className={"text-sm font-medium leading-none"}>{projectData.status}</span>

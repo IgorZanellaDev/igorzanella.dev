@@ -1,3 +1,4 @@
+import Header from "@/components/header";
 import { Card } from "@/components/ui/card";
 import { PROJECTS, PROJECTS_STATUS_SETTINGS } from "@/constants/projects";
 import { cn } from "@/lib/utils";
@@ -44,9 +45,8 @@ const Projects: FC = () => {
 
   return (
     <>
-      <h2 className={"text-3xl font-semibold"}>Projects</h2>
-      <p className={"mt-1 font-medium text-muted-foreground"}>Here are some of the projects I&apos;ve worked on.</p>
-      <h3 className={"mb-2 mt-6 text-2xl font-medium"}>Main Project</h3>
+      <Header title={"Projects"} description={"Here are some of the projects I've worked on."} />
+      <h3 className={"mb-2 text-2xl font-medium"}>Main Project</h3>
       {mainProject && (
         <ProjectCard
           title={mainProject.title}
