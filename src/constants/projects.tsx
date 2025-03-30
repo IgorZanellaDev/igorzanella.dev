@@ -6,7 +6,7 @@ import { LuSettings, LuX, LuZap } from "react-icons/lu";
 
 export const PROJECTS_STATUS_SETTINGS: Record<ProjectStatus, { icon: IconType; color: string }> = {
   [ProjectStatus.Working]: { icon: LuSettings, color: "bg-green-500" },
-  [ProjectStatus.Active]: { icon: LuZap, color: "bg-green-500" },
+  [ProjectStatus.Active]: { icon: LuZap, color: "bg-blue-500" },
   [ProjectStatus.Closed]: { icon: LuX, color: "bg-red-500" },
 };
 
