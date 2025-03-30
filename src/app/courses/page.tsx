@@ -11,10 +11,10 @@ const CourseCard: FC<{
   return (
     <a key={course.link} href={course.link} target={"_blank"} rel={"noopener"}>
       <Card className={"relative flex h-full flex-col overflow-hidden"}>
-        <div className={"bg- absolute left-2 top-2 flex items-center gap-1 rounded-lg bg-muted px-2 py-1 text-white"}>
+        <div className={"bg- absolute left-2 top-2 flex items-center gap-1 rounded-lg bg-muted px-2 py-1"}>
           <span className={"text-sm font-medium leading-none"}>{course.language}</span>
         </div>
-        <div className={"absolute right-2 top-2 flex items-center gap-1 rounded-lg bg-muted px-2 py-1 text-white"}>
+        <div className={"absolute right-2 top-2 flex items-center gap-1 rounded-lg bg-muted px-2 py-1"}>
           <span className={"text-sm font-medium leading-none"}>-{course.discount}%</span>
         </div>
         <Image
