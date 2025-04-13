@@ -21,11 +21,11 @@ const RootLayout = ({
   return (
     <html suppressHydrationWarning lang={"en"} className={`${GeistSans.variable} ${GeistMono.variable} antialiased`}>
       <GoogleTagManager gtmId={GTM_ID} />
-      <body className={"mx-auto mt-4 flex max-w-screen-lg gap-2"}>
+      <body className={"mx-auto flex max-w-screen-lg gap-2"}>
         <ThemeProvider disableTransitionOnChange enableSystem attribute={"class"} defaultTheme={"system"}>
           <IubendaScripts />
           <Sidebar />
-          <main className={"flex flex-1 flex-col overflow-x-hidden p-8"}>{children}</main>
+          <main className={"mt-4 flex flex-1 flex-col overflow-x-hidden p-8"}>{children}</main>
         </ThemeProvider>
       </body>
     </html>

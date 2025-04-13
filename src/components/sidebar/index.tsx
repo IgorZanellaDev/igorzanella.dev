@@ -8,7 +8,7 @@ import { PiSealCheckFill } from "react-icons/pi";
 
 const Sidebar: FC = () => {
   return (
-    <aside className={"sticky top-0 hidden h-full w-fit flex-col pt-6 md:flex"}>
+    <aside className={"sticky top-4 hidden h-full w-fit flex-col pt-6 md:flex"}>
       <div className={"flex items-center gap-2 pr-4"}>
         <Logo />
         <div className={"flex flex-col"}>
