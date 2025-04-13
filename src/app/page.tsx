@@ -9,11 +9,10 @@ import { LuRocket } from "react-icons/lu";
 const Home: FC = () => {
   return (
     <>
-      <Header title={"Hello world! I'm Igor 👋🏻"} description={"Based in Treviso, Italy 🇮🇹"} />
+      <Header title={"Hello world! I'm Igor 👋🏻"} description={"Full Stack Developer & DevOps Engineer"} />
       <p className={"leading-relaxed"}>
-        Full Stack Developer & DevOps Engineer. I love building products and startups. Specialized in React, but I also
-        work on backend and infrastructure side. I usually work with or manage teams to deliver products in a fast but
-        quality way.
+        Based in Treviso, Italy. I love building products and startups. Specialized in React, but I also work on backend
+        and infrastructure side. I usually work with or manage teams to deliver products in a fast but quality way.
       </p>
       <hr className={"my-3"} />
       <Technologies />
