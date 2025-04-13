@@ -357,7 +357,7 @@ export const PROJECTS: (showCustomerlyMessage?: (message: string) => void) => Pr
   },
   {
     title: "IgorZanellaDev",
-    description: "This website",
+    description: "Actually this website",
     id: "izdev",
     imageSize: { width: 1920, height: 1080 },
     status: ProjectStatus.Active,
