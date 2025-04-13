@@ -4,16 +4,22 @@ import { useTheme } from "next-themes";
 import { FC } from "react";
 import GitHubCalendar from "react-github-calendar";
 
-const GithubContributions: FC = () => {
+interface GithubContributionsProps {
+  className?: string;
+}
+
+const GithubContributions: FC<GithubContributionsProps> = ({ className }) => {
   const { theme, systemTheme } = useTheme();
 
   return (
-    <div>
-      <h2 className={"mb-3 text-2xl font-semibold"}>GitHub Contributions</h2>
+    <div className={className}>
       <GitHubCalendar
+        blockSize={10}
+        blockMargin={3}
         colorScheme={
           theme === "system" ? (systemTheme === "dark" ? "dark" : "light") : theme === "dark" ? "dark" : "light"
         }
+        weekStart={1}
         username={"igorzanelladev"}
       />
     </div>
