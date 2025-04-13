@@ -46,11 +46,11 @@ const Project: FC = () => {
           height={projectData.imageSize.height}
         />
       </div>
-      <h3 className={"mb-1 mt-6 text-xl font-medium"}>Technologies</h3>
+      <h2 className={"mb-1 mt-6 text-xl font-medium"}>Technologies</h2>
       {technologiesArrays && <TechMatrix rows={technologiesArrays} />}
       <div
         className={
-          "[&>h3]:mb-1 [&>h3]:mt-6 [&>h3]:text-xl [&>h3]:font-medium [&>img]:my-2 [&>img]:w-full [&>img]:rounded-xl [&>p>a]:underline [&>p>button]:underline [&>p]:leading-relaxed"
+          "[&>h2]:mb-1 [&>h2]:mt-6 [&>h2]:text-xl [&>h2]:font-medium [&>img]:my-2 [&>img]:w-full [&>img]:rounded-xl [&>p>a]:underline [&>p>button]:underline [&>p]:leading-relaxed"
         }
       >
         {projectData.content}

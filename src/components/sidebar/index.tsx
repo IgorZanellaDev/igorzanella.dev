@@ -13,7 +13,7 @@ const Sidebar: FC = () => {
         <Logo />
         <div className={"flex flex-col"}>
           <div className={"flex items-center gap-1"}>
-            <h1 className={"text-xl font-medium"}>Igor Zanella</h1>
+            <span className={"text-xl font-medium"}>Igor Zanella</span>
             <PiSealCheckFill className={"inline-block h-5 w-5 text-blue-500"} />
           </div>
           <p className={"text-sm text-muted-foreground"}>Software & DevOps</p>

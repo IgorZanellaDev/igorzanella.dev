@@ -2,18 +2,20 @@ import Header from "@/components/header";
 import { Card } from "@/components/ui/card";
 import { PROJECTS, PROJECTS_STATUS_SETTINGS } from "@/constants/projects";
 import { cn } from "@/lib/utils";
-import { ProjectStatus } from "@/types/project";
+import { Project } from "@/types/project";
 import Image from "next/image";
 import Link from "next/link";
 import { FC } from "react";
 
-const ProjectCard: FC<{
-  title: string;
-  description: string;
-  id: string;
-  imageSize: { width: number; height: number };
-  status: ProjectStatus;
-}> = ({ title, description, id, imageSize: { width, height }, status }) => {
+const ProjectCard: FC<{ project: Project }> = ({
+  project: {
+    title,
+    description,
+    id,
+    imageSize: { width, height },
+    status,
+  },
+}) => {
   const { icon: Icon, color } = PROJECTS_STATUS_SETTINGS[status];
 
   return (
@@ -46,29 +48,16 @@ const Projects: FC = () => {
   return (
     <>
       <Header title={"Projects"} description={"Here are some of the projects I've worked on."} />
-      <h3 className={"mb-2 text-2xl font-medium"}>Main Project</h3>
-      {mainProject && (
-        <ProjectCard
-          title={mainProject.title}
-          description={mainProject.description}
-          id={mainProject.id}
-          imageSize={{ width: mainProject.imageSize.width, height: mainProject.imageSize.height }}
-          status={mainProject.status}
-        />
-      )}
-      <h3 className={"mt-6 text-2xl font-medium"}>Other Projects</h3>
-      <div className="mt-2 grid grid-cols-1 gap-4 md:grid-cols-2">
-        {otherProjects.map(({ description, id, imageSize: { width, height }, status, title }) => (
-          <ProjectCard
-            key={id}
-            title={title}
-            description={description}
-            id={id}
-            imageSize={{ width, height }}
-            status={status}
-          />
+      <h2 className={"mb-2 text-2xl font-medium"}>Main Project</h2>
+      {mainProject && <ProjectCard project={mainProject} />}
+      <h2 className={"mt-6 text-2xl font-medium"}>Other Projects</h2>
+      <ul className="mt-2 grid grid-cols-1 gap-4 md:grid-cols-2">
+        {otherProjects.map((project) => (
+          <li key={project.id}>
+            <ProjectCard project={project} />
+          </li>
         ))}
-      </div>
+      </ul>
     </>
   );
 };

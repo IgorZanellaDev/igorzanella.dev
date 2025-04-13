@@ -57,7 +57,7 @@ export const PROJECTS: (showCustomerlyMessage?: (message: string) => void) => Pr
     ],
     content: (
       <>
-        <h3>What is Customerly?</h3>
+        <h2>What is Customerly?</h2>
         <p>
           <a href={"https://www.customerly.io"} target={"_blank"} rel={"noopener"}>
             Customerly
@@ -73,7 +73,7 @@ export const PROJECTS: (showCustomerlyMessage?: (message: string) => void) => Pr
           CSAT surveys, email marketing automation, and customer success tools, making it a comprehensive solution for
           SaaS companies looking to scale support operations efficiently.
         </p>
-        <h3>Web application</h3>
+        <h2>Web application</h2>
         <p>
           The web app is the main project we manage in the team. It&apos;s the app Customerly&apos;s clients use to
           manage their customers&apos; conversations, creating Chatflows, managing their Help Center and more.
@@ -83,7 +83,7 @@ export const PROJECTS: (showCustomerlyMessage?: (message: string) => void) => Pr
           It&apos;s based on React, built on Vite and Typescript. We used different technologies like WebSockets and
           many more to give the best experience to the users.
         </p>
-        <h3>Messenger</h3>
+        <h2>Messenger</h2>
         <p>
           The Messenger is one of the main features of Customerly. It is the main interface for the customers to
           interact with the company.
@@ -91,7 +91,7 @@ export const PROJECTS: (showCustomerlyMessage?: (message: string) => void) => Pr
           It&apos;s been accessed more than 100M times every month. It&apos;s based on React and I developed the last
           version from scratch in 2024.
         </p>
-        <h3>Help Center</h3>
+        <h2>Help Center</h2>
         <p>
           The Help Center is a feature that allows customers to search for answers to their questions. It&apos;s built
           on NextJS with ISR to give the best performance. As shown in the image below, when we released it (in 2023) we
@@ -103,12 +103,12 @@ export const PROJECTS: (showCustomerlyMessage?: (message: string) => void) => Pr
           height={1138}
           alt={"Help Center Performances"}
         />
-        <h3>Mobile App</h3>
+        <h2>Mobile App</h2>
         <p>
           The mobile app is built on React Native and Expo. It&apos;s a simple app that allows customers to interact
           with their clients answering conversations and more. I didn&apos;t develop the app, but I reviewed the code.
         </p>
-        <h3>AI</h3>
+        <h2>AI</h2>
         <p>
           The AI is the main feature of Customerly. The customers can create Chatflows to automate their conversations
           with their clients. We manage it with multiple LLMs in our backend.
@@ -118,17 +118,17 @@ export const PROJECTS: (showCustomerlyMessage?: (message: string) => void) => Pr
           Our customers can also gather conversations data in automatic way using AI and use it to do different actions
           like for example calling custom APIs.
         </p>
-        <h3>Backend</h3>
+        <h2>Backend</h2>
         <p>
           The backend is built on PHP and most of APIs are managed with Symfony. We also use Redis to cache data and for
           internal purposes. I don&apos;t work usually with the backend, but sometimes I do some changes to the code.
         </p>
-        <h3>Infrastructure</h3>
+        <h2>Infrastructure</h2>
         <p>
           The infrastructure is managed with Terraform, hosted mostly on AWS. I usually take care of it when we need to
           deploy something new or when we need to migrate to a new service.
         </p>
-        <h3>What I do</h3>
+        <h2>What I do</h2>
         <p>
           I work on many parts of the project. Mainly on the frontend and infrastructure. I also do some changes to the
           backend and AI code when needed. I&apos;m also a partner of the company.
@@ -160,7 +160,7 @@ export const PROJECTS: (showCustomerlyMessage?: (message: string) => void) => Pr
     ],
     content: (
       <>
-        <h3>What is ComputerPortatile?</h3>
+        <h2>What is ComputerPortatile?</h2>
         <p>
           Many friends often ask me which laptop model they should buy, I help them searching on Amazon, but the laptops
           I advice are usually the same.
@@ -171,13 +171,13 @@ export const PROJECTS: (showCustomerlyMessage?: (message: string) => void) => Pr
           </a>
           , which is an Italian website, with the lists of the top laptops on Amazon.it.
         </p>
-        <h3>Amazon Affiliate Program</h3>
+        <h2>Amazon Affiliate Program</h2>
         <p>
           The links to Amazon are affiliate links, so if you buy a laptop through my website I get a small commission. I
           was already part of Amazon Affiliate Program some years ago with BestOnDesk, so I decided to reenter the
           program with ComputerPortatile.
         </p>
-        <h3>How it started and how it changed</h3>
+        <h2>How it started and how it changed</h2>
         <p>
           I started the project in 2022 with the simple idea to write articles in it and update them some times.
           <br />
@@ -185,7 +185,7 @@ export const PROJECTS: (showCustomerlyMessage?: (message: string) => void) => Pr
           AI wave: I could use AI not only to write the articles for me, but it can also help me to find the best
           laptops on Amazon.it.
         </p>
-        <h3>Frontend technologies</h3>
+        <h2>Frontend technologies</h2>
         <p>
           The frontend is built on NextJS with Styled Components and Typescript. The CI/CD is managed with Vercel which
           also hosts the website for free.
@@ -193,7 +193,7 @@ export const PROJECTS: (showCustomerlyMessage?: (message: string) => void) => Pr
           Frontend code is not open source because I&apos;m trying some SEO tricks to rank better on Google and I
           don&apos;t want to share them currently.
         </p>
-        <h3>AmaForge</h3>
+        <h2>AmaForge</h2>
         <p>
           I created a tool on NestJS which uses Amazon APIs to get the last products and I made different prompts for
           choosing the best laptops. After the laptops are chosen, another prompt is used to write the article, based on
@@ -224,7 +224,7 @@ export const PROJECTS: (showCustomerlyMessage?: (message: string) => void) => Pr
     ],
     content: (
       <>
-        <h3>What is BJJ Radar?</h3>
+        <h2>What is BJJ Radar?</h2>
         <p>
           I&apos;m a BJJ competitor and in this environment it&apos;s difficult to keep track of all the competitions
           and events because there are a lot of federations.
@@ -235,17 +235,17 @@ export const PROJECTS: (showCustomerlyMessage?: (message: string) => void) => Pr
           </a>
           , a website that aggregates all the competitions and events from all the federations.
         </p>
-        <h3>Frontend</h3>
+        <h2>Frontend</h2>
         <p>
           The frontend is built on NextJS with Shadcn and Jotai. The CI/CD is managed with Vercel which also hosts the
           website for free.
         </p>
-        <h3>Backend</h3>
+        <h2>Backend</h2>
         <p>
           There is no backend for this project. The data is get during build time on the CI/CD flow and they are updated
           every week.
         </p>
-        <h3>Monetization</h3>
+        <h2>Monetization</h2>
         <p>
           Currently the website is free. I currently don&apos;t need to monetize it, in the future probably I could add
           some custom banners or affiliate links from BJJ brands.
@@ -268,20 +268,20 @@ export const PROJECTS: (showCustomerlyMessage?: (message: string) => void) => Pr
     ],
     content: (
       <>
-        <h3>What is an Ethereum Validator server?</h3>
+        <h2>What is an Ethereum Validator server?</h2>
         <p>
           An Ethereum Validator server is a server that participates in the Ethereum blockchain consensus. It is
           responsible for validating transactions and blocks, and adding them to the blockchain. It&apos;s a server that
           runs 24/7 to ensure the network is secure and decentralized. Running the validator server rewards the owner
           with ETH from the network fees.
         </p>
-        <h3>What are the hardware requirements?</h3>
+        <h2>What are the hardware requirements?</h2>
         <p>
           The server needs to be up 24/7 to be a validator. It needs to have a good amount of RAM to be able to run the
           validator software. It also needs a good amount of storage to store the blockchain data (2-3TB), high network
           uptime and infrastructure stability.
         </p>
-        <h3>What&apos;s the budget needed to run a validator server?</h3>
+        <h2>What&apos;s the budget needed to run a validator server?</h2>
         <p>
           To start a validator server you need to deposit 32 ETH (check the price on{" "}
           <a href={"https://coinmarketcap.com/currencies/ethereum/"} target={"_blank"} rel={"noopener"}>
@@ -290,7 +290,7 @@ export const PROJECTS: (showCustomerlyMessage?: (message: string) => void) => Pr
           ). In the past the rewards couldn&apos;t be withdrawn, but after some updates it started to be possible. If
           you want to withdraw the starting deposit you need to terminate the validator.
         </p>
-        <h3>Client Diversity</h3>
+        <h2>Client Diversity</h2>
         <p>
           In the world of decentralization, there are many clients that can be used to run a validator. If the majority
           of validators use the same client, the network is less decentralized and in case of a bug of the validator
@@ -315,7 +315,7 @@ export const PROJECTS: (showCustomerlyMessage?: (message: string) => void) => Pr
           , which are less used but still secure and stable as you can see on{" "}
           <a href={"https://clientdiversity.org/"}>Client Diversity</a> website.
         </p>
-        <h3>Monitoring</h3>
+        <h2>Monitoring</h2>
         <p>
           There are different ways to monitor a validator server. Starting from online dashboards, like{" "}
           <a href={"https://beaconcha.in/"} target={"_blank"} rel={"noopener"}>
@@ -339,7 +339,7 @@ export const PROJECTS: (showCustomerlyMessage?: (message: string) => void) => Pr
           height={961}
           alt={"Grafana dashboard"}
         />
-        <h3>Do you want to run a validator server?</h3>
+        <h2>Do you want to run a validator server?</h2>
         <p>
           If you want to run a ETH validator server or you search for someone who maintains yours, you can{" "}
           <button
@@ -372,17 +372,17 @@ export const PROJECTS: (showCustomerlyMessage?: (message: string) => void) => Pr
     ],
     content: (
       <>
-        <h3>This website</h3>
+        <h2>This website</h2>
         <p>
           As every developer, I need a website to show my projects and share my knowledge, so I have this website that I
           try to update often with new projects and articles.
         </p>
-        <h3>Technologies</h3>
+        <h2>Technologies</h2>
         <p>
           The website is built on NextJS, with TailwindCSS and components based on Shadcn. The CI/CD is managed with
           Vercel which also hosts the website for free.
         </p>
-        <h3>Open source</h3>
+        <h2>Open source</h2>
         <p>
           The website is open source, you can find it on{" "}
           <a href={"https://github.com/IgorZanellaDev/igorzanella.devs"} target={"_blank"} rel={"noopener"}>
@@ -410,13 +410,13 @@ export const PROJECTS: (showCustomerlyMessage?: (message: string) => void) => Pr
     ],
     content: (
       <>
-        <h3>What was BestOnDesk?</h3>
+        <h2>What was BestOnDesk?</h2>
         <p>
           BestOnDesk was an Italian blog, created for the office workers, to give the best advices about products, but
           also articles on motivation, personal growth and personal finance. The idea came from a friend of mine, Marco
           Campagnolo, who wrotes the article, while I was working on the code side.
         </p>
-        <h3>Website</h3>
+        <h2>Website</h2>
         <p>
           The website was first built with Wordpress, but after we grew in terms of traffic, we decided to revamp the UI
           and the code, so we switched to Gatsby in March 2021. I decided to keep Wordpress as CMS for the articles,
@@ -424,7 +424,7 @@ export const PROJECTS: (showCustomerlyMessage?: (message: string) => void) => Pr
           was loading articles from Wordpress during build using GraphQL.
         </p>
         <Image src={"/images/projects/bestondesk/website.jpg"} width={1920} height={1080} alt={"BestOnDesk"} />
-        <h3>Infrastructure</h3>
+        <h2>Infrastructure</h2>
         <p>
           Firstly we were hosting the Wordpress website on a free EC2 on AWS on an OpenLiteSpeed server, which had a
           good cache system with LiteSpeed Cache plugin.
@@ -432,18 +432,18 @@ export const PROJECTS: (showCustomerlyMessage?: (message: string) => void) => Pr
           After we switched to Gatsby, we decided to host the website on S3, behind a Cloudfront distribution, still on
           AWS but with infrastructure wrote on Terraform.
         </p>
-        <h3>Collaborations</h3>
+        <h2>Collaborations</h2>
         <p>
           We collaborated with some startups like 4Books and we were affiliate of Amazon, Fiverr, BigCommerce, GearBest,
           SkyScanneer and some other companies.
         </p>
-        <h3>Telegram channel</h3>
+        <h2>Telegram channel</h2>
         <p>
           We also had a channel for Amazon deals, managed by a bot, which was scanning Amazon multiple times per day to
           find the best deals for our users. The deals were real, because I created a script which checked the price
           based on the previous prices in time, checking the discount with a logarithmic expression.
         </p>
-        <h3>Why we closed the project</h3>
+        <h2>Why we closed the project</h2>
         <p>
           After 3 years of activity, we decided to close the project because in the last months the earnings went down
           and we didn&apos;t have enough time to keep the articles updated anymore.
@@ -471,7 +471,7 @@ export const PROJECTS: (showCustomerlyMessage?: (message: string) => void) => Pr
     ],
     content: (
       <>
-        <h3>What was Racing Line Motorsport?</h3>
+        <h2>What was Racing Line Motorsport?</h2>
         <p>
           Racing Line Motorsport was a sim racing team, founded by me and other passionate sim racers. The team competed
           in the most important championships on Assetto Corsa Competizione, like the{" "}
@@ -501,7 +501,7 @@ export const PROJECTS: (showCustomerlyMessage?: (message: string) => void) => Pr
           height={1080}
           alt={"Racing Line Motorsport"}
         />
-        <h3>Online platform</h3>
+        <h2>Online platform</h2>
         <p>
           We created a platform for different reasons, first of all to have a website to show our team and services
           (like professional coaching), but also to have a platform to organize races.
@@ -519,7 +519,7 @@ export const PROJECTS: (showCustomerlyMessage?: (message: string) => void) => Pr
           Bootstrap for styling. The backend part was managed by another developer, crafted with NodeJS and MongoDB, run
           on Serverless functions in AWS.
         </p>
-        <h3>News section</h3>
+        <h2>News section</h2>
         <Image
           src={"/images/projects/racing-line-motorsport/news.jpg"}
           width={1440}
@@ -530,7 +530,7 @@ export const PROJECTS: (showCustomerlyMessage?: (message: string) => void) => Pr
           On our online platform we created a part for news, created on Gatsby with Contentful as CMS. The news were
           about team results and races.
         </p>
-        <h3>Race/training servers</h3>
+        <h2>Race/training servers</h2>
         <p>
           For training, but also for races, we had some gaming servers running with Windows on EC2 in AWS. We also used
           a software to manage them without getting inside the servers using RDS.
@@ -541,7 +541,7 @@ export const PROJECTS: (showCustomerlyMessage?: (message: string) => void) => Pr
           height={1080}
           alt={"Racing Line Motorsport"}
         />
-        <h3>My YouTube channel</h3>
+        <h2>My YouTube channel</h2>
         <p>
           I started being known in the sim racing community, and different people were asking advices to me. So, after I
           got some similar questions, in 2020 I decided to open a YouTube channel which was{" "}
@@ -555,7 +555,7 @@ export const PROJECTS: (showCustomerlyMessage?: (message: string) => void) => Pr
           <br />I had more than 2k subscribers, more than 200k views and different videos with tens of thousands of
           views.
         </p>
-        <h3>Why team has been closed</h3>
+        <h2>Why team has been closed</h2>
         <p>
           The sim racing at professional level requires a lot of time, after Covid-19 pandemic the team members had less
           time to dedicate to the team, I became a freelancer and, at the same time, some of the top drivers, in
