@@ -15,7 +15,7 @@ const About: FC = () => {
         height={3840}
         alt={"Igor Zanella"}
       />
-      <span className={"mt-4 text-3xl font-semibold"}>
+      <span className={"mt-4 text-2xl font-semibold md:text-3xl"}>
         Currently in Italy 🇮🇹
         <span className={"ml-2 text-sm text-muted-foreground"}>
           ({new Date().toLocaleTimeString("en-US", { hour: "2-digit", minute: "2-digit" })})

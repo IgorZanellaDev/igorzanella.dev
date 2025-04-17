@@ -1,15 +1,16 @@
+import { cn } from "@/lib/utils";
 import { FC } from "react";
 
 interface LogoProps {
+  className?: string;
   textColor?: string;
   withText?: boolean;
 }
 
-const Logo: FC<LogoProps> = ({ textColor, withText }) => {
+const Logo: FC<LogoProps> = ({ className, textColor, withText }) => {
   return (
     <svg
-      width={withText ? "240" : "80"}
-      height={"80"}
+      className={cn("h-[80px]", withText ? "w-[240px]" : "w-[80px]", className)}
       version={"1.1"}
       viewBox={withText ? "0 0 144 48" : "0 0 64 64"}
       xmlns={"http://www.w3.org/2000/svg"}

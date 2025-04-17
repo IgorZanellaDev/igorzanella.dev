@@ -1,5 +1,5 @@
 import IubendaScripts from "@/components/iubenda-scripts";
-import Sidebar from "@/components/sidebar";
+import Menu from "@/components/menu";
 import { ThemeProvider } from "@/components/theme-provider";
 import { GTM_ID } from "@/constants/seo";
 import { GoogleTagManager } from "@next/third-parties/google";
@@ -21,11 +21,11 @@ const RootLayout = ({
   return (
     <html suppressHydrationWarning lang={"en"} className={`${GeistSans.variable} ${GeistMono.variable} antialiased`}>
       <GoogleTagManager gtmId={GTM_ID} />
-      <body className={"mx-auto flex max-w-screen-lg gap-2"}>
+      <body className={"mx-auto flex flex-col gap-2 md:max-w-screen-lg md:flex-row"}>
         <ThemeProvider disableTransitionOnChange enableSystem attribute={"class"} defaultTheme={"system"}>
           <IubendaScripts />
-          <Sidebar />
-          <main className={"mt-4 flex flex-1 flex-col overflow-x-hidden p-8"}>{children}</main>
+          <Menu />
+          <main className={"flex flex-1 flex-col overflow-x-hidden p-4 md:mt-4 md:p-8"}>{children}</main>
         </ThemeProvider>
       </body>
     </html>
