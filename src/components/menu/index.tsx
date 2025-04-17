@@ -10,7 +10,7 @@ import { PiSealCheckFill } from "react-icons/pi";
 
 const Menu: FC = () => {
   return (
-    <div className={"flex-col pl-2 md:sticky md:top-0 md:flex md:h-full md:w-fit md:pt-10"}>
+    <div className={"flex-col pl-2 md:sticky md:top-0 md:flex md:h-screen md:w-fit md:pt-10"}>
       <header className={"mt-4 flex justify-between px-4"}>
         <Link href={"/"} className={"flex items-center gap-2 pr-4"}>
           <Logo className={"h-[48px] w-[48px] md:h-[80px] md:w-[80px]"} />
@@ -24,7 +24,7 @@ const Menu: FC = () => {
         </Link>
         <MobileMenu />
       </header>
-      <aside className={"hidden flex-col md:flex"}>
+      <aside className={"hidden flex-1 flex-col md:flex"}>
         <Card className={"mt-6"}>
           <CardContent className={"p-2"}>
             <Nav />
@@ -40,6 +40,28 @@ const Menu: FC = () => {
             <ThemeChooser />
           </CardContent>
         </Card>
+        <footer className={"mb-1 mt-auto flex flex-col text-xs text-muted"}>
+          <div className={"flex flex-row gap-2"}>
+            <a
+              className={"underline"}
+              href={"https://www.iubenda.com/privacy-policy/36569385"}
+              rel={"noopener noreferrer"}
+              target={"_blank"}
+            >
+              Privacy Policy
+            </a>
+            <a
+              className={"underline"}
+              href={"https://www.iubenda.com/privacy-policy/36569385/cookie-policy"}
+              rel={"noopener noreferrer"}
+              target={"_blank"}
+            >
+              Cookie Policy
+            </a>
+          </div>
+          <p>VAT: IT05104380265</p>
+          <p>© {new Date().getFullYear()} All rights reserved.</p>
+        </footer>
       </aside>
     </div>
   );
