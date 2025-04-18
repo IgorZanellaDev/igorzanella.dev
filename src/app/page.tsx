@@ -32,6 +32,7 @@ const Home: FC = () => {
           </p>
         </CardContent>
         <CardFooter className={"flex items-center gap-4"}>
+          {/* FIXME: Open messenger on contact me */}
           <Button>Contact me</Button>
           <p className={"text-muted-foreground"}>
             {new Date().toLocaleTimeString(undefined, { hour: "2-digit", minute: "2-digit" })}

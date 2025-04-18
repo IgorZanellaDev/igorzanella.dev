@@ -5,12 +5,14 @@ interface FooterProps {
   mobile?: boolean;
 }
 
-const Footer: FC<FooterProps> = ({ mobile }) => {
+const Footer: FC<FooterProps> = () => {
   return (
-    <footer
-      className={cn("mb-2 mt-auto flex flex-col px-4 pb-2 text-sm text-muted md:p-0 md:text-xs", mobile && "md:hidden")}
-    >
-      <div className={"flex flex-row gap-2"}>
+    <footer className={cn("mb-2 mt-auto flex justify-between px-4 pb-2 text-sm text-muted-foreground md:px-8")}>
+      <div className={"flex flex-col"}>
+        <p>VAT: IT05104380265</p>
+        <p>© {new Date().getFullYear()} All rights reserved.</p>
+      </div>
+      <div className={"flex flex-col"}>
         <a
           className={"underline"}
           href={"https://www.iubenda.com/privacy-policy/36569385"}
@@ -27,10 +29,6 @@ const Footer: FC<FooterProps> = ({ mobile }) => {
         >
           Cookie Policy
         </a>
-      </div>
-      <div className={"md: flex flex-row-reverse justify-between md:flex-col md:justify-start"}>
-        <p>VAT: IT05104380265</p>
-        <p>© {new Date().getFullYear()} All rights reserved.</p>
       </div>
     </footer>
   );

@@ -1,5 +1,4 @@
 import Logo from "@/components/logo";
-import Footer from "@/components/menu/footer";
 import MobileMenu from "@/components/menu/mobile-menu";
 import Nav from "@/components/menu/nav";
 import Socials from "@/components/menu/socials";
@@ -41,7 +40,6 @@ const Menu: FC = () => {
             <ThemeChooser />
           </CardContent>
         </Card>
-        <Footer />
       </aside>
     </div>
   );
