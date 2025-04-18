@@ -1,5 +1,6 @@
 import IubendaScripts from "@/components/iubenda-scripts";
 import Menu from "@/components/menu";
+import Footer from "@/components/menu/footer";
 import { ThemeProvider } from "@/components/theme-provider";
 import { GTM_ID } from "@/constants/seo";
 import { GoogleTagManager } from "@next/third-parties/google";
@@ -26,6 +27,7 @@ const RootLayout = ({
           <IubendaScripts />
           <Menu />
           <main className={"flex flex-1 flex-col overflow-x-hidden p-4 md:mt-4 md:p-8"}>{children}</main>
+          <Footer mobile />
         </ThemeProvider>
       </body>
     </html>

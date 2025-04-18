@@ -1,4 +1,5 @@
 import Logo from "@/components/logo";
+import Footer from "@/components/menu/footer";
 import MobileMenu from "@/components/menu/mobile-menu";
 import Nav from "@/components/menu/nav";
 import Socials from "@/components/menu/socials";
@@ -40,28 +41,7 @@ const Menu: FC = () => {
             <ThemeChooser />
           </CardContent>
         </Card>
-        <footer className={"mb-1 mt-auto flex flex-col text-xs text-muted"}>
-          <div className={"flex flex-row gap-2"}>
-            <a
-              className={"underline"}
-              href={"https://www.iubenda.com/privacy-policy/36569385"}
-              rel={"noopener noreferrer"}
-              target={"_blank"}
-            >
-              Privacy Policy
-            </a>
-            <a
-              className={"underline"}
-              href={"https://www.iubenda.com/privacy-policy/36569385/cookie-policy"}
-              rel={"noopener noreferrer"}
-              target={"_blank"}
-            >
-              Cookie Policy
-            </a>
-          </div>
-          <p>VAT: IT05104380265</p>
-          <p>© {new Date().getFullYear()} All rights reserved.</p>
-        </footer>
+        <Footer />
       </aside>
     </div>
   );
