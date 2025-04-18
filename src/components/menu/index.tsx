@@ -11,7 +11,7 @@ import { PiSealCheckFill } from "react-icons/pi";
 const Menu: FC = () => {
   return (
     <div className={"flex-col pl-2 md:sticky md:top-0 md:flex md:h-screen md:w-fit md:pt-10"}>
-      <header className={"mt-4 flex justify-between px-4"}>
+      <header className={"mt-4 flex justify-between pl-2 pr-4 md:pl-4"}>
         <Link href={"/"} className={"flex items-center gap-2 pr-4"}>
           <Logo className={"h-[48px] w-[48px] md:h-[80px] md:w-[80px]"} />
           <div className={"flex flex-col"}>
