@@ -38,13 +38,15 @@ const Project: FC = () => {
           <Icon className={"h-4 w-4"} />
           <span className={"text-sm font-medium leading-none"}>{projectData.status}</span>
         </div>
-        <Image
-          className={"rounded-xl"}
-          src={`/images/projects/${projectData.id}/main.jpg`}
-          alt={projectData.title}
-          width={projectData.imageSize.width}
-          height={projectData.imageSize.height}
-        />
+        <a href={projectData.url} target={"_blank"} rel={"noopener noreferrer"}>
+          <Image
+            className={"rounded-xl"}
+            src={`/images/projects/${projectData.id}/main.jpg`}
+            alt={projectData.title}
+            width={projectData.imageSize.width}
+            height={projectData.imageSize.height}
+          />
+        </a>
       </div>
       <h2 className={"mb-1 mt-6 text-xl font-medium"}>Technologies</h2>
       {technologiesArrays && <TechMatrix rows={technologiesArrays} />}

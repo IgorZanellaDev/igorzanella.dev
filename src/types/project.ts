@@ -16,4 +16,5 @@ export interface Project {
   technologiesChunkSize?: number;
   technologies?: string[];
   content?: ReactNode;
+  url?: string;
 }

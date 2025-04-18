@@ -15,6 +15,7 @@ export const PROJECTS: (showCustomerlyMessage?: (message: string) => void) => Pr
     title: "Customerly",
     description: "The Customer Operating System for SaaS",
     id: "customerly",
+    url: "https://www.customerly.io",
     imageSize: { width: 1200, height: 630 },
     status: ProjectStatus.Working,
     main: true,
@@ -140,6 +141,7 @@ export const PROJECTS: (showCustomerlyMessage?: (message: string) => void) => Pr
     title: "ComputerPortatile",
     description: "Affiliate marketing website",
     id: "computerportatile",
+    url: "https://computerportatile.com",
     imageSize: { width: 1920, height: 1080 },
     status: ProjectStatus.Active,
     technologiesChunkSize: 6,
@@ -210,6 +212,7 @@ export const PROJECTS: (showCustomerlyMessage?: (message: string) => void) => Pr
     title: "BJJ Radar",
     description: "BJJ competitions aggregator",
     id: "bjjradar",
+    url: "https://bjj-radar.com",
     imageSize: { width: 1200, height: 630 },
     status: ProjectStatus.Active,
     technologies: [
