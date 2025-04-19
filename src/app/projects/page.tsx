@@ -52,8 +52,8 @@ const ProjectCard: FC<{ project: Project }> = ({
 };
 
 const Projects: FC = () => {
-  const mainProject = PROJECTS().find((project) => project.main);
-  const otherProjects = PROJECTS().filter((project) => !project.main);
+  const mainProject = PROJECTS.find((project) => project.main);
+  const otherProjects = PROJECTS.filter((project) => !project.main);
 
   return (
     <>

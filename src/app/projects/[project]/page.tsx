@@ -1,5 +1,3 @@
-"use client";
-
 import Header from "@/components/header";
 import TechMatrix from "@/components/technologies/tech-matrix";
 import { PROJECTS, PROJECTS_STATUS_SETTINGS } from "@/constants/projects";
@@ -8,11 +6,11 @@ import { cn } from "@/lib/utils";
 import { TechnologyId } from "@/types/technology";
 import { chunkArray } from "@/utils/array";
 import Image from "next/image";
-import { notFound, useParams } from "next/navigation";
+import { notFound } from "next/navigation";
 import { FC } from "react";
 
 export const generateMetadata = async ({ params }: { params: { project: string } }) => {
-  const projectData = PROJECTS().find((p) => p.id === params.project);
+  const projectData = PROJECTS.find((p) => p.id === params.project);
 
   if (!projectData) {
     return notFound();
@@ -46,14 +44,10 @@ export const generateMetadata = async ({ params }: { params: { project: string }
   };
 };
 
-const Project: FC = () => {
-  const { project } = useParams();
+const Project: FC<{ params: Promise<{ project: string }> }> = async ({ params }) => {
+  const { project } = await params;
 
-  const showNewMessage = (message: string) => {
-    window.customerly?.showNewMessage(message);
-  };
-
-  const projectData = PROJECTS(showNewMessage).find((p) => p.id === project);
+  const projectData = PROJECTS.find((p) => p.id === project);
 
   if (!projectData) {
     return notFound();

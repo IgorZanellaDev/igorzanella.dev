@@ -6,7 +6,7 @@ export enum ProjectStatus {
   Closed = "closed",
 }
 
-export interface Project {
+export type Project = {
   title: string;
   description: string;
   metaDescription: string;
@@ -16,6 +16,6 @@ export interface Project {
   main?: boolean;
   technologiesChunkSize?: number;
   technologies?: string[];
-  content?: ReactNode;
   url?: string;
-}
+  content: ReactNode;
+};

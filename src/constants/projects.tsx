@@ -1,3 +1,4 @@
+import CustomerlyButton from "@/components/customerly-button";
 import { Project, ProjectStatus } from "@/types/project";
 import { TechnologyId } from "@/types/technology";
 import Image from "next/image";
@@ -10,7 +11,7 @@ export const PROJECTS_STATUS_SETTINGS: Record<ProjectStatus, { icon: IconType; c
   [ProjectStatus.Closed]: { icon: LuX, color: "bg-red-500" },
 };
 
-export const PROJECTS: (showCustomerlyMessage?: (message: string) => void) => Project[] = (showCustomerlyMessage) => [
+export const PROJECTS: Project[] = [
   {
     title: "Customerly",
     description: "The Customer Operating System for SaaS",
@@ -353,15 +354,9 @@ export const PROJECTS: (showCustomerlyMessage?: (message: string) => void) => Pr
         <h2>Do you want to run a validator server?</h2>
         <p>
           If you want to run a ETH validator server or you search for someone who maintains yours, you can{" "}
-          <button
-            onClick={() =>
-              showCustomerlyMessage?.(
-                "Hi Igor! I would like to have more information for an Ethereum validator server.",
-              )
-            }
-          >
+          <CustomerlyButton message="Hi Igor! I would like to have more information for an Ethereum validator server.">
             contact me.
-          </button>
+          </CustomerlyButton>
         </p>
       </>
     ),

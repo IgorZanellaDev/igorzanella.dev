@@ -1,3 +1,5 @@
+"use client";
+
 import { Marquee } from "@/components/magicui/marquee";
 import { Technology } from "@/types/technology";
 import { useTheme } from "next-themes";
