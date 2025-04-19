@@ -1,7 +1,7 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { NAV_LINKS } from "@/constants/nav-links";
+import { NAV_LINKS } from "@/constants/menu";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { usePathname } from "next/navigation";

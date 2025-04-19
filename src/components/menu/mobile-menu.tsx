@@ -1,7 +1,7 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { NAV_LINKS } from "@/constants/nav-links";
+import { NAV_LINKS, SOCIALS } from "@/constants/menu";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { FC, useEffect, useState } from "react";
@@ -39,13 +39,27 @@ const MobileMenu: FC = () => {
           >
             <LuX className={"!h-5 !w-5"} />
           </Button>
-          <div className={"flex h-full w-full items-center justify-center"}>
+          <div className={"flex h-full w-full flex-col items-center justify-center gap-12"}>
             <ul className={"flex flex-col items-center gap-4"}>
               {NAV_LINKS.map((link) => (
                 <li key={link.label}>
                   <Link className={"flex items-center gap-3 text-2xl"} href={link.link}>
                     <link.icon />
                     {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+            <ul className={"flex items-center gap-4"}>
+              {SOCIALS.map((social) => (
+                <li key={social.link}>
+                  <Link
+                    className={"flex items-center gap-3 text-2xl"}
+                    href={social.link}
+                    target={"_blank"}
+                    rel={"noopener noreferrer"}
+                  >
+                    <social.icon />
                   </Link>
                 </li>
               ))}
