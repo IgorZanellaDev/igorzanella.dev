@@ -14,6 +14,8 @@ export const PROJECTS: (showCustomerlyMessage?: (message: string) => void) => Pr
   {
     title: "Customerly",
     description: "The Customer Operating System for SaaS",
+    metaDescription:
+      "AI-first customer service platform for SaaS. I lead web, messenger & infra, scaling to 100M+ monthly chats and seamless AI-human hand-offs. Explore the build.",
     id: "customerly",
     url: "https://www.customerly.io",
     imageSize: { width: 1200, height: 630 },
@@ -140,6 +142,8 @@ export const PROJECTS: (showCustomerlyMessage?: (message: string) => void) => Pr
   {
     title: "ComputerPortatile",
     description: "Affiliate marketing website",
+    metaDescription:
+      "Italian laptop review site leveraging Amazon affiliate links. NextJS & AI pick top deals and auto-write articles, driving passive income.",
     id: "computerportatile",
     url: "https://computerportatile.com",
     imageSize: { width: 1920, height: 1080 },
@@ -211,6 +215,8 @@ export const PROJECTS: (showCustomerlyMessage?: (message: string) => void) => Pr
   {
     title: "BJJ Radar",
     description: "BJJ competitions aggregator",
+    metaDescription:
+      "Web app aggregating Brazilian Jiu-Jitsu competitions across federations. Static-generated with Next.js; weekly updates keep athletes event-ready. Check it out.",
     id: "bjjradar",
     url: "https://bjj-radar.com",
     imageSize: { width: 1200, height: 630 },
@@ -259,6 +265,8 @@ export const PROJECTS: (showCustomerlyMessage?: (message: string) => void) => Pr
   {
     title: "Ethereum Validator",
     description: "Ethereum staking validator server",
+    metaDescription:
+      "Client-diverse Nimbus+Besu server staking 32 ETH since 2020. Monitored with Prometheus & Grafana for 24/7 uptime and decentralised rewards. Learn more.",
     id: "ethereum-validator",
     imageSize: { width: 1920, height: 1080 },
     status: ProjectStatus.Active,
@@ -361,6 +369,8 @@ export const PROJECTS: (showCustomerlyMessage?: (message: string) => void) => Pr
   {
     title: "IgorZanellaDev",
     description: "Actually this website",
+    metaDescription:
+      "Open-source personal site built with Next.js, Tailwind and Vercel. Showcases projects, articles and experiments. Updated continuously. Browse the code.",
     id: "izdev",
     imageSize: { width: 1920, height: 1080 },
     status: ProjectStatus.Active,
@@ -399,6 +409,8 @@ export const PROJECTS: (showCustomerlyMessage?: (message: string) => void) => Pr
   {
     title: "BestOnDesk",
     description: "A website for a best on desk shop",
+    metaDescription:
+      "Italian office-gear and self-development blog monetised via Amazon and others. Migrated from WordPress to Gatsby + AWS for faster, serverless pages.",
     id: "bestondesk",
     imageSize: { width: 1920, height: 1080 },
     status: ProjectStatus.Closed,
@@ -457,6 +469,8 @@ export const PROJECTS: (showCustomerlyMessage?: (message: string) => void) => Pr
   {
     title: "Racing Line Motorsport",
     description: "A website for a racing line motorsport shop",
+    metaDescription:
+      "Sim-racing team platform for events, coaching and news. React/Gatsby front-end on AWS supported podium finishes in GT World Challenge esports. See the build.",
     id: "racing-line-motorsport",
     imageSize: { width: 1920, height: 1080 },
     status: ProjectStatus.Closed,

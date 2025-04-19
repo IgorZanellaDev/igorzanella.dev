@@ -9,6 +9,7 @@ export enum ProjectStatus {
 export interface Project {
   title: string;
   description: string;
+  metaDescription: string;
   id: string;
   imageSize: { width: number; height: number };
   status: ProjectStatus;

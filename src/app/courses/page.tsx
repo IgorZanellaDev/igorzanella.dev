@@ -2,8 +2,18 @@ import Header from "@/components/header";
 import { Card } from "@/components/ui/card";
 import { COURSES } from "@/constants/courses";
 import { Course } from "@/types/course";
+import { Metadata } from "next";
 import Image from "next/image";
 import { FC } from "react";
+
+export const metadata: Metadata = {
+  title: "Courses",
+  description:
+    "Hands-on courses and tutorials in web development, cloud infrastructure, and DevOps. Learn proven techniques from my freelance engineering work. Enroll today.",
+  alternates: {
+    canonical: "/courses",
+  },
+};
 
 const CourseCard: FC<{
   course: Course;

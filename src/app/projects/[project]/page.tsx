@@ -11,6 +11,41 @@ import Image from "next/image";
 import { notFound, useParams } from "next/navigation";
 import { FC } from "react";
 
+export const generateMetadata = async ({ params }: { params: { project: string } }) => {
+  const projectData = PROJECTS().find((p) => p.id === params.project);
+
+  if (!projectData) {
+    return notFound();
+  }
+
+  return {
+    title: projectData.title,
+    description: projectData.metaDescription,
+    alternates: {
+      canonical: `/projects/${projectData.id}`,
+    },
+    openGraph: {
+      images: [
+        {
+          url: `/images/projects/${projectData.id}/main.jpg`,
+          width: projectData.imageSize.width,
+          height: projectData.imageSize.height,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      images: [
+        {
+          url: `/images/projects/${projectData.id}/main.jpg`,
+          width: projectData.imageSize.width,
+          height: projectData.imageSize.height,
+        },
+      ],
+    },
+  };
+};
+
 const Project: FC = () => {
   const { project } = useParams();
 

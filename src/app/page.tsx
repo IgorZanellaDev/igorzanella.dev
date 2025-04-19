@@ -3,8 +3,18 @@ import Header from "@/components/header";
 import Technologies from "@/components/technologies";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+import { Metadata } from "next";
 import { FC } from "react";
 import { LuRocket } from "react-icons/lu";
+
+export const metadata: Metadata = {
+  title: "Igor Zanella | Freelance Full-Stack & DevOps Engineer",
+  description:
+    "Freelance Full Stack Software Engineer & DevOps specialist delivering end-to-end digital solutions. Discover how I can elevate your project.",
+  alternates: {
+    canonical: "/",
+  },
+};
 
 const Home: FC = () => {
   return (

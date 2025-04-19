@@ -3,9 +3,19 @@ import { Card } from "@/components/ui/card";
 import { PROJECTS, PROJECTS_STATUS_SETTINGS } from "@/constants/projects";
 import { cn } from "@/lib/utils";
 import { Project } from "@/types/project";
+import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { FC } from "react";
+
+export const metadata: Metadata = {
+  title: "Projects",
+  description:
+    "Browse real-world projects from my freelance Full Stack & DevOps work. See code, demos and results. Discover how ideas became scalable products.",
+  alternates: {
+    canonical: "/projects",
+  },
+};
 
 const ProjectCard: FC<{ project: Project }> = ({
   project: {

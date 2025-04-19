@@ -1,8 +1,18 @@
 import GithubContributions from "@/components/github-contributions";
 import Header from "@/components/header";
+import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { FC } from "react";
+
+export const metadata: Metadata = {
+  title: "About",
+  description:
+    "Explore my journey in software engineering, key project stats, and the passions that fuel my freelance path, from creative coding to BJJ on the mats.",
+  alternates: {
+    canonical: "/about",
+  },
+};
 
 const About: FC = () => {
   return (
