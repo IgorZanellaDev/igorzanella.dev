@@ -17,10 +17,6 @@ export const metadata: Metadata = {
 };
 
 const Home: FC = () => {
-  const handleChatClick = () => {
-    window.customerly?.showNewMessage("Hi Igor! ");
-  };
-
   return (
     <>
       <Header title={"Hello world! I'm Igor 👋🏻"} description={"Full Stack Developer & DevOps Engineer"} />
