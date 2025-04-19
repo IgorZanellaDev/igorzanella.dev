@@ -77,7 +77,7 @@ const RootLayout = ({
           <IubendaScripts />
           <Menu />
           <div className={"flex flex-1 flex-col overflow-x-hidden"}>
-            <main className={"flex flex-col p-4 md:mt-4 md:p-8 md:pb-4"}>{children}</main>
+            <main className={"flex flex-1 flex-col p-4 md:mt-4 md:p-8 md:pb-4"}>{children}</main>
             <Footer />
           </div>
         </ThemeProvider>
