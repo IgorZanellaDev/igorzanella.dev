@@ -9,8 +9,13 @@ import Image from "next/image";
 import { notFound } from "next/navigation";
 import { FC } from "react";
 
-export const generateMetadata = async ({ params }: { params: { project: string } }) => {
-  const projectData = PROJECTS.find((p) => p.id === params.project);
+interface ProjectProps {
+  params: Promise<{ project: string }>;
+}
+
+export const generateMetadata = async ({ params }: ProjectProps) => {
+  const { project } = await params;
+  const projectData = PROJECTS.find((p) => p.id === project);
 
   if (!projectData) {
     return notFound();
@@ -44,7 +49,7 @@ export const generateMetadata = async ({ params }: { params: { project: string }
   };
 };
 
-const Project: FC<{ params: Promise<{ project: string }> }> = async ({ params }) => {
+const Project: FC<ProjectProps> = async ({ params }) => {
   const { project } = await params;
 
   const projectData = PROJECTS.find((p) => p.id === project);
