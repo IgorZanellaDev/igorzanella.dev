@@ -1,7 +1,7 @@
 import ClyTestimonial from "@/components/cly-testimonial";
+import ContactButton from "@/components/contact-button";
 import Header from "@/components/header";
 import Technologies from "@/components/technologies";
-import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Metadata } from "next";
 import { FC } from "react";
@@ -17,6 +17,10 @@ export const metadata: Metadata = {
 };
 
 const Home: FC = () => {
+  const handleChatClick = () => {
+    window.customerly?.showNewMessage("Hi Igor! ");
+  };
+
   return (
     <>
       <Header title={"Hello world! I'm Igor 👋🏻"} description={"Full Stack Developer & DevOps Engineer"} />
@@ -42,8 +46,7 @@ const Home: FC = () => {
           </p>
         </CardContent>
         <CardFooter className={"flex items-center gap-4"}>
-          {/* FIXME: Open messenger on contact me */}
-          <Button>Contact me</Button>
+          <ContactButton />
           <p className={"text-muted-foreground"}>
             {new Date().toLocaleTimeString(undefined, { hour: "2-digit", minute: "2-digit" })}
           </p>
