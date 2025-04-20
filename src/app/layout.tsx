@@ -4,9 +4,11 @@ import Footer from "@/components/menu/footer";
 import { ThemeProvider } from "@/components/theme-provider";
 import { DEFAULT_SUFFIX, DEFAULT_TITLE, GTM_ID, WEBSITE_URL } from "@/constants/seo";
 import { GoogleTagManager } from "@next/third-parties/google";
+import { Analytics } from "@vercel/analytics/react";
 import { GeistMono } from "geist/font/mono";
 import { GeistSans } from "geist/font/sans";
 import type { Metadata, Viewport } from "next";
+import { ReactNode } from "react";
 import type { Organization, WithContext } from "schema-dts";
 import "./globals.css";
 
@@ -63,11 +65,12 @@ const defaultStructuredData: WithContext<Organization>[] = [
 const RootLayout = ({
   children,
 }: Readonly<{
-  children: React.ReactNode;
+  children: ReactNode;
 }>) => {
   return (
     <html suppressHydrationWarning lang={"en"} className={`${GeistSans.variable} ${GeistMono.variable} antialiased`}>
       <GoogleTagManager gtmId={GTM_ID} />
+      <Analytics />
       <body className={"mx-auto flex flex-col gap-2 md:max-w-screen-lg md:flex-row"}>
         <script
           type={"application/ld+json"}
