@@ -1,5 +1,6 @@
 "use client";
 
+import ThemeChooser from "@/components/menu/theme-chooser";
 import { Button } from "@/components/ui/button";
 import { NAV_LINKS, SOCIALS } from "@/constants/menu";
 import Link from "next/link";
@@ -50,20 +51,23 @@ const MobileMenu: FC = () => {
                 </li>
               ))}
             </ul>
-            <ul className={"flex items-center gap-4"}>
-              {SOCIALS.map((social) => (
-                <li key={social.link}>
-                  <Link
-                    className={"flex items-center gap-3 text-2xl"}
-                    href={social.link}
-                    target={"_blank"}
-                    rel={"noopener noreferrer"}
-                  >
-                    <social.icon />
-                  </Link>
-                </li>
-              ))}
-            </ul>
+            <div className={"flex flex-col items-center gap-8"}>
+              <ul className={"flex items-center gap-4"}>
+                {SOCIALS.map((social) => (
+                  <li key={social.link}>
+                    <Link
+                      className={"flex items-center gap-3 text-2xl"}
+                      href={social.link}
+                      target={"_blank"}
+                      rel={"noopener noreferrer"}
+                    >
+                      <social.icon />
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+              <ThemeChooser />
+            </div>
           </div>
         </div>
       )}
