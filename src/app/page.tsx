@@ -1,5 +1,6 @@
 import ClyTestimonial from "@/components/cly-testimonial";
 import ContactButton from "@/components/contact-button";
+import CurrentHour from "@/components/current-hour";
 import Header from "@/components/header";
 import Technologies from "@/components/technologies";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
@@ -43,9 +44,7 @@ const Home: FC = () => {
         </CardContent>
         <CardFooter className={"flex items-center gap-4"}>
           <ContactButton />
-          <p className={"text-muted-foreground"}>
-            {new Date().toLocaleTimeString(undefined, { hour: "2-digit", minute: "2-digit" })}
-          </p>
+          <CurrentHour />
         </CardFooter>
       </Card>
     </>
