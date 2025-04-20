@@ -30,7 +30,7 @@ const MobileMenu: FC = () => {
         <RxHamburgerMenu className={"!h-5 !w-5"} />
       </Button>
       {showMenu && (
-        <div className={"fixed left-0 top-0 z-50 h-screen w-screen bg-background md:hidden"}>
+        <div className={"fixed left-0 top-0 z-50 h-dvh w-dvw bg-background md:hidden"}>
           <Button
             className={"absolute right-4 top-4 h-12 w-12 p-2"}
             onClick={handleCloseMenu}
