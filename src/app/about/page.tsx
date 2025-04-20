@@ -1,3 +1,4 @@
+import CustomerlyButton from "@/components/customerly-button";
 import GithubContributions from "@/components/github-contributions";
 import Header from "@/components/header";
 import { Metadata } from "next";
@@ -116,6 +117,15 @@ const About: FC = () => {
         Contributions
       </h2>
       <GithubContributions className={"mt-2"} />
+      <h2 className={"mt-4 text-xl font-medium"}>How to contact me</h2>
+      <p className={"leading-relaxed"}>
+        I&apos;m always open to new opportunities and collaborations. You can contact me via email at{" "}
+        <a href={"mailto:igor@igorzanella.dev"} className={"underline"}>
+          igor@igorzanella.dev
+        </a>{" "}
+        or through the <CustomerlyButton message={""}>chat</CustomerlyButton>.
+      </p>
+      <div className={"mt-4 flex w-full gap-2"}></div>
     </>
   );
 };
