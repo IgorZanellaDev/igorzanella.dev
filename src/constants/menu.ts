@@ -1,4 +1,4 @@
-import { FaGithub, FaLinkedin, FaMedium, FaSpotify } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaMedium, FaSpotify, FaYoutube } from "react-icons/fa";
 import { LuBookText, LuHouse, LuUser, LuVideo } from "react-icons/lu";
 
 export const NAV_LINKS = [
@@ -29,6 +29,11 @@ export const SOCIALS = [
     label: "Github",
     link: "https://github.com/IgorZanellaDev",
     icon: FaGithub,
+  },
+  {
+    label: "Youtube",
+    link: "https://www.youtube.com/@igorzanelladev",
+    icon: FaYoutube,
   },
   {
     label: "LinkedIn",
