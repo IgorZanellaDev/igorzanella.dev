@@ -15,6 +15,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/",
   },
+  verification: {
+    google: "pH14L0CLjQeBUsgawaZwnQYV3BHgVUMEkAl46fjsXl0",
+  },
 };
 
 const Home: FC = () => {
