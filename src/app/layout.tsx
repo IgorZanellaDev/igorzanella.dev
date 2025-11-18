@@ -4,7 +4,6 @@ import Footer from "@/components/menu/footer";
 import { ThemeProvider } from "@/components/theme-provider";
 import { DEFAULT_SUFFIX, DEFAULT_TITLE, GTM_ID, WEBSITE_URL } from "@/constants/seo";
 import { GoogleTagManager } from "@next/third-parties/google";
-import { Analytics } from "@vercel/analytics/react";
 import { GeistMono } from "geist/font/mono";
 import { GeistSans } from "geist/font/sans";
 import type { Metadata, Viewport } from "next";
@@ -70,7 +69,13 @@ const RootLayout = ({
   return (
     <html suppressHydrationWarning lang={"en"} className={`${GeistSans.variable} ${GeistMono.variable} antialiased`}>
       <GoogleTagManager gtmId={GTM_ID} />
-      <Analytics />
+      <head>
+        <script
+          defer
+          src={"https://umami.igorzanella.dev/script.js"}
+          data-website-id={"ec468414-7593-4644-afc8-7c178a059399"}
+        />
+      </head>
       <body className={"mx-auto flex flex-col gap-2 md:max-w-screen-lg md:flex-row"}>
         <script
           type={"application/ld+json"}
