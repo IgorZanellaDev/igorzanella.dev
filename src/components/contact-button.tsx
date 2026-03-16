@@ -2,10 +2,13 @@
 
 import { Button } from "@/components/ui/button";
 import { FC } from "react";
+import { useCustomerly } from "react-live-chat-customerly";
 
 const ContactButton: FC = () => {
+  const { showNewMessage } = useCustomerly();
+
   const handleChatClick = () => {
-    window.customerly?.showNewMessage("Hi Igor! ");
+    showNewMessage("Hi Igor! ");
   };
 
   return <Button onClick={handleChatClick}>Contact me</Button>;

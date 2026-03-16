@@ -27,6 +27,7 @@ const TechMatrix: FC<{
               rel={"noopener noreferrer"}
             >
               <Image
+                suppressHydrationWarning
                 className={"h-5 w-5"}
                 src={`/tech-icons/${tech.icon}${tech.themeChange !== undefined ? (theme === "system" ? (systemTheme === "dark" ? "-dark" : "-light") : theme === "dark" ? "-dark" : "-light") : ""}.svg`}
                 alt={tech.name}

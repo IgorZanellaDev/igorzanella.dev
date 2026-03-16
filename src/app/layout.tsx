@@ -1,4 +1,6 @@
-import IubendaScripts from "@/components/iubenda-scripts";
+import CookieConsentBanner from "@/components/cookie-consent-banner";
+import { CookieConsentProvider } from "@/components/cookie-consent-provider";
+import CustomerlyWidget from "@/components/customerly-provider";
 import Menu from "@/components/menu";
 import Footer from "@/components/menu/footer";
 import { ThemeProvider } from "@/components/theme-provider";
@@ -80,12 +82,16 @@ const RootLayout = ({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(defaultStructuredData) }}
         />
         <ThemeProvider disableTransitionOnChange enableSystem attribute={"class"} defaultTheme={"system"}>
-          <IubendaScripts />
-          <Menu />
-          <div className={"flex flex-1 flex-col overflow-x-hidden"}>
-            <main className={"flex flex-1 flex-col p-4 md:mt-4 md:p-8 md:pb-10"}>{children}</main>
-            <Footer />
-          </div>
+          <CookieConsentProvider>
+            <CustomerlyWidget>
+              <Menu />
+              <div className={"flex flex-1 flex-col overflow-x-hidden"}>
+                <main className={"flex flex-1 flex-col p-4 md:mt-4 md:p-8 md:pb-10"}>{children}</main>
+                <Footer />
+              </div>
+            </CustomerlyWidget>
+            <CookieConsentBanner />
+          </CookieConsentProvider>
         </ThemeProvider>
       </body>
     </html>

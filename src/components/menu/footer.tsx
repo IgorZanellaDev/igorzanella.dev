@@ -1,4 +1,5 @@
 import { cn } from "@/lib/utils";
+import Link from "next/link";
 import { FC } from "react";
 
 interface FooterProps {
@@ -13,22 +14,12 @@ const Footer: FC<FooterProps> = () => {
         <p>© {new Date().getFullYear()} All rights reserved.</p>
       </div>
       <div className={"flex flex-col"}>
-        <a
-          className={"underline"}
-          href={"https://www.iubenda.com/privacy-policy/36569385"}
-          rel={"noopener noreferrer"}
-          target={"_blank"}
-        >
+        <Link className={"underline"} href={"/privacy-policy"}>
           Privacy Policy
-        </a>
-        <a
-          className={"underline"}
-          href={"https://www.iubenda.com/privacy-policy/36569385/cookie-policy"}
-          rel={"noopener noreferrer"}
-          target={"_blank"}
-        >
+        </Link>
+        <Link className={"underline"} href={"/cookie-policy"}>
           Cookie Policy
-        </a>
+        </Link>
       </div>
     </footer>
   );
