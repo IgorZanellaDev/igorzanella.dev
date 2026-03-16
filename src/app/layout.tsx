@@ -2,8 +2,7 @@ import IubendaScripts from "@/components/iubenda-scripts";
 import Menu from "@/components/menu";
 import Footer from "@/components/menu/footer";
 import { ThemeProvider } from "@/components/theme-provider";
-import { DEFAULT_SUFFIX, DEFAULT_TITLE, GTM_ID, WEBSITE_URL } from "@/constants/seo";
-import { GoogleTagManager } from "@next/third-parties/google";
+import { DEFAULT_SUFFIX, DEFAULT_TITLE, WEBSITE_URL } from "@/constants/seo";
 import { GeistMono } from "geist/font/mono";
 import { GeistSans } from "geist/font/sans";
 import type { Metadata, Viewport } from "next";
@@ -68,7 +67,6 @@ const RootLayout = ({
 }>) => {
   return (
     <html suppressHydrationWarning lang={"en"} className={`${GeistSans.variable} ${GeistMono.variable} antialiased`}>
-      <GoogleTagManager gtmId={GTM_ID} />
       <head>
         <script
           defer
