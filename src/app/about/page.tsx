@@ -80,7 +80,7 @@ const About: FC = () => {
         I believe staying active is key to a healthy work-life balance, and I&apos;m passionate about a variety of
         sports.
         <br />
-        🥋 <span className={"font-semibold"}>Brazilian Jiu Jitsu:</span> I&apos;m a brown belt and regularly compete in
+        🥋 <span className={"font-semibold"}>Brazilian Jiu Jitsu:</span> I&apos;m a black belt and regularly compete in
         international tournaments.
         <br />
         🏔️ <span className={"font-semibold"}>Mountain Sports:</span> Living close to the Dolomites, I spend my winters
